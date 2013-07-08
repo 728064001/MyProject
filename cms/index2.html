@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>ZMS</title>
+<style type="text/css">
+.login_class {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right: 1px solid #C0C0C0;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom: 1px solid #C0C0C0;
+}
+.style1 {
+	background-color: #C0C0C0;
+}
+.style2 {
+	text-align: center;
+}
+.style3 {
+	background-color: #C0C0C0;
+	text-align: right;
+	font-size: small;
+	color: #FF0000;
+}
+#na {
+	line-height: 47px;
+}
+#pa {
+	line-height: 47px;
+}
+}
+.style4 {
+	font-family: 黑体;
+}
+.style5 {
+	font-family: 黑体;
+	font-weight: normal;
+}
+.style6 {
+	color: #FF00FF;
+	text-align: center;
+}
+</style>
+<script src="js/validate.js" type="text/javascript"></script>
+</head>
+
+<body onload="load()">
+
+<div style="width: 600px; height: 400px; margin: 0 auto;">
+	<form action="" method="post" name="form_login" onsubmit="return chk()">
+		<table align="center" class="login_class" style="width: 600px; height: 400px">
+			<tr class="style1">
+				<td colspan="4" style="height: 60px">
+				<h2 align="center">Z&nbsp;&nbsp; M&nbsp;&nbsp; S 登录...</h2>
+				</td>
+			</tr>
+			<tr>
+				<td class="style2" style="width: 94px">
+				<h3 class="style2"><span class="style5"><strong>登录名</strong></span>：</h3>
+				</td>
+				<td class="style2" colspan="3">
+				<img height="32" src="image/user.png" width="32" />&nbsp;
+				<input id="na" name="login_name" onblur="len()" style="width: 250px; height: 47px" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<td class="style2" style="width: 94px; height: 49px;"></td>
+				<td id="tip1" class="style2" colspan="3" style="height: 49px">
+				</td>
+			</tr>
+			<tr>
+				<td class="style2" style="width: 94px">
+				<h3 class="style4">密&nbsp; 码：</h3>
+				</td>
+				<td class="style2" colspan="3">
+				<img height="32" src="image/unlock.png" width="32" />&nbsp;
+				<input id="pa" name="login_password" style="width: 250px; height: 47px" type="password" />
+				</td>
+			</tr>
+			<tr>
+				<td class="style2" style="width: 94px; height: 50px;"></td>
+				<td class="style2" colspan="3" style="height: 50px"></td>
+			</tr>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+				<td class="style2">
+				<input name="Button1" onclick="aaa()" style="width: 84px; height: 54px" type="reset" value="重 置" />
+				</td>
+				<td class="style2">
+				<input name="Submit1" style="width: 84px; height: 54px" type="submit" value="确 认" />
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#FF0000" class="style3" colspan="4" style="height: 49px">
+				注册</td>
+			</tr>
+		</table>
+	</form>
+	<div id="layer1" class="style6" style="position: relative; width: 289px; height: 150px; z-index: 1; left: -273px; top: 234px">
+		asdfas</div>
+</div>
+
+</body>
+
+</html>

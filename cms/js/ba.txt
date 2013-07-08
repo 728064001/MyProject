@@ -1,0 +1,34 @@
+<script type="text/javascript">
+function chk(){
+	var username=document.form_login.login_name.value;
+	var strname=document.getElementById("na");
+	if(username.length<6||username.length>12){
+		strname.innerHTML="<font color='red'>用户名长度为6—12个字符</font>";
+		return false;
+	}else{
+		strname.innerHTML="<font color='green'>√</font>";
+		return true;
+	}
+	var pwdtext=document.form_login.login_password.value;
+	var pw=document.getElementById("pa");
+	if(pwdtext.length<7||pwdtext.length>20||pwdtext.indexOf("*",0)!=-1){
+		pw.innerHTML="<font color='red'>密码格式不符合要求</font>";
+		return false;
+	}else{
+		pw.innerHTML="<font color='green'>√</font>";
+		return true;
+	}
+}
+
+</script>
+
+ <script type="text/javascript">
+    	function aaa(){
+    		var names = document.forms["form_login"].elements["login_name"].value;//获取用户名
+    		var passwords = document.forms["form_login"].elements["login_password"].value;//获取密码
+    		alert(passwords);
+    	}
+    	function heiden(){
+    		
+    	}
+    </script>
