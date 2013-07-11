@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="zh-cn" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<style type="text/css">
+.style1 {
+	border-style: solid;
+	border-width: 1px;
+}
+.style2 {
+	text-align: center;
+}
+</style>
+
+<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+<script type="text/javascript">
+	function hi(){
+		$(function(){
+			$("#d2").hide();
+			$("#d3").hide();
+		});
+	}
+	function one(){
+		$("#d1").show();
+		
+		$("#d2").hide();
+		$("#d3").hide();
+
+	}
+	function two(){
+		$("#d2").show();
+		
+		$("#d1").hide();
+		$("#d3").hide();
+
+	}
+	function three(){
+		$("#d3").show();
+		
+		$("#d1").hide();
+		$("#d2").hide();
+
+	}
+
+</script>
+</head>
+
+<body onload="hi()">
+
+<table cellspacing="1" class="style1" style="width: 100%; height: 411px">
+	<tr>
+		<td class="style2" style="height: 49px" onclick="one()">div1</td>
+		<td class="style2" style="height: 49px" onclick="two()">div2</td>
+		<td class="style2" style="height: 49px" onclick="three()">div3</td>
+	</tr>
+	<tr>
+		<td align="left" colspan="3" valign="top">
+				<div id="d1" style="position: absolute; color:blue; width: 905px; height: 357px; z-index: 1; left: 13px; top: 68px">
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br/>
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br/>
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br/>				
+				</div>
+				<div id="d2" style="position: absolute; color:blue; width: 905px; height: 357px; z-index: 2; left: 13px; top: 68px">
+				bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br/>
+				bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br/>
+				bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br/>				
+				</div>
+				<div id="d3" style="position: absolute; color:blue; width: 905px; height: 357px; z-index: 3; left: 13px; top: 68px">
+				ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc<br/>
+				ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc<br/>
+				cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc<br/>				
+				</div>
+
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
