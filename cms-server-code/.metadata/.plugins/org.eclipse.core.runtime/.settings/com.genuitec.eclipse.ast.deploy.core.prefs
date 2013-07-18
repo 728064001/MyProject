@@ -1,0 +1,12 @@
+#Thu Jul 18 18:37:09 CST 2013
+tomcat6Server.CMS.shouldOverwrite=false
+tomcat6Server.CMS.isUptoDate=true
+tomcat6Server.CMS.shouldBackup=false
+tomcat6Server.CMS.deploymentPath=D\:\\apache-tomcat-x86\\apache-tomcat-6.0.35\\webapps\\CMS
+tomcat6Server.CMS.type=WebDeployment
+tomcat6Server.CMS.isDeployed=true
+tomcat6Server.CMS.earProjectName=
+tomcat6Server.CMS.deployIsOverProject=false
+eclipse.preferences.version=1
+tomcat6Server.CMS.contextRoot=/CMS
+tomcat6Server.CMS.isExploded=true

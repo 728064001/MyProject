@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="JqueryAjax"
+  id="myeclipse.1372482566750"
+  context-root="/JqueryAjax"
+  j2ee-spec="5.0"
+  archive="JqueryAjax.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

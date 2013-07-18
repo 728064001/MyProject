@@ -1,0 +1,121 @@
+!SESSION 2013-07-18 18:29:44.577 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 18:29:49.441
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 18:29:49.465
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 18:29:49.467
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 18:29:49.497
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:02.853
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\html\css_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:02.943
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\html\forms_lists_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:02.985
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\html\htmlform_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:03.046
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\html\html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:03.114
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\html\javascript_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:03.272
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\jsf_f_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:03.355
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\jsf_h_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:03.408
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\struts_bean_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:03.475
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\struts_html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:03.547
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\struts_logic_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-18 18:31:03.631
+!MESSAGE Installed snippet library: D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\struts_tiles_snippets.xml
+
+!ENTRY com.tikal.eclipse.updatemanager.quicksetup 4 4 2013-07-18 18:31:50.985
+!MESSAGE Network connection problems encountered during search.
+
+!ENTRY com.genuitec.eclipse.javascript 1 0 2013-07-18 18:35:08.710
+!MESSAGE 
+!STACK 0
+org.mozilla.javascript.JavaScriptException: [object Function] (JS lint#456)
+	at org.mozilla.javascript.gen.c2._c13(JS lint:456)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:95)
+	at org.mozilla.javascript.gen.c2._c9(JS lint:389)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callProp0(OptRuntime.java:117)
+	at org.mozilla.javascript.gen.c2._c76(JS lint:1368)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName0(OptRuntime.java:106)
+	at org.mozilla.javascript.gen.c2._c4(JS lint:201)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:95)
+	at org.mozilla.javascript.gen.c2._c0(JS lint:1740)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:337)
+	at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:2755)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.gen.c2.exec(JS lint)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:471)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:429)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateFile(JavaScriptValidator.java:544)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateContainer(JavaScriptValidator.java:503)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateContainer(JavaScriptValidator.java:505)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateContainer(JavaScriptValidator.java:505)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateFull(JavaScriptValidator.java:556)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:418)
+	at org.eclipse.wst.validation.internal.core.ValidatorLauncher.start(ValidatorLauncher.java:98)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.launchValidator(ValidationOperation.java:1286)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.internalValidate(ValidationOperation.java:1101)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.validate(ValidationOperation.java:996)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.run(ValidationOperation.java:657)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.performFullBuild(ValidationBuilder.java:248)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.performFullBuild(ValidationBuilder.java:240)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.build(ValidationBuilder.java:189)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-18 18:35:10.451
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-07-18 18:35:15.842
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.

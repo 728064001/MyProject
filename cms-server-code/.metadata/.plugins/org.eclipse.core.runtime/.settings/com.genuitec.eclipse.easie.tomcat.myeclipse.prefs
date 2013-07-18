@@ -1,0 +1,8 @@
+#Thu Jul 18 18:36:41 CST 2013
+SERVER_ENABLEMENT=false
+LIBRARY_PATH="D\:\\Program Files\\MyEclipse 6.5\\bin;D\:\\Program Files\\MyEclipse 6.5\\myeclipse\\eclipse\\plugins\\com.genuitec.eclipse.easie.tomcat.myeclipse_6.5.0.zmyeclipse650200806\\tomcat\\bin"
+tomcat.configuration.version.current=2
+eclipse.preferences.version=1
+JDK_HOME=D\:\\Program Files\\MyEclipse 6.5
+ENDORSED_DIRS="D\:\\Program Files\\MyEclipse 6.5\\myeclipse\\eclipse\\plugins\\com.genuitec.eclipse.easie.tomcat.myeclipse_6.5.0.zmyeclipse650200806\\tomcat/common/endorsed"
+JDK_INSTALLATION_NAME=MyEclipse 6.5
