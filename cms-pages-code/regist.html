@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="zh-cn" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>regist</title>
+<style type="text/css">
+ body{
+	margin:0;
+	padding:0;
+}
+.style1 {
+	border: 1px solid #999966;
+}
+.style2 {
+	text-align: center;
+}
+.style3 {
+	font-family: 华文琥珀;
+	font-size: large;
+}
+.style4 {
+	font-size: large;
+	font-family: 黑体;
+	color: #808080;
+}
+.style5 {
+	text-align: center;
+	font-family: 黑体;
+	font-size: large;
+	color: #808080;
+}
+.style6 {
+	font-size: small;
+	color: #0000FF;
+
+}
+.style9 {
+	font-size: small;
+}
+</style>
+</head>
+
+<body>
+
+<table border="1" cellpadding="0" cellspacing="0" style="width: 100%; height: 670px">
+	<tr>
+		<td style="width: 359px; height: 99px"></td>
+		<td style="width: 614px; height: 99px"></td>
+		<td style="height: 99px"></td>
+	</tr>
+	<tr>
+		<td style="height: 238px; width: 359px">
+		&nbsp;</td>
+		<td style="height: 238px; width: 614px" align="left" valign="top">
+		<table border="1" cellspacing="0" class="style1" style="width: 100%; height: 100%">
+			<tr bgcolor="#808080">
+				<td colspan="3" style="height: 54px; text-align: center" class="style3">
+				<strong>用 户 注 册</strong></td>
+			</tr>
+			<tr>
+				<td style="text-align: center; width: 138px; height: 45px;" class="style4">
+				<strong>用户名：</strong></td>
+				<td style="height: 45px; width: 196px">					
+				<input name="username" id="username" value="asdf" type="text" style="width: 159px; height: 25px" onblur="userInputOnblur()" />
+				</td>
+				<td style="height: 45px" class="style6" id="usernametip">输入中文姓名</td>
+			</tr>
+			<tr>
+				<td class="style5" style="width: 138px; height: 45px;"><strong>密&nbsp;&nbsp; 码：</strong></td>
+				<td style="height: 45px; width: 196px">					
+				<input name="password" id="password" type="password" style="width: 159px; height: 25px" onblur="passwordInputOnblur()" /></td>
+				<td style="height: 45px" class="style6" id="passwordtip">8-16位密码</td>
+			</tr>
+			<tr>
+				<td class="style5" style="width: 138px; height: 45px;"><strong>重复输入密码：</strong></td>
+				<td style="height: 45px; width: 196px">					
+				<input name="repeatpassword" id="repeatpassword" type="password" style="width: 159px; height: 25px" onblur="repeatPasswordInputOnblur()"/></td>
+				<td style="height: 45px" class="style6" id="repeatpasswordtip">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="style5" style="width: 138px; height: 45px;"><strong>联系电话：</strong></td>
+				<td style="height: 45px; width: 196px">					
+				<input name="tel" id="tel" type="text" style="width: 159px; height: 25px" onblur="telInputOnblur()" /></td>
+				<td style="height: 45px" class="style6" id="teltip">最多12个字符</td>
+			</tr>
+			<tr>
+				<td class="style5" style="width: 138px; height: 45px;"><strong>QQ:</strong></td>
+				<td style="height: 45px; width: 196px">					
+				<input name="qq" id="qq" type="text" style="width: 159px; height: 25px" onblur="qqInputOnblur()" /></td>
+				<td style="height: 45px" class="style6" id="qqtip">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="style5" style="width: 138px; height: 45px;"><strong>生日日期：</strong></td>
+				<td style="height: 45px; width: 196px">					
+				<input name="brithday" id="brithday" type="text" style="width: 159px; height: 25px" onblur="brithdayInputOnblur()"/></td>
+				<td style="height: 45px" class="style6" id="brithdaytip">4位农历日期,如:农历九月六日 为 0906</td>
+			</tr>
+			<tr>
+				<td class="style5" style="width: 138px; height: 45px;"><strong>年&nbsp; 龄：</strong></td>
+				<td style="height: 45px; width: 196px">					
+				<input name="age" id="age" type="text" style="width: 159px; height: 25px" onblur="ageInputOnblur()" /></td>
+				<td style="height: 45px" class="style6" id="agetip">1-100</td>
+			</tr>
+			<tr>
+				<td class="style5" style="width: 138px; height: 45px;"><strong>身份证：</strong></td>
+				<td style="height: 45px; width: 196px">					
+				<input name="card" id="card" type="text" style="width: 159px; height: 25px" onblur="cardInputOnblur()" /></td>
+				<td style="height: 45px" class="style6" id="cardtip">最多19个字符</td>
+			</tr>
+			<tr>
+				<td class="style5" style="width: 138px; height: 45px;"><strong>所&nbsp; 
+				属：</strong></td>
+				<td style="height: 45px; width: 196px">					
+					<select name="dep0" id="dep0" style="width: 109px; height: 25px">
+					<option></option>
+					</select></td>
+				<td style="height: 45px" class="style6">选择所属公司</td>
+			</tr>
+			<tr>
+				<td class="style5" style="width: 138px; height: 45px;"><strong>部&nbsp; 门：</strong></td>
+				<td style="height: 45px; width: 196px" align="left" valign="middle">
+					<select name="dep" id="dep" style="width: 109px; height: 25px">
+					<option></option>
+					</select>
+				</td>
+				<td style="height: 45px" class="style6">选择所在部门</td>
+			</tr>
+			<tr>
+				<td class="style5" style="width: 138px; height: 45px;"><strong>职&nbsp; 位：</strong></td>
+				<td style="height: 45px; width: 196px">
+				<select name="post" id="post" style="width: 109px; height: 25px">
+				<option></option>
+				</select></td>
+				<td style="height: 45px" class="style6">选择职位</td>
+			</tr>
+			<tr>
+				<td class="style2" style="width: 138px; height: 88px;"></td>
+				<td style="height: 88px; width: 196px"><span>&nbsp;<input name="Checkbox1" type="checkbox" />				
+				<span class="style9">同意</span><a href="##"><span class="style9">用户协议</span></a><span class="style9">&nbsp;
+				</span>				</span><br/><br/>
+					<input name="regist" type="submit" value="注  册" style="width: 103px; height: 45px" />									</td>
+				<td style="height: 88px" valign="bottom">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="style2" style="height: 37px;" colspan="3" bgcolor="#C0C0C0">
+		<span style="color: rgb(81, 81, 81); font-family: Arial; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 24px; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">
+		Copyright ©&nbsp; 2013 zyeeda. All Rights Reserved</span></td>
+			</tr>
+		</table>
+		</td>
+		<td style="height: 238px"></td>
+	</tr>
+	<tr>
+		<td style="width: 359px; height: 84px;"></td>
+		<td style="width: 614px; height: 84px;"></td>
+		<td style="height: 84px"></td>
+	</tr>
+</table>
+
+<script type="text/javascript">	
+    <!-- 用户名验证 -->
+	function userInputOnblur(){
+		var usernameStr=document.getElementById("username").value;
+		var usernametipobj=document.getElementById("usernametip");
+		<!-- 中文正则 -->
+		var reg = /[\u4E00-\u9FA5\uf900-\ufa2d]/ig; 		
+		if(usernameStr.length>1&&usernameStr.length<5){			
+			if(reg.test(usernameStr)){
+				(document.getElementById("username")).style.border="#66FF33 2px solid";
+				usernametipobj.childNodes[0].nodeValue="ok";
+				usernametipobj.style.color="#0000FF";
+				return true;
+			}else{			
+				(document.getElementById("username")).style.border="red 2px solid";	
+				usernametipobj.childNodes[0].nodeValue="请输入中文";
+				usernametipobj.style.color="red";
+				return false;
+			}
+		}else{
+				(document.getElementById("username")).style.border="red 2px solid";	
+				usernametipobj.childNodes[0].nodeValue="2-4个中文字符";
+				usernametipobj.style.color="red";
+				return false;
+		}
+	}
+	
+	<!-- 密码验证 -->
+	function passwordInputOnblur(){
+		var passwordStr=document.getElementById("password").value;
+		var passwordtipobj=document.getElementById("passwordtip");
+		if(passwordStr.length>=8&&passwordStr.length<=16){
+				(document.getElementById("password")).style.border="#66FF33 2px solid";
+				passwordtipobj.childNodes[0].nodeValue="ok";
+				passwordtipobj.style.color="#0000FF";
+				return true;
+		}else{
+				(document.getElementById("password")).style.border="red 2px solid";	
+				passwordtipobj.childNodes[0].nodeValue="密码长度为8-16个字符";
+				passwordtipobj.style.color="red";
+				return false;
+		}
+	}
+	
+	<!-- 重复密码验证 -->
+	function repeatPasswordInputOnblur(){
+		var passwordStr=document.getElementById("password").value;
+		var repeatpasswordStr=document.getElementById("repeatpassword").value;
+		var repeatpasswordtipobj=document.getElementById("repeatpasswordtip");
+		if(repeatpasswordStr.length==passwordStr.length&&passwordStr==repeatpasswordStr){
+				(document.getElementById("repeatpassword")).style.border="#66FF33 2px solid";
+				repeatpasswordtipobj.childNodes[0].nodeValue="ok";
+				repeatpasswordtipobj.style.color="#0000FF";
+				return true;
+		}else{
+				(document.getElementById("repeatpassword")).style.border="red 2px solid";	
+				repeatpasswordtipobj.childNodes[0].nodeValue="与前一次输入的密码不匹配!";
+				repeatpasswordtipobj.style.color="red";
+				return false;
+		}
+	}
+	
+	<!-- 验证电话号码 -->
+	function telInputOnblur(){
+		var telStr=document.getElementById("tel").value;
+		var teltipobj=document.getElementById("teltip");
+		var telReg=/^\d*$/;
+		if(telStr.length>=7&&telStr.length<=12){
+			if(telReg.test(telStr)){
+				(document.getElementById("tel")).style.border="#66FF33 2px solid";
+				teltipobj.childNodes[0].nodeValue="ok";
+				teltipobj.style.color="#0000FF";
+				return true;
+			}else{
+				(document.getElementById("tel")).style.border="red 2px solid";	
+				teltipobj.childNodes[0].nodeValue="电话号码格式错误!(请输入合法的号码)!";
+				teltipobj.style.color="red";
+				return false;
+			}
+		}else{
+				(document.getElementById("tel")).style.border="red 2px solid";	
+				teltipobj.childNodes[0].nodeValue="电话号码长度错误!(7-12位)";
+				teltipobj.style.color="red";
+				return false;
+		} 
+	}
+	
+	<!-- 验证QQ -->
+	function qqInputOnblur(){
+		var qqStr=document.getElementById("qq").value;
+		var qqtipobj=document.getElementById("qqtip");
+		var qqReg=/^\d*$/;
+		if(qqStr.length>=4&&qqStr.length<=15){
+			if(qqReg.test(qqStr)){
+				(document.getElementById("qq")).style.border="#66FF33 2px solid";
+				qqtipobj.childNodes[0].nodeValue="ok";
+				qqtipobj.style.color="#0000FF";
+				return true;
+			}else{
+				(document.getElementById("qq")).style.border="red 2px solid";	
+				qqtipobj.childNodes[0].nodeValue="请输入正确的号码!";
+				qqtipobj.style.color="red";
+				return false;
+			}
+		}else{
+				(document.getElementById("qq")).style.border="red 2px solid";	
+				qqtipobj.childNodes[0].nodeValue="QQ号码长度不正确!";
+				qqtipobj.style.color="red";
+				return false;
+		}
+	}
+	
+	<!--农历生日 -->
+	function brithdayInputOnblur(){
+		var brithdayStr=document.getElementById("brithday").value;
+		var brithdaytipobj=document.getElementById("brithdaytip");
+		var brithdayReg=/^\d*$/;
+		if(brithdayReg.test(brithdayStr)){
+			if(brithdayStr.length==4){
+				if(((parseInt(brithdayStr.substring(0,2))>0)&&(parseInt(brithdayStr.substring(0,2))<=12))&&((parseInt(brithdayStr.substring(2,4))>0)&&(parseInt(brithdayStr.substring(2,4))<=30))){
+				(document.getElementById("brithday")).style.border="#66FF33 2px solid";
+				brithdaytipobj.childNodes[0].nodeValue="ok";
+				brithdaytipobj.style.color="#0000FF";
+				return true;
+			}else{
+				(document.getElementById("brithday")).style.border="red 2px solid";	
+				brithdaytipobj.childNodes[0].nodeValue="农历日期范围错误，如:0609";
+				brithdaytipobj.style.color="red";
+				return false;
+				}
+			}else{
+				(document.getElementById("brithday")).style.border="red 2px solid";	
+				brithdaytipobj.childNodes[0].nodeValue="农历日期长度错误，如:0609";
+				brithdaytipobj.style.color="red";
+				return false;
+			}
+		}else{
+				(document.getElementById("brithday")).style.border="red 2px solid";	
+				brithdaytipobj.childNodes[0].nodeValue="农历日期错误，如:0609";
+				brithdaytipobj.style.color="red";
+				return false;
+		}
+	}
+	
+	<!--年龄验证  -->
+	function ageInputOnblur(){
+		var ageStr=document.getElementById("age").value;
+		var agetipobj=document.getElementById("agetip");
+		var ageReg=/^\d*$/;
+		if(ageReg.test(ageStr)){
+			if(((parseInt(ageStr))>=17)&&((parseInt(ageStr))<=100)){
+				(document.getElementById("age")).style.border="#66FF33 2px solid";
+				agetipobj.childNodes[0].nodeValue="ok";
+				agetipobj.style.color="#0000FF";
+				return true;
+			}else{
+				(document.getElementById("age")).style.border="red 2px solid";	
+				agetipobj.childNodes[0].nodeValue="年龄范围错误！";
+				agetipobj.style.color="red";
+				return false;
+			}
+		}else{
+				(document.getElementById("age")).style.border="red 2px solid";	
+				agetipobj.childNodes[0].nodeValue="年龄格式错误！";
+				agetipobj.style.color="red";
+				return false;
+		}
+	}
+	
+	<!--身份证验证  -->
+	function cardInputOnblur(){
+		var cardStr=document.getElementById("card").value;
+		var cardtipobj=document.getElementById("cardtip");
+		var cardReg=/^(\d{14}|\d{17})(\d|[xX])$/;
+		if(cardReg.test(cardStr)){
+				(document.getElementById("card")).style.border="#66FF33 2px solid";
+				cardtipobj.childNodes[0].nodeValue="ok";
+				cardtipobj.style.color="#0000FF";
+				return true;
+		}else{
+				(document.getElementById("card")).style.border="red 2px solid";	
+				cardtipobj.childNodes[0].nodeValue="身份证号码错误，请输入合法身份证!";
+				cardtipobj.style.color="red";
+				return false;
+		}
+	}
+</script>
+</body>
+
+</html>

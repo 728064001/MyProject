@@ -1,0 +1,15 @@
+package com.haolei.entity;
+
+import java.util.Date;
+
+
+
+public class Person {
+	private int id;
+	private String uuid;
+	private String username;
+	private String password;
+	private String tel;
+	private String icq;
+	private Date brithday;
+}

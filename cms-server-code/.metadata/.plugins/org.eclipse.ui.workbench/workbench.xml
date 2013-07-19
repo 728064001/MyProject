@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="41" version="2.0">
 <workbenchAdvisor/>
-<window height="728" width="1024" x="175" y="0">
+<window height="728" maximized="true" minimized="true" width="1024" x="473" y="103">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -20,11 +20,13 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -37,28 +39,27 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" partName="index.jsp" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/index.jsp" title="index.jsp" tooltip="CMS/WebRoot/index.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/index.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="394"/>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="login.jsp" partName="login.jsp" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/login.jsp" title="login.jsp" tooltip="CMS/WebRoot/login.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/login.jsp"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="734"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Person.java" partName="Person.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/entity/Person.java" title="Person.java" tooltip="CMS/src/com/haolei/entity/Person.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/entity/Person.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="230"/>
 </editor>
 </editors>
 <views>
-<view id="com.genuitec.eclipse.ui.HTMLView" partName="Web Browser"/>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
-<view id="uky.article.imageviewer.views.ImageView" partName="Image Preview">
-<viewState/>
-</view>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
@@ -93,17 +94,8 @@
 <view id="com.genuitec.eclipse.ast.deploy.core.serverview" partName="Servers">
 <viewState/>
 </view>
-<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState columnWidth0="253" columnWidth1="78" columnWidth2="153" columnWidth3="63" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
-<columnOrder columnOrderIndex="0"/>
-<columnOrder columnOrderIndex="1"/>
-<columnOrder columnOrderIndex="2"/>
-<columnOrder columnOrderIndex="3"/>
-<columnOrder columnOrderIndex="4"/>
-</viewState>
-</view>
 </views>
-<perspectives activePart="org.eclipse.jst.jsp.core.jspsource.source" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -199,13 +191,8 @@
 <perspective_action id="com.genuitec.eclipse.dehory.dehoryperspective"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.jdt.ui.TypeHierarchy"/>
-<view id="uky.article.imageviewer.views.ImageView"/>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
-<view id="org.eclipse.ui.views.TaskList"/>
-<view id="com.genuitec.eclipse.ui.HTMLView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
 <fastViewBars/>
@@ -242,20 +229,17 @@
 </folder>
 </info>
 <info folder="true" part="bottom" ratio="0.7492447" ratioLeft="496" ratioRight="166" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.genuitec.eclipse.ast.deploy.core.serverview" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
-<page content="com.genuitec.eclipse.ui.HTMLView" label="Web Browser"/>
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="com.genuitec.eclipse.ui.HTMLView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -271,13 +255,10 @@
 </folder>
 </info>
 <info folder="true" part="bottomleft" ratio="0.5498489" ratioLeft="364" ratioRight="298" relationship="4" relative="topleft">
-<folder activePageID="uky.article.imageviewer.views.ImageView" appearance="2" expanded="2">
-<page content="uky.article.imageviewer.views.ImageView" label="Image Preview"/>
-<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="uky.article.imageviewer.views.ImageView" label="LabelNotFound"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
 </folder>
 </info>
 </mainWindow>
@@ -289,10 +270,29 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/CMS/WebRoot/index.jsp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/index.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/CMS/WebRoot/login.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/login.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/entity/Person.java"/>
 </editors>
 <item historyLabel="index.jsp" index="0"/>
-<item active="true" historyLabel="index.jsp" index="1">
+<item historyLabel="index.jsp" index="1">
 <position/>
+</item>
+<item historyLabel="login.jsp" index="2"/>
+<item historyLabel="login.jsp" index="3">
+<position/>
+</item>
+<item historyLabel="Person.java" index="4">
+<position info="not_deleted" x="30" y="0"/>
+</item>
+<item historyLabel="Person.java" index="4">
+<position info="not_deleted" x="268" y="4"/>
+</item>
+<item historyLabel="Person.java" index="4">
+<position info="not_deleted" x="56" y="0"/>
+</item>
+<item active="true" historyLabel="Person.java" index="4">
+<position info="not_deleted" x="464" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -300,6 +300,13 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topleft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@24d0fa"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@114069b"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -307,10 +314,17 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Person.java" tooltip="CMS/src/com/haolei/entity/Person.java">
+<persistable path="/CMS/src/com/haolei/entity/Person.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="login.jsp" tooltip="CMS/WebRoot/login.jsp">
+<persistable path="/CMS/WebRoot/login.jsp"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" tooltip="CMS/WebRoot/index.jsp">
 <persistable path="/CMS/WebRoot/index.jsp"/>
 </file>

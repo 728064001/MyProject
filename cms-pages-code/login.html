@@ -4,8 +4,8 @@
 <head>
 <meta content="zh-cn" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  <script src="js/jquery-1.10.1.js"></script>
-  <title>CMS</title>
+<script src="js/jquery-1.10.1.js"></script>
+ <title>CMS</title>
 <style type="text/css">
 .table1{
 	border-style: solid;
@@ -38,14 +38,19 @@
 	font-family: 微软雅黑;
 
 }
-.registtext-style{
- text-align:center;
- 	color: red;
-	font-size: x-small;
+.regist-style{
+	text-align: center;
+	color: red;
+	font-size: small;
 	font-family: 微软雅黑;
 
 }
-.style3 {
+
+a.regist-style:link{
+	color: red;
+	font-size: x-small;
+	font-family: 微软雅黑;
+
 }
 .style6 {
 	text-align: center;
@@ -56,10 +61,13 @@
 	text-align: center;
 }
 .style8 {
+	
+}
+.style9 {
 	text-align: center;
-	color: red;
-	font-size: small;
-	font-family: 微软雅黑;
+	color: #C0C0C0;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
 }
 </style>
 
@@ -94,7 +102,7 @@
 									<td style="height: 81px; width: 111px;" class="style6">
 									<strong>用户名：</strong></td>
 									<td style="height: 81px; width: 329px;" class="f6">
-										<input name="Text1" style="width: 162px; height: 30px" type="text" /></td>
+										<input name="username" id="username" style="width: 162px; height: 30px" type="text" onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'" /></td>
 									<td style="height: 81px" class="usertiptext-style">
 									请输入你的中文姓名</td>
 								</tr>
@@ -103,8 +111,19 @@
 									<strong>密&nbsp; 码：</strong></td>
 									<td style="height: 94px; width: 329px;" class="f6">
 									
-									<input name="Text2" style="width: 165px; height: 30px" type="text" /></td>
+									<input name="password" id="password" style="width: 165px; height: 30px" type="password"  onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'" /></td>
 									<td style="height: 94px" class="passwordtiptext-style">请输入8位密码</td>
+								</tr>
+								<tr>
+									<td style="height: 94px; width: 111px;" class="style9">
+									部&nbsp; 门：</td>
+									<td style="height: 94px; width: 329px;" class="f6">
+									
+									<select name="Select1" style="width: 123px; height: 28px">
+									<option></option>
+									</select></td>
+									<td style="height: 94px" class="passwordtiptext-style">
+									请选择您所在部门</td>
 								</tr>
 								<tr>
 									<td style="width: 111px">&nbsp;</td>
@@ -114,7 +133,7 @@
 									<br />
 									<br />
 									<span ><a href="">忘记密码了？</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span ><a href="">无法登录，管理员审核中？</a></span></span></td>
-									<td class="style8">注册</td>
+									<td class="style8"><a class="regist-style" href="">注册</a></td>
 								</tr>
 							</table>
 						</form>
@@ -141,6 +160,12 @@
 		</td>
 		</tr>
 	</table>
+	<script type="text/javascript">
+		var notregist = "";
+		var getpasswordinput = document.getElementById("password");
+		var getusernameinput = document.getElementById("username");
+				
+	</script>
 </body>
 
 </html>
