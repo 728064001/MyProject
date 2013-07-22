@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -42,7 +42,7 @@
 </style>
 </head>
 
-<body>
+<body onload="int()">
 
 <table border="0" ellpadding="0" cellspacing="0" style="width: 100%; height: 670px">
 	<tr>
@@ -51,6 +51,7 @@
 		<td style="height: 99px; width: 379px;"></td>
 	</tr>
 	<tr>
+
 		<td style="height: 238px; width: 379px">
 		&nbsp;</td>
 		<td style="height: 238px; width: 660px" align="left" valign="top">
@@ -138,10 +139,10 @@
 			</tr>
 			<tr>
 				<td class="td-font-style" style="width: 138px; height: 88px;"></td>
-				<td style="height: 88px; width: 196px"><span>&nbsp;<input name="Checkbox1" type="checkbox" />				
+				<td style="height: 88px; width: 196px"><span>&nbsp;<input name="xieyi" id="xieyi" type="checkbox" onchange="checkboxonchange()" />				
 				<span class="style9">同意</span><a href="##"><span class="style9">用户协议</span></a><span class="style9">&nbsp;
 				</span>				</span><br/><br/>
-					<input name="regist" type="submit" value="注  册" style="width: 103px; height: 45px" onclick="validata()"/>							</td>
+					<input name="regist" id="regbut" type="submit" value="注  册" style="width: 103px; height: 45px" onclick="return register()"/>	</td>
 				<td style="height: 88px" valign="bottom">&nbsp;</td>
 			</tr>
 			<tr>
@@ -162,6 +163,20 @@
 </table>
 
 <script type="text/javascript">	
+<!--载入-->
+	function int(){
+		//document.getElementById("xieyi").checked = true;
+		var regbut = document.getElementById("regbut").disabled = true;
+	}
+// checkbox method
+	function checkboxonchange(){
+		var xieyicheckbox = document.getElementById("xieyi").checked;
+		if(xieyicheckbox){
+			document.getElementById("regbut").disabled = false;
+		}else{
+			document.getElementById("regbut").disabled = true;
+		}
+	}
 <!--即时验证  -->
     <!-- 用户名验证 -->
 	function userInputOnblur(){
@@ -379,7 +394,7 @@
 	<!-- 密码验证 -->
 		var passwordStr=document.getElementById("password").value.trim();
 		var passwordtipobj=document.getElementById("passwordtip");
-		alert(passwordStr.length);
+		// alert(passwordStr.length);
 		if(passwordStr==""||passwordStr==null||passwordStr.length<8||passwordStr.length>16){
 				(document.getElementById("password")).style.border="red 2px solid";	
 				passwordtipobj.childNodes[0].nodeValue="密码长度为8-16个字符";
@@ -527,11 +542,6 @@
 		
 <!-- 提交时验证-------------------------------------------------------------------------------end -->	
 
-	function validata(){
-		if(register()){
-			form.submit();
-		}
-	}
 </script>
 
 	
