@@ -1,0 +1,23 @@
+package com.haolei.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.List;
+
+public class DepNameListDAO {
+	public List returnDepNameList(){
+		Connection conn = Dbconn.getconn();
+		PreparedStatement pstm = null;
+		ResultSet res = null;
+		String queryDepNameStr = "select dep from dep_tab";
+		try{
+			
+		}catch(Exception e){
+			
+		}finally{
+			e.printStackTrace();
+		}
+		return null;
+	}
+}

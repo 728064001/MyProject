@@ -1,0 +1,5 @@
+package com.haolei.dao;
+
+public class Dbconn {
+
+}

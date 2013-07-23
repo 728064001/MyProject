@@ -1,0 +1,38 @@
+package com.haolei.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.List;
+
+public class CompanyNameListDAO {
+	
+	public List returnCompanyNameList(){
+		Connection conn = Dbconn.getconn();
+		PreparedStatement pstm = null;
+		ResultSet res = null;
+		String queryCompanyNameStr = "select companyname from company_tab";
+		try{
+			pstm = conn.prepareStatement(queryCompanyNameStr);
+			res = pstm.executeQuery();
+			while(res.next()){
+				
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			Dbconn.closeALL(conn, pstm, res);
+		}
+		
+		
+		return null;
+	}
+	/**
+	 * 
+	 * @param test
+	 */
+	public static void main(String[] args) {
+		CompanyNameListDAO dnyd = new CompanyNameListDAO();
+		dnyd.returnCompanyNameList();
+	}
+}
