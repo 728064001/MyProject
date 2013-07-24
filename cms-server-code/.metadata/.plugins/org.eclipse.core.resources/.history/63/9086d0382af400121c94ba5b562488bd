@@ -1,0 +1,43 @@
+package com.haolei.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.haolei.entity.Company;
+import com.haolei.entity.Dep;
+import com.haolei.entity.Person;
+import com.haolei.entity.Post;
+
+public class RegisterDAO {
+	public boolean register(Person person, Company company, Dep dep, Post post){
+		Connection conn = Dbconn.getconn();
+		PreparedStatement pstm = null;
+		ResultSet res = null;
+		int num = 0;
+		
+		
+		
+		
+		//1.根据Company对象的CompanyName值，在Company_tab中查对应的ID
+		String queryCompanyidStr = "select id from Company_tab where companyname = ?";
+		int companyid;
+		try{
+			pstm = conn.prepareStatement(queryCompanyidStr);
+			pstm.setString(1, company.getCompanyName());
+			res = pstm.executeQuery();
+			while(res.next()){
+				companyid = res.getInt(1);
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			Dbconn.closeALL(conn, pstm, res);
+		}
+		
+		//根据Dep对象的dep值，在dep_tab中查询对应id
+		String queryDepidStr = "";
+		
+		return true;
+	}
+}

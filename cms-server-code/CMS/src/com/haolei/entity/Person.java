@@ -11,10 +11,11 @@ public class Person {
 	private String password; //用户密码
 	private String tel; //电话号码
 	private String icq; //qq
-	private Date brithday; //生日
+	private String brithday; //生日
 	private int age; //年龄
 	private String card; //身份证号
 	private String imagepath; //用户图像对应的目录路径
+	private int	companyid;
 	private int postid; //职位ID	
 	private int depid; //部门ID
 	
@@ -60,10 +61,10 @@ public class Person {
 	public void setIcq(String icq) {
 		this.icq = icq;
 	}
-	public Date getBrithday() {
+	public String getBrithday() {
 		return brithday;
 	}
-	public void setBrithday(Date brithday) {
+	public void setBrithday(String brithday) {
 		this.brithday = brithday;
 	}
 	public int getAge() {
@@ -95,6 +96,14 @@ public class Person {
 	}
 	public void setDepid(int depid) {
 		this.depid = depid;
+	}
+
+	public int getCompanyid() {
+		return companyid;
+	}
+
+	public void setCompanyid(int companyid) {
+		this.companyid = companyid;
 	}
 	
 

@@ -1,0 +1,11 @@
+package com.haolei.dao;
+
+import java.util.List;
+
+public class PostNameListDAO {
+	public List returnPostNameList(){
+		
+		
+		return null;
+	}
+}

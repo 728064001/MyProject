@@ -1,0 +1,15 @@
+package com.haolei.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.List;
+
+public class PostNameListDAO {
+	public List returnPostNameList(){
+		Connection conn = Dbconn.getconn();
+		PreparedStatement pstm = null;
+		ResultSet res = null;
+		
+		return null;
+	}
+}

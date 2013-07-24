@@ -1,0 +1,9 @@
+package com.haolei.tools;
+
+import java.util.UUID;
+
+public class CreateUUID {
+	public static void main(String[] args) {
+		UUID uuid = UUID.randomUUID();
+	}
+}

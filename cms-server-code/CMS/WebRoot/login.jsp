@@ -146,8 +146,8 @@ a.regist-style:link{
 									<span class="forgetpasswordtext-style">
 									<br />
 									<br />
-									<span ><a href="">忘记密码了？</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span ><a href="">无法登录，管理员审核中？</a></span></span></td>
-									<td class="style8"><a class="regist-style" href="">注册</a></td>
+									<span ><a href="a.htl">忘记密码了？</a></span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+									<td class="style8"><a class="regist-style" href="register.jsp">注册</a></td>
 								</tr>
 							</table>
 						</form>

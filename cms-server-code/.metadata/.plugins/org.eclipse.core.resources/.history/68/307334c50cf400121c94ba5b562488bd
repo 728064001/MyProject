@@ -1,0 +1,10 @@
+package com.haolei.entity;
+
+public class Post {
+	private int id;
+	private String post;
+	
+	public Post(){}
+	
+	
+}

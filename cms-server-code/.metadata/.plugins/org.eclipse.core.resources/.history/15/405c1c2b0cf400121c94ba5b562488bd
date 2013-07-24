@@ -1,0 +1,9 @@
+package com.haolei.dao;
+
+public class PostNameListDAO {
+	public List returnPostNameList(){
+		
+		
+		return null;
+	}
+}

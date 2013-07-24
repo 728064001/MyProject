@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+	body{
+	margin:0;
+	padding:0;
+}
+. table--style {
+	border-style: solid;
+	border-width: 0px;
+}
+. table-td-style {
+	text-align: center;
+}
+. table-td-successtip-style {
+	color: #0000FF;
+	line-height:5;
+	vertical-align:middle;
+}
+. table-td-jishi-style {
+	font-family: 黑体;
+	color: #808080;
+}
+. table-td-jishu-style {
+	font-family: 黑体;
+	color: #FF3300;
+}
+. table-span-tiaozhuan-style {
+	font-size: small;
+}
+.style1 {
+	text-align: center;
+}
+.style2 {
+	color: #0000FF;
+}
+.style3 {
+	font-size: small;
+}
+.style4 {
+	color: #FF3300;
+}
