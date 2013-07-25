@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profiles>
+<profile id="extjs" name="extjs">use namespace ExtJS;
+include 'E:\\Development\\Frame\\EXTjs\\ext-4.2\\ext-all-dev.js';
+</profile>
+</profiles>

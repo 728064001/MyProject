@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="33" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="728" maximized="true" width="1024" x="391" y="0">
+<window height="728" maximized="true" width="683" x="217" y="121">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.ui.console.ConsoleView"/>
 </fastViewData>
@@ -28,6 +28,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.spket.js.jseditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.javascript.JSMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -35,7 +36,7 @@
 <coolItem id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.html" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -49,56 +50,17 @@
 <presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="4"/>
-<part id="3"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Company.java" partName="Company.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/entity/Company.java" title="Company.java" tooltip="CMS/src/com/haolei/entity/Company.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/entity/Company.java"/>
-<editorState selectionHPixel="0" selectionLength="11" selectionOffset="88"/>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" partName="index.jsp" path="E:/git/MyProject/cms-server-code/EXTjsLearning/WebRoot/index.jsp" title="index.jsp" tooltip="EXTjsLearning/WebRoot/index.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EXTjsLearning/WebRoot/index.jsp"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="914"/>
 </editor>
-<editor id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" partName="web.xml" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/WEB-INF/web.xml" title="web.xml" tooltip="E:/git/MyProject/cms-server-code/CMS/WebRoot/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CMS/WebRoot/WEB-INF/web.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RegisterDAO.java" partName="RegisterDAO.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/dao/RegisterDAO.java" title="RegisterDAO.java" tooltip="CMS/src/com/haolei/dao/RegisterDAO.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/dao/RegisterDAO.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="579"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Person.java" partName="Person.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/entity/Person.java" title="Person.java" tooltip="CMS/src/com/haolei/entity/Person.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/entity/Person.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="440"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dep.java" partName="Dep.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/entity/Dep.java" title="Dep.java" tooltip="CMS/src/com/haolei/entity/Dep.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/entity/Dep.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
-</editor>
-<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RegisterServlet.java" partName="RegisterServlet.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/servlet/RegisterServlet.java" title="RegisterServlet.java" tooltip="CMS/src/com/haolei/servlet/RegisterServlet.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/servlet/RegisterServlet.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1776"/>
-</editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="register.jsp" partName="register.jsp" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/register.jsp" title="register.jsp" tooltip="CMS/WebRoot/register.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/register.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1244"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dbconn.java" partName="Dbconn.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/dao/Dbconn.java" title="Dbconn.java" tooltip="CMS/src/com/haolei/dao/Dbconn.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/dao/Dbconn.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="981"/>
-</editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="registersuccess.jsp" partName="registersuccess.jsp" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/registersuccess.jsp" title="registersuccess.jsp" tooltip="CMS/WebRoot/registersuccess.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/registersuccess.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1506"/>
-</editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="login.jsp" partName="login.jsp" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/login.jsp" title="login.jsp" tooltip="CMS/WebRoot/login.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/login.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="4477"/>
+<editor activePart="true" focus="true" id="com.spket.js.jseditor" name="alert.js" partName="alert.js" path="E:/git/MyProject/cms-server-code/EXTjsLearning/WebRoot/js/custom/alert.js" title="alert.js" tooltip="EXTjsLearning/WebRoot/js/custom/alert.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EXTjsLearning/WebRoot/js/custom/alert.js"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="78"/>
 </editor>
 </editors>
 <views>
@@ -137,7 +99,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="com.spket.js.jseditor" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -304,156 +266,176 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/dao/RegisterDAO.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/servlet/RegisterServlet.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/register.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/dao/Dbconn.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=CMS/D:\/Program Files\/Java\/jdk1.7.0_17\/jre\/lib\/rt.jar&lt;java.sql(Statement.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.javascript.JSMultiPageEditorPart" path="/CMS/WebRoot/js/register.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/CMS/WebRoot/css/login.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/CMS/WebRoot/css/registersuccess.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.javascript.JSMultiPageEditorPart" path="/CMS/WebRoot/js/registersuccess.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/registersuccess.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/login.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/entity/Person.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/EXTjsLearning/WebRoot/index.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/EXTjsLearning/WebRoot/js/custom/alert.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/EXTjsLearning/WebRoot/js/bootstrap.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" path="/EXTjsLearning/WebRoot/ext-4.2/docs/guides/editable_grid/GeekFlicks/index.html.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/docs/guides/editable_grid/GeekFlicks/index.html.html"/>
+<editor factoryID="org.eclipse.atf.mozilla.ide.ui.browser.memento" id="com.genuitec.javascript.debug.ui.editor.AJAXBrowserEditor" url="file:///E:/git/MyProject/cms-server-code/EXTjsLearning/WebRoot/ext-4.2/examples/draw/Logos.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/draw/Logos.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/component-loader/content.htm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/docs/guides/testing/article.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/tree/custom-drop-logic.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/simple-widgets/progress-bar.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Area.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/AreaBrowserStats.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Bar.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/BarRenderer.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Column.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/TipsChart.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/StackedBar.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/ScatterRenderer.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/RadarFill.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Radar.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/PieRenderer.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Pie.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/EXTjsLearning/WebRoot/js/custom/alert.js"/>
 </editors>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="500" y="15"/>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="990" y="0"/>
 </item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="831" y="0"/>
+<item historyLabel="alert.js" index="1">
+<position info="not_deleted" x="0" y="78"/>
 </item>
-<item historyLabel="RegisterDAO.java" index="0">
-<position info="not_deleted" x="518" y="0"/>
-</item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="831" y="0"/>
-</item>
-<item historyLabel="RegisterDAO.java" index="0">
-<position info="not_deleted" x="569" y="0"/>
-</item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="831" y="0"/>
-</item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="731" y="0"/>
-</item>
-<item historyLabel="RegisterDAO.java" index="0">
-<position info="not_deleted" x="569" y="0"/>
-</item>
-<item historyLabel="RegisterDAO.java" index="0">
-<position info="not_deleted" x="2685" y="0"/>
-</item>
-<item historyLabel="RegisterDAO.java" index="0">
-<position info="not_deleted" x="725" y="9"/>
-</item>
-<item historyLabel="RegisterDAO.java" index="0">
-<position info="not_deleted" x="2745" y="0"/>
-</item>
-<item historyLabel="RegisterDAO.java" index="0">
-<position info="not_deleted" x="1795" y="0"/>
-</item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="731" y="0"/>
-</item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="1281" y="0"/>
-</item>
-<item historyLabel="RegisterDAO.java" index="0">
-<position info="not_deleted" x="2952" y="0"/>
-</item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="1281" y="0"/>
-</item>
-<item historyLabel="RegisterDAO.java" index="0">
-<position info="not_deleted" x="2952" y="0"/>
-</item>
-<item historyLabel="Dbconn.java" index="3">
-<position info="not_deleted" x="892" y="0"/>
-</item>
-<item historyLabel="Dbconn.java" index="3">
-<position info="not_deleted" x="874" y="0"/>
-</item>
-<item historyLabel="Dbconn.java" index="3">
-<position info="not_deleted" x="879" y="0"/>
-</item>
-<item historyLabel="Statement.class" index="4">
-<position info="not_deleted" x="4270" y="5"/>
-</item>
-<item historyLabel="Dbconn.java" index="3">
+<item historyLabel="index.jsp" index="0">
 <position info="not_deleted" x="981" y="0"/>
 </item>
-<item historyLabel="RegisterDAO.java" index="0">
-<position info="not_deleted" x="579" y="0"/>
-</item>
-<item historyLabel="register.js" index="5"/>
-<item historyLabel="register.jsp" index="2">
-<position info="not_deleted" x="1256" y="0"/>
-</item>
-<item historyLabel="register.js" index="5"/>
-<item historyLabel="register.jsp" index="2">
+<item historyLabel="bootstrap.js" index="2">
 <position/>
 </item>
-<item historyLabel="register.js" index="5"/>
-<item historyLabel="register.jsp" index="2">
-<position info="not_deleted" x="1257" y="0"/>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
 </item>
-<item historyLabel="register.js" index="5"/>
-<item historyLabel="register.jsp" index="2">
-<position info="not_deleted" x="1244" y="0"/>
+<item historyLabel="index.html.html" index="3"/>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
 </item>
-<item historyLabel="login.css" index="6">
+<item historyLabel="index.html.html" index="4">
 <position/>
 </item>
-<item historyLabel="registersuccess.css" index="7">
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
+</item>
+<item historyLabel="AJAX Web Browser" index="5"/>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
+</item>
+<item historyLabel="Logos.html" index="6">
 <position/>
 </item>
-<item historyLabel="registersuccess.js" index="8"/>
-<item historyLabel="registersuccess.css" index="7">
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
+</item>
+<item historyLabel="Logos.html" index="6">
+<position info="not_deleted" x="141" y="0"/>
+</item>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
+</item>
+<item historyLabel="content.htm" index="7">
 <position/>
 </item>
-<item historyLabel="login.css" index="6">
+<item historyLabel="article.html" index="8">
 <position/>
 </item>
-<item historyLabel="register.jsp" index="2">
-<position info="not_deleted" x="1244" y="0"/>
-</item>
-<item historyLabel="registersuccess.jsp" index="9">
+<item historyLabel="content.htm" index="7">
 <position/>
 </item>
-<item historyLabel="register.jsp" index="2">
-<position info="not_deleted" x="1244" y="0"/>
-</item>
-<item historyLabel="registersuccess.jsp" index="9">
-<position info="not_deleted" x="1506" y="0"/>
-</item>
-<item historyLabel="registersuccess.js" index="8"/>
-<item historyLabel="registersuccess.jsp" index="9">
-<position info="not_deleted" x="1506" y="0"/>
-</item>
-<item historyLabel="register.jsp" index="2">
-<position info="not_deleted" x="1244" y="0"/>
-</item>
-<item historyLabel="login.jsp" index="10">
+<item historyLabel="custom-drop-logic.html" index="9">
 <position/>
 </item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="1281" y="0"/>
+<item historyLabel="content.htm" index="7">
+<position/>
 </item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="1776" y="0"/>
+<item historyLabel="progress-bar.html" index="10">
+<position/>
 </item>
-<item historyLabel="Person.java" index="11">
-<position info="not_deleted" x="440" y="0"/>
+<item historyLabel="content.htm" index="7">
+<position/>
 </item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="1776" y="0"/>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
 </item>
-<item historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="1757" y="7"/>
+<item historyLabel="Area.html" index="11">
+<position/>
 </item>
-<item active="true" historyLabel="RegisterServlet.java" index="1">
-<position info="not_deleted" x="1766" y="8"/>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
+</item>
+<item historyLabel="AreaBrowserStats.html" index="12">
+<position/>
+</item>
+<item historyLabel="Bar.html" index="13">
+<position/>
+</item>
+<item historyLabel="AreaBrowserStats.html" index="12">
+<position info="not_deleted" x="139" y="0"/>
+</item>
+<item historyLabel="BarRenderer.html" index="14">
+<position/>
+</item>
+<item historyLabel="Column.html" index="15">
+<position/>
+</item>
+<item historyLabel="content.htm" index="7">
+<position/>
+</item>
+<item historyLabel="Column.html" index="15">
+<position info="not_deleted" x="140" y="0"/>
+</item>
+<item historyLabel="BarRenderer.html" index="14">
+<position info="not_deleted" x="140" y="0"/>
+</item>
+<item historyLabel="AreaBrowserStats.html" index="12">
+<position info="not_deleted" x="139" y="0"/>
+</item>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
+</item>
+<item historyLabel="TipsChart.html" index="16">
+<position/>
+</item>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
+</item>
+<item historyLabel="StackedBar.html" index="17">
+<position/>
+</item>
+<item historyLabel="ScatterRenderer.html" index="18">
+<position/>
+</item>
+<item historyLabel="StackedBar.html" index="17">
+<position info="not_deleted" x="140" y="0"/>
+</item>
+<item historyLabel="RadarFill.html" index="19">
+<position/>
+</item>
+<item historyLabel="StackedBar.html" index="17">
+<position info="not_deleted" x="140" y="0"/>
+</item>
+<item historyLabel="Radar.html" index="20">
+<position/>
+</item>
+<item historyLabel="StackedBar.html" index="17">
+<position info="not_deleted" x="140" y="0"/>
+</item>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
+</item>
+<item historyLabel="PieRenderer.html" index="21">
+<position/>
+</item>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="981" y="0"/>
+</item>
+<item historyLabel="Pie.html" index="22">
+<position/>
+</item>
+<item historyLabel="index.jsp" index="0">
+<position info="not_deleted" x="914" y="0"/>
+</item>
+<item active="true" historyLabel="alert.js" index="23">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -461,12 +443,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topleft"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -474,55 +450,54 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="login.jsp" tooltip="CMS/WebRoot/login.jsp">
-<persistable path="/CMS/WebRoot/login.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" name="alert.js" tooltip="EXTjsLearning/WebRoot/js/custom/alert.js">
+<persistable path="/EXTjsLearning/WebRoot/js/custom/alert.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.javascript.JSMultiPageEditorPart" name="registersuccess.js" tooltip="CMS/WebRoot/js/registersuccess.js">
-<persistable path="/CMS/WebRoot/js/registersuccess.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="Pie.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/Pie.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Pie.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="registersuccess.jsp" tooltip="CMS/WebRoot/registersuccess.jsp">
-<persistable path="/CMS/WebRoot/registersuccess.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="PieRenderer.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/PieRenderer.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/PieRenderer.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="registersuccess.css" tooltip="CMS/WebRoot/css/registersuccess.css">
-<persistable path="/CMS/WebRoot/css/registersuccess.css"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="Radar.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/Radar.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Radar.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="login.css" tooltip="CMS/WebRoot/css/login.css">
-<persistable path="/CMS/WebRoot/css/login.css"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="RadarFill.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/RadarFill.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/RadarFill.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.javascript.JSMultiPageEditorPart" name="register.js" tooltip="CMS/WebRoot/js/register.js">
-<persistable path="/CMS/WebRoot/js/register.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="ScatterRenderer.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/ScatterRenderer.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/ScatterRenderer.html"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Statement.class" tooltip="java.sql.Statement">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=CMS/D:\/Program Files\/Java\/jdk1.7.0_17\/jre\/lib\/rt.jar&lt;java.sql(Statement.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="StackedBar.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/StackedBar.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/StackedBar.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dbconn.java" tooltip="CMS/src/com/haolei/dao/Dbconn.java">
-<persistable path="/CMS/src/com/haolei/dao/Dbconn.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="TipsChart.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/TipsChart.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/TipsChart.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="register.jsp" tooltip="CMS/WebRoot/register.jsp">
-<persistable path="/CMS/WebRoot/register.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="content.htm" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/component-loader/content.htm">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/component-loader/content.htm"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="ERROR.jsp" tooltip="CMS/WebRoot/ERROR.jsp">
-<persistable path="/CMS/WebRoot/ERROR.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="Column.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/Column.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Column.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="OK.jsp" tooltip="CMS/WebRoot/OK.jsp">
-<persistable path="/CMS/WebRoot/OK.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="BarRenderer.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/BarRenderer.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/BarRenderer.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CreateUUID.java" tooltip="CMS/src/com/haolei/tools/CreateUUID.java">
-<persistable path="/CMS/src/com/haolei/tools/CreateUUID.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="Bar.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/Bar.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Bar.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RegisterServlet.java" tooltip="CMS/src/com/haolei/servlet/RegisterServlet.java">
-<persistable path="/CMS/src/com/haolei/servlet/RegisterServlet.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="AreaBrowserStats.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/AreaBrowserStats.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/AreaBrowserStats.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dep.java" tooltip="CMS/src/com/haolei/entity/Dep.java">
-<persistable path="/CMS/src/com/haolei/entity/Dep.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="Area.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/Area.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Area.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Person.java" tooltip="CMS/src/com/haolei/entity/Person.java">
-<persistable path="/CMS/src/com/haolei/entity/Person.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="progress-bar.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/simple-widgets/progress-bar.html">
+<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/simple-widgets/progress-bar.html"/>
 </file>
 </mruList>
 </workbench>

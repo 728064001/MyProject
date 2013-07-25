@@ -1,0 +1,4 @@
+Ext.onReady(function(){
+	Ext.MessageBox.alert("Extjs","Hello extjs");
+	
+});

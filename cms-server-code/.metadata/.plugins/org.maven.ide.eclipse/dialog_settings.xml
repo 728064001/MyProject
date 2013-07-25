@@ -2,11 +2,13 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
-		</list>
-		<list key="artifactId">
+			<item value="EXTjsLearning"/>
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+		<list key="artifactId">
+			<item value="EXTjsLearning"/>
 		</list>
 	</section>
 </section>

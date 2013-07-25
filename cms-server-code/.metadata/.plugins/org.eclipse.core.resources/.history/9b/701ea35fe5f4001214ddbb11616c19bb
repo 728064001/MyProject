@@ -1,0 +1,4 @@
+Ext.onReady(function(){
+	Ext.MessageBox.alert("Extjs","这是我的第一个EXTJS程序！！");
+	Ext.MessageBox.alert("ok","现在开始学习EXTjs");
+});

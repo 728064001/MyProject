@@ -227,3 +227,263 @@ java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
 
 !ENTRY org.eclipse.jdt.ui 2 0 2013-07-24 15:26:34.404
 !MESSAGE The 'org.eclipse.jdt.ui.JavaTypeCompletionProposalComputer' proposal computer from the 'org.eclipse.jdt.ui' plug-in did not complete normally. The extension took too long to return from the 'computeContextInformation()' operation.
+!SESSION 2013-07-25 09:57:20.000 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 09:57:37.410
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 09:57:37.488
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 09:57:37.488
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 09:57:37.566
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-07-25 10:00:38.172
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-25 10:00:40.091
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.update.core 4 42 2013-07-25 10:10:31.066
+!MESSAGE Network connection problems encountered during search.
+!SUBENTRY 1 org.eclipse.update.core 4 0 2013-07-25 10:10:31.066
+!MESSAGE Unable to access "http://www.spket.com/updata/".
+!STACK 1
+org.eclipse.update.internal.core.CoreExceptionWithRootCause: Unable to access site: "http://www.spket.com/updata/" [Server returned HTTP response code: "404 Not Found" for URL: http://www.spket.com/updata/.]
+	at org.eclipse.update.core.Utilities.newCoreException(Utilities.java:226)
+	at org.eclipse.update.internal.core.SiteURLFactory.createSite(SiteURLFactory.java:93)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:334)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:326)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:298)
+	at org.eclipse.update.internal.core.InternalSiteManager.attemptCreateSite(InternalSiteManager.java:222)
+	at org.eclipse.update.internal.core.InternalSiteManager.getSite(InternalSiteManager.java:162)
+	at org.eclipse.update.core.SiteManager.getSite(SiteManager.java:80)
+	at org.eclipse.update.search.UpdateSearchRequest.searchOneSite(UpdateSearchRequest.java:452)
+	at org.eclipse.update.search.UpdateSearchRequest.performSearch(UpdateSearchRequest.java:323)
+	at org.eclipse.update.ui.UpdateJob.runSearchForNew(UpdateJob.java:182)
+	at org.eclipse.update.ui.UpdateJob.run(UpdateJob.java:170)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+org.eclipse.update.internal.core.CoreExceptionWithRootCause[42]: org.eclipse.update.internal.core.FatalIOException: Server returned HTTP response code: "404 Not Found" for URL: http://www.spket.com/updata/.
+	at org.eclipse.update.internal.core.UpdateManagerUtils.checkConnectionResult(UpdateManagerUtils.java:562)
+	at org.eclipse.update.internal.core.SiteURLFactory.createSite(SiteURLFactory.java:74)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:334)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:326)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:298)
+	at org.eclipse.update.internal.core.InternalSiteManager.attemptCreateSite(InternalSiteManager.java:222)
+	at org.eclipse.update.internal.core.InternalSiteManager.getSite(InternalSiteManager.java:162)
+	at org.eclipse.update.core.SiteManager.getSite(SiteManager.java:80)
+	at org.eclipse.update.search.UpdateSearchRequest.searchOneSite(UpdateSearchRequest.java:452)
+	at org.eclipse.update.search.UpdateSearchRequest.performSearch(UpdateSearchRequest.java:323)
+	at org.eclipse.update.ui.UpdateJob.runSearchForNew(UpdateJob.java:182)
+	at org.eclipse.update.ui.UpdateJob.run(UpdateJob.java:170)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.update.core 4 42 2013-07-25 10:10:31.066
+!MESSAGE Unable to access site: "http://www.spket.com/updata/" [Server returned HTTP response code: "404 Not Found" for URL: http://www.spket.com/updata/.]
+!STACK 0
+org.eclipse.update.internal.core.FatalIOException: Server returned HTTP response code: "404 Not Found" for URL: http://www.spket.com/updata/.
+	at org.eclipse.update.internal.core.UpdateManagerUtils.checkConnectionResult(UpdateManagerUtils.java:562)
+	at org.eclipse.update.internal.core.SiteURLFactory.createSite(SiteURLFactory.java:74)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:334)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:326)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:298)
+	at org.eclipse.update.internal.core.InternalSiteManager.attemptCreateSite(InternalSiteManager.java:222)
+	at org.eclipse.update.internal.core.InternalSiteManager.getSite(InternalSiteManager.java:162)
+	at org.eclipse.update.core.SiteManager.getSite(SiteManager.java:80)
+	at org.eclipse.update.search.UpdateSearchRequest.searchOneSite(UpdateSearchRequest.java:452)
+	at org.eclipse.update.search.UpdateSearchRequest.performSearch(UpdateSearchRequest.java:323)
+	at org.eclipse.update.ui.UpdateJob.runSearchForNew(UpdateJob.java:182)
+	at org.eclipse.update.ui.UpdateJob.run(UpdateJob.java:170)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.update.core 4 42 2013-07-25 10:10:31.066
+!MESSAGE Unable to access site: "http://www.spket.com/updata/" [Server returned HTTP response code: "404 Not Found" for URL: http://www.spket.com/updata/.]
+!STACK 0
+org.eclipse.update.internal.core.FatalIOException: Server returned HTTP response code: "404 Not Found" for URL: http://www.spket.com/updata/.
+	at org.eclipse.update.internal.core.UpdateManagerUtils.checkConnectionResult(UpdateManagerUtils.java:562)
+	at org.eclipse.update.internal.core.SiteURLFactory.createSite(SiteURLFactory.java:74)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:334)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:326)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:298)
+	at org.eclipse.update.internal.core.InternalSiteManager.attemptCreateSite(InternalSiteManager.java:222)
+	at org.eclipse.update.internal.core.InternalSiteManager.getSite(InternalSiteManager.java:162)
+	at org.eclipse.update.core.SiteManager.getSite(SiteManager.java:80)
+	at org.eclipse.update.search.UpdateSearchRequest.searchOneSite(UpdateSearchRequest.java:452)
+	at org.eclipse.update.search.UpdateSearchRequest.performSearch(UpdateSearchRequest.java:323)
+	at org.eclipse.update.ui.UpdateJob.runSearchForNew(UpdateJob.java:182)
+	at org.eclipse.update.ui.UpdateJob.run(UpdateJob.java:170)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2013-07-25 10:43:58.039 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 10:44:04.059
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 10:44:04.117
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 10:44:04.119
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 10:44:04.147
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-25 11:07:43.241
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2013-07-25 11:17:20.902 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 11:17:24.414
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 11:17:24.471
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 11:17:24.473
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 11:17:24.500
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-25 11:19:09.999
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2013-07-25 11:34:51.892 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 11:34:56.771
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 11:34:56.840
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 11:34:56.842
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 11:34:56.868
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-25 11:37:03.944
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-07-25 12:23:00.834
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.
+!SESSION 2013-07-25 12:43:56.096 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 12:43:59.950
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 12:44:00.018
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 12:44:00.020
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 12:44:00.046
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-25 12:44:58.603
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2013-07-25 12:46:13.911 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 12:46:16.801
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 12:46:16.856
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 12:46:16.858
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-25 12:46:16.884
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-25 12:47:38.489
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
