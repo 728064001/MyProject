@@ -487,3 +487,6 @@ java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
 	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
 	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-07-25 13:59:57.737
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.

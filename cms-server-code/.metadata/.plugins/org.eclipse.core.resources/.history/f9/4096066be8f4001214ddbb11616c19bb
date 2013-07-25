@@ -1,0 +1,4 @@
+Ext.onReady(function(){
+	Ext.Msg.alert("Extjs","<h1 style="color:red">这是我的第一个EXTJS程序！！</h1>");
+	
+});

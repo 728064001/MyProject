@@ -28,7 +28,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.spket.js.jseditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.spket.js.jseditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.javascript.JSMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -37,7 +37,7 @@
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.html" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -47,21 +47,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" partName="index.jsp" path="E:/git/MyProject/cms-server-code/EXTjsLearning/WebRoot/index.jsp" title="index.jsp" tooltip="EXTjsLearning/WebRoot/index.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EXTjsLearning/WebRoot/index.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="914"/>
-</editor>
-<editor activePart="true" focus="true" id="com.spket.js.jseditor" name="alert.js" partName="alert.js" path="E:/git/MyProject/cms-server-code/EXTjsLearning/WebRoot/js/custom/alert.js" title="alert.js" tooltip="EXTjsLearning/WebRoot/js/custom/alert.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EXTjsLearning/WebRoot/js/custom/alert.js"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="78"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
@@ -99,7 +88,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.spket.js.jseditor" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -227,7 +216,7 @@
 </folder>
 </info>
 <info folder="true" part="bottom" ratio="0.7492447" ratioLeft="496" ratioRight="166" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="com.genuitec.eclipse.ast.deploy.core.serverview" appearance="2" expanded="2">
 <page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
@@ -264,185 +253,15 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/EXTjsLearning/WebRoot/index.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/EXTjsLearning/WebRoot/js/custom/alert.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/EXTjsLearning/WebRoot/js/bootstrap.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" path="/EXTjsLearning/WebRoot/ext-4.2/docs/guides/editable_grid/GeekFlicks/index.html.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/docs/guides/editable_grid/GeekFlicks/index.html.html"/>
-<editor factoryID="org.eclipse.atf.mozilla.ide.ui.browser.memento" id="com.genuitec.javascript.debug.ui.editor.AJAXBrowserEditor" url="file:///E:/git/MyProject/cms-server-code/EXTjsLearning/WebRoot/ext-4.2/examples/draw/Logos.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/draw/Logos.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/component-loader/content.htm"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/docs/guides/testing/article.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/tree/custom-drop-logic.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/simple-widgets/progress-bar.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Area.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/AreaBrowserStats.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Bar.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/BarRenderer.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Column.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/TipsChart.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/StackedBar.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/ScatterRenderer.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/RadarFill.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Radar.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/PieRenderer.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Pie.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/EXTjsLearning/WebRoot/js/custom/alert.js"/>
-</editors>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="990" y="0"/>
-</item>
-<item historyLabel="alert.js" index="1">
-<position info="not_deleted" x="0" y="78"/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="bootstrap.js" index="2">
-<position/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="index.html.html" index="3"/>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="index.html.html" index="4">
-<position/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="AJAX Web Browser" index="5"/>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="Logos.html" index="6">
-<position/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="Logos.html" index="6">
-<position info="not_deleted" x="141" y="0"/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="content.htm" index="7">
-<position/>
-</item>
-<item historyLabel="article.html" index="8">
-<position/>
-</item>
-<item historyLabel="content.htm" index="7">
-<position/>
-</item>
-<item historyLabel="custom-drop-logic.html" index="9">
-<position/>
-</item>
-<item historyLabel="content.htm" index="7">
-<position/>
-</item>
-<item historyLabel="progress-bar.html" index="10">
-<position/>
-</item>
-<item historyLabel="content.htm" index="7">
-<position/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="Area.html" index="11">
-<position/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="AreaBrowserStats.html" index="12">
-<position/>
-</item>
-<item historyLabel="Bar.html" index="13">
-<position/>
-</item>
-<item historyLabel="AreaBrowserStats.html" index="12">
-<position info="not_deleted" x="139" y="0"/>
-</item>
-<item historyLabel="BarRenderer.html" index="14">
-<position/>
-</item>
-<item historyLabel="Column.html" index="15">
-<position/>
-</item>
-<item historyLabel="content.htm" index="7">
-<position/>
-</item>
-<item historyLabel="Column.html" index="15">
-<position info="not_deleted" x="140" y="0"/>
-</item>
-<item historyLabel="BarRenderer.html" index="14">
-<position info="not_deleted" x="140" y="0"/>
-</item>
-<item historyLabel="AreaBrowserStats.html" index="12">
-<position info="not_deleted" x="139" y="0"/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="TipsChart.html" index="16">
-<position/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="StackedBar.html" index="17">
-<position/>
-</item>
-<item historyLabel="ScatterRenderer.html" index="18">
-<position/>
-</item>
-<item historyLabel="StackedBar.html" index="17">
-<position info="not_deleted" x="140" y="0"/>
-</item>
-<item historyLabel="RadarFill.html" index="19">
-<position/>
-</item>
-<item historyLabel="StackedBar.html" index="17">
-<position info="not_deleted" x="140" y="0"/>
-</item>
-<item historyLabel="Radar.html" index="20">
-<position/>
-</item>
-<item historyLabel="StackedBar.html" index="17">
-<position info="not_deleted" x="140" y="0"/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="PieRenderer.html" index="21">
-<position/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="981" y="0"/>
-</item>
-<item historyLabel="Pie.html" index="22">
-<position/>
-</item>
-<item historyLabel="index.jsp" index="0">
-<position info="not_deleted" x="914" y="0"/>
-</item>
-<item active="true" historyLabel="alert.js" index="23">
-<position/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topleft"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -450,54 +269,9 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
-<mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" name="alert.js" tooltip="EXTjsLearning/WebRoot/js/custom/alert.js">
-<persistable path="/EXTjsLearning/WebRoot/js/custom/alert.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="Pie.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/Pie.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Pie.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="PieRenderer.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/PieRenderer.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/PieRenderer.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="Radar.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/Radar.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Radar.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="RadarFill.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/RadarFill.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/RadarFill.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="ScatterRenderer.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/ScatterRenderer.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/ScatterRenderer.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="StackedBar.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/StackedBar.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/StackedBar.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="TipsChart.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/TipsChart.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/TipsChart.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="content.htm" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/component-loader/content.htm">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/component-loader/content.htm"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="Column.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/Column.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Column.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="BarRenderer.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/BarRenderer.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/BarRenderer.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="Bar.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/Bar.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Bar.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="AreaBrowserStats.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/AreaBrowserStats.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/AreaBrowserStats.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="Area.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/charts/Area.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/charts/Area.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="progress-bar.html" tooltip="EXTjsLearning/WebRoot/ext-4.2/examples/simple-widgets/progress-bar.html">
-<persistable path="/EXTjsLearning/WebRoot/ext-4.2/examples/simple-widgets/progress-bar.html"/>
-</file>
-</mruList>
+<mruList/>
 </workbench>

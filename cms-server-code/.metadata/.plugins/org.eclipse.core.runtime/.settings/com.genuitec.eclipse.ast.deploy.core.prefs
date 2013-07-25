@@ -1,22 +1,12 @@
-#Thu Jul 25 11:22:14 CST 2013
-tomcat6Server.EXTjsLearning.type=WebDeployment
-tomcat6Server.CMS.earProjectName=
-tomcat6Server.CMS.isDeployed=true
-tomcat6Server.EXTjsLearning.isExploded=true
-tomcat6Server.CMS.isUptoDate=true
-tomcat6Server.EXTjsLearning.deployIsOverProject=false
-tomcat6Server.CMS.shouldBackup=false
-tomcat6Server.CMS.isExploded=true
-tomcat6Server.EXTjsLearning.deploymentPath=D\:\\apache-tomcat-x86\\apache-tomcat-6.0.35\\webapps\\EXTjsLearning
-eclipse.preferences.version=1
-tomcat6Server.EXTjsLearning.shouldBackup=false
+#Thu Jul 25 14:00:25 CST 2013
 tomcat6Server.CMS.shouldOverwrite=false
-tomcat6Server.CMS.contextRoot=/CMS
-tomcat6Server.CMS.deployIsOverProject=false
-tomcat6Server.EXTjsLearning.shouldOverwrite=false
+tomcat6Server.CMS.isUptoDate=true
+tomcat6Server.CMS.shouldBackup=false
 tomcat6Server.CMS.deploymentPath=D\:\\apache-tomcat-x86\\apache-tomcat-6.0.35\\webapps\\CMS
-tomcat6Server.EXTjsLearning.earProjectName=
 tomcat6Server.CMS.type=WebDeployment
-tomcat6Server.EXTjsLearning.contextRoot=/EXTjsLearning
-tomcat6Server.EXTjsLearning.isDeployed=true
-tomcat6Server.EXTjsLearning.isUptoDate=true
+tomcat6Server.CMS.isDeployed=true
+tomcat6Server.CMS.earProjectName=
+tomcat6Server.CMS.deployIsOverProject=false
+eclipse.preferences.version=1
+tomcat6Server.CMS.contextRoot=/CMS
+tomcat6Server.CMS.isExploded=true
