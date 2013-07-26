@@ -27,6 +27,7 @@ public class RegisterServlet extends HttpServlet {
 		person.setUuid(CreateUUID.createuuid());
 		person.setUsername(request.getParameter("username"));
 		person.setPassword(request.getParameter("password"));
+		person.setSex(request.getParameter("sex"));
 		person.setTel(request.getParameter("tel"));
 		person.setIcq(request.getParameter("qq"));
 		person.setBrithday(request.getParameter("brithday"));

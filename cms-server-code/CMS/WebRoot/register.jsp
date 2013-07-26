@@ -59,6 +59,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<td style="height: 45px" class="tagtip-style" id="repeatpasswordtip">&nbsp;</td>
 			</tr>
 			<tr>
+				<td class="tagname-style" style="width: 138px; height: 45px;">
+				<strong>性 别：</strong></td>
+				<td style="height: 45px; width: 196px">					
+				<strong>
+				<input class="radio-text" name="sex" type="radio" onmouseout="sexradioOnblur()" onblur="sexradioOnblur()" /></strong><span class="radio-text"><strong>男&nbsp;&nbsp; 
+				</strong></span><strong>
+				<input class="radio-text" name="sex" type="radio" /><span class="radio-text">女</span></strong></td>
+				<td style="height: 45px" class="tagtip-style" id="sextip">
+				&nbsp;</td>
+			</tr>
+			
+			
+			<tr>
 				<td class="tagname-style" style="width: 138px; height: 45px;"><strong>联系电话：</strong></td>
 				<td style="height: 45px; width: 196px">					
 				<input name="tel" id="tel" type="text" style="width: 159px; height: 25px" onblur="telInputOnblur()" /></td>
@@ -166,6 +179,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<td style="height: 84px; width: 379px;"></td>
 	</tr>
 </table>
+<script type="text/javascript" src="js/ajaxtel.js"></script>
 <script type="text/javascript" src="js/register.js"></script>
+
+<
 </body>
 </html>

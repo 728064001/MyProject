@@ -490,3 +490,287 @@ java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
 
 !ENTRY org.eclipse.wst.internet.cache 1 0 2013-07-25 13:59:57.737
 !MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.
+!SESSION 2013-07-26 11:37:57.628 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -data E:\git\MyProject\cms-server-code -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 11:38:00.839
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 11:38:00.913
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 11:38:00.915
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 11:38:00.955
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-26 12:23:07.170
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-07-26 13:50:17.342
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2013-07-26 13:51:18.559
+!MESSAGE SAXParseException with null/null (fatalError) while reading descriptor: The element type "web-app" must be terminated by the matching end-tag "</web-app>".
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2013-07-26 13:51:18.560
+!MESSAGE SAXException while reading descriptor null org.xml.sax.SAXParseException: The element type "web-app" must be terminated by the matching end-tag "</web-app>".
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2013-07-26 13:51:18.725
+!MESSAGE SAXParseException with null/null (fatalError) while reading descriptor: The element type "web-app" must be terminated by the matching end-tag "</web-app>".
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2013-07-26 13:51:18.726
+!MESSAGE SAXException while reading descriptor null org.xml.sax.SAXParseException: The element type "web-app" must be terminated by the matching end-tag "</web-app>".
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2013-07-26 13:51:25.679
+!MESSAGE SAXParseException with null/null (fatalError) while reading descriptor: The element type "web-app" must be terminated by the matching end-tag "</web-app>".
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2013-07-26 13:51:25.680
+!MESSAGE SAXException while reading descriptor null org.xml.sax.SAXParseException: The element type "web-app" must be terminated by the matching end-tag "</web-app>".
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2013-07-26 13:51:25.735
+!MESSAGE SAXParseException with null/null (fatalError) while reading descriptor: The element type "web-app" must be terminated by the matching end-tag "</web-app>".
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2013-07-26 13:51:25.736
+!MESSAGE SAXException while reading descriptor null org.xml.sax.SAXParseException: The element type "web-app" must be terminated by the matching end-tag "</web-app>".
+
+!ENTRY org.eclipse.ui 4 0 2013-07-26 14:14:10.065
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTError: No more handles
+	at org.eclipse.swt.SWT.error(SWT.java:3589)
+	at org.eclipse.swt.SWT.error(SWT.java:3481)
+	at org.eclipse.swt.SWT.error(SWT.java:3452)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Control.createHandle(Control.java:602)
+	at org.eclipse.swt.widgets.Sash.createHandle(Sash.java:114)
+	at org.eclipse.swt.widgets.Control.createWidget(Control.java:618)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:97)
+	at org.eclipse.swt.widgets.Sash.<init>(Sash.java:72)
+	at org.eclipse.swt.custom.SashFormLayout.layout(SashFormLayout.java:115)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1025)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1371)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3743)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1235)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2521)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2503)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2499)
+	at org.eclipse.swt.layout.GridLayout.layout(GridLayout.java:686)
+	at org.eclipse.swt.layout.GridLayout.layout(GridLayout.java:190)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1025)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1371)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3743)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4364)
+	at org.eclipse.swt.internal.win32.OS.EndDeferWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:729)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:695)
+	at org.eclipse.swt.widgets.Composite.setResizeChildren(Composite.java:901)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1375)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3743)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1235)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2521)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2503)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2499)
+	at org.jboss.tools.common.model.ui.forms.DefaultFormPage$FormLayout.layout(DefaultFormPage.java:202)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1025)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1371)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3743)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1235)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2521)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2503)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2499)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:198)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1025)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1371)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3743)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.EndDeferWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:729)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:695)
+	at org.eclipse.swt.widgets.Composite.setResizeChildren(Composite.java:901)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1375)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3743)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1235)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2521)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2503)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2499)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:198)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1025)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1371)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3743)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1235)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2521)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2503)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2499)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:198)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1025)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1371)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3743)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Widget.SetWindowPos(Widget.java:1235)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2521)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2503)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2499)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:2568)
+	at org.eclipse.ui.internal.LayoutPart.setBounds(LayoutPart.java:300)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setBounds(PresentablePart.java:169)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.layoutContent(PresentablePartFolder.java:129)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.layout(PresentablePartFolder.java:410)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:289)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:400)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1256)
+	at org.eclipse.ui.internal.PartStack.setSelection(PartStack.java:1209)
+	at org.eclipse.ui.internal.WorkbenchPage.internalBringToTop(WorkbenchPage.java:786)
+	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:610)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2748)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2651)
+	at org.eclipse.ui.internal.WorkbenchPage.access$13(WorkbenchPage.java:2643)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2595)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2590)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2574)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2565)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:644)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:603)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:286)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:139)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:194)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:175)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:268)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:244)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:316)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$5.open(PackageExplorerPart.java:613)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:820)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:46)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:199)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:818)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1079)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1183)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:263)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:257)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:297)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+!SESSION 2013-07-26 14:41:49.014 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 14:41:52.167
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 14:41:52.234
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 14:41:52.236
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 14:41:52.265
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-26 15:34:24.715
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

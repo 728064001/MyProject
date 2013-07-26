@@ -9,6 +9,7 @@ public class Person {
 	private String uuid; //uuid
 	private String username; //用户名
 	private String password; //用户密码
+	private String sex;
 	private String tel; //电话号码
 	private String icq; //qq
 	private String brithday; //生日
@@ -104,6 +105,14 @@ public class Person {
 
 	public void setCompanyid(int companyid) {
 		this.companyid = companyid;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
 	}
 	
 

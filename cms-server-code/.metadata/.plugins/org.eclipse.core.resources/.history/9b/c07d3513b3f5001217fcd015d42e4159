@@ -1,0 +1,11 @@
+package com.haolei.dao.ajaxdao;
+
+import com.haolei.entity.Person;
+
+public class queryCardDAO {
+	public boolean querycard(Person person){
+		
+		
+		return true;
+	}
+}

@@ -6,6 +6,14 @@
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
 	</section>
+	<section name="ShowViewDialog">
+		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.eclipse.ui.console.ConsoleView"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui"/>
+			<item value="com.genuitec.eclipse.views.myEclipseAJAXCategory"/>
+			<item value="com.genuitec.eclipse.views.myEclipseDBCategory"/>
+		</list>
+	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item key="DIALOG_X_ORIGIN" value="529"/>
 		<item key="DIALOG_Y_ORIGIN" value="60"/>
@@ -16,9 +24,7 @@
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wst.javascript.ui.internal.wizard.NewJSWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="com.genuitec.eclipse.myeclipse"/>
-			<item value="com.genuitec.eclipse.myeclipse/com.genuitec.eclipse.myeclipse.maven"/>
 			<item value="com.genuitec.eclipse.myeclipse/com.genuitec.eclipse.myeclipse.web"/>
 		</list>
 	</section>

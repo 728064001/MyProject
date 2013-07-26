@@ -1,0 +1,11 @@
+package com.haolei.dao.ajaxdao;
+
+import com.haolei.entity.Person;
+
+public class queryTelDAO {
+	public boolean querytel(Person person){
+		
+		
+		return true;
+	}
+}

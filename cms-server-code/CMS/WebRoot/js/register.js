@@ -78,9 +78,23 @@
 				return false;
 		}
 	}
+	//验证性别
+	function sexradioOnblur(){
+		var getsexradio = document.getElementsByName("sex");
+		var sextipobj = document.getElementById("sextip");
+		if(getsexradio[0].checked||getsexradio[1].checked){
+				sextipobj.childNodes[0].nodeValue="ok";
+				sextipobj.style.color="#0000FF";
+		}else{
+				sextipobj.childNodes[0].nodeValue="请选择性别";
+				sextipobj.style.color="red";
+		}
+	}
+	
 	
 	// 验证电话号码 -->
 	function telInputOnblur(){
+		sendRequest();
 		var telStr=document.getElementById("tel").value.trim();
 		var teltipobj=document.getElementById("teltip");
 		var telReg=/^\d*$/;
@@ -312,6 +326,19 @@
 				repeatpasswordtipobj.style.color="#0000FF";
 			}
 		}	
+		
+		//验证性别
+			var getsexradio = document.getElementsByName("sex");
+		var sextipobj = document.getElementById("sextip");
+		if(!getsexradio[0].checked&&!getsexradio[1].checked){
+				sextipobj.childNodes[0].nodeValue="请选择性别";
+				sextipobj.style.color="red";
+				return false
+		}else{
+				sextipobj.childNodes[0].nodeValue="ok";
+				sextipobj.style.color="#0000FF";
+		}
+		
 		
 	//验证电话号码  -->
 		var telStr=document.getElementById("tel").value.trim();

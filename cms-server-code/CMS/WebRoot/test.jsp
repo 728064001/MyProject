@@ -19,53 +19,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-		<script type="text/javascript">
-			//create xmlhttprequest object
-			var xmlhttprequest;
-			function createXmlHttpRequest(){
-				if(window.navigator.appName == "Microsoft Internet Explorer"){
-					xmlhttprequest = new ActiveXObject("Microsoft.XMLHTTP");
-				}else{
-					xmlhttprequest = new XMLHttpRequest();
-				}
-			}
-
-			function sendRequest(){
-				var url ="/CMS/returnCompanyNameServlet";
-				var sendData = "getJSON";
-				createXmlHttpRequest();
-				alert("ok");
-				xmlhttprequest.open("POST",url,true);
-				xmlhttprequest.onreadystatechange = handleStateChange;
-				xmlhttprequest.setRequestHeader("Content-Type","application/x-www-form-rulencoded;");
-				xmlhttprequest.send(sendData);
-			}
-
-			function handleStateChange(){
-				if(xmlhttprequest.readyState == 4)
-				{
-					if(xmlhttprequest.status == 200){
-						alert("getRequest sended");
-						parseResults();
-					}else{
-						alert("error1");
-					}
-				}else{
-					
-				}
-			}
-
-			function parseResults(){
-				var returntext = xmlhttprequest.responseText;
-				alert(typeof(returntext));
-				var jsondatas = eval('('+returntext+')');
-				alert(jsondatas.company[0].companyname);
-				
-			}
-		</script>
+		<script type="text/javascript" src="js/ajaxtel.js">	</script>
 	</head>
 
 	<body>
+		<input  id = "tel" />
 		<input type="button" value="get JSON Data form Servlet" onclick="sendRequest()"/><br/>
 
 		<h2>Show json:</h2>

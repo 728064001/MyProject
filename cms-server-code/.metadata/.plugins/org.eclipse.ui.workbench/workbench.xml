@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="42" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="683" x="217" y="121">
 <fastViewData fastViewLocation="1024">
@@ -28,17 +28,17 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.spket.js.jseditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.spket.js.jseditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.javascript.JSMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.genuitec.eclipse.webdesigner3.editors.html" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -47,12 +47,64 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="9"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="register.jsp" partName="register.jsp" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/register.jsp" title="register.jsp" tooltip="CMS/WebRoot/register.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/register.jsp"/>
+<editorState selectionHPixel="343" selectionLength="0" selectionOffset="8703"/>
+</editor>
+<editor id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" partName="web.xml" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/WEB-INF/web.xml" title="web.xml" tooltip="E:/git/MyProject/cms-server-code/CMS/WebRoot/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CMS/WebRoot/WEB-INF/web.xml"/>
+</editor>
+<editor activePart="true" focus="true" id="com.spket.js.jseditor" name="ajaxtel.js" partName="ajaxtel.js" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/js/ajaxtel.js" title="ajaxtel.js" tooltip="CMS/WebRoot/js/ajaxtel.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/js/ajaxtel.js"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1198"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="test.jsp" partName="test.jsp" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/test.jsp" title="test.jsp" tooltip="CMS/WebRoot/test.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/test.jsp"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="794"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="registerQueryTelServlet.java" partName="registerQueryTelServlet.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/servlet/ajaxservlet/registerQueryTelServlet.java" title="registerQueryTelServlet.java" tooltip="CMS/src/com/haolei/servlet/ajaxservlet/registerQueryTelServlet.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/servlet/ajaxservlet/registerQueryTelServlet.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1366"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="getjson.jsp" partName="getjson.jsp" path="E:/git/MyProject/cms-server-code/JsonAjax/WebRoot/getjson.jsp" title="getjson.jsp" tooltip="JsonAjax/WebRoot/getjson.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JsonAjax/WebRoot/getjson.jsp"/>
+<editorState selectionHPixel="0" selectionLength="394" selectionOffset="1750"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReturnJson.java" partName="ReturnJson.java" path="E:/git/MyProject/cms-server-code/JsonAjax/src/com/json/servlets/ReturnJson.java" title="ReturnJson.java" tooltip="JsonAjax/src/com/json/servlets/ReturnJson.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JsonAjax/src/com/json/servlets/ReturnJson.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1028"/>
+</editor>
+<editor id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" partName="web.xml" path="E:/git/MyProject/cms-server-code/JsonAjax/WebRoot/WEB-INF/web.xml" title="web.xml" tooltip="E:/git/MyProject/cms-server-code/JsonAjax/WebRoot/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/JsonAjax/WebRoot/WEB-INF/web.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="queryTelDAO.java" partName="queryTelDAO.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/dao/ajaxdao/queryTelDAO.java" title="queryTelDAO.java" tooltip="CMS/src/com/haolei/dao/ajaxdao/queryTelDAO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/dao/ajaxdao/queryTelDAO.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="880"/>
+</editor>
+<editor id="com.spket.js.jseditor" name="register.js" partName="register.js" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/js/register.js" title="register.js" tooltip="CMS/WebRoot/js/register.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/js/register.js"/>
+<editorState selectionHPixel="0" selectionLength="49" selectionOffset="3466"/>
+</editor>
 </editors>
 <views>
+<view id="org.eclipse.help.ui.HelpView" partName="Help">
+<viewState pageId="context-help-page"/>
+</view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
@@ -88,7 +140,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="com.spket.js.jseditor" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -186,6 +238,7 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<view id="org.eclipse.help.ui.HelpView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -195,11 +248,13 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1d3030a" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="cvslocation">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.help.ui.HelpView" appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="Help"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.20738007" ratioLeft="281" ratioRight="1074" relationship="2" relative="cvslocation"/>
@@ -216,7 +271,7 @@
 </folder>
 </info>
 <info folder="true" part="bottom" ratio="0.7492447" ratioLeft="496" ratioRight="166" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.genuitec.eclipse.ast.deploy.core.serverview" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
@@ -253,15 +308,175 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/ajaxtel.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/test.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/servlet/ajaxservlet/registerQueryTelServlet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/JsonAjax/WebRoot/getjson.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonAjax/src/com/json/servlets/ReturnJson.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/register.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/ajaxtel.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/test.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/dao/ajaxdao/queryTelDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/register.js"/>
+</editors>
+<item historyLabel="ajaxtel.js" index="0">
+<position info="not_deleted" x="989" y="12"/>
+</item>
+<item historyLabel="ajaxtel.js" index="0">
+<position/>
+</item>
+<item historyLabel="ajaxtel.js" index="0">
+<position info="not_deleted" x="1057" y="0"/>
+</item>
+<item historyLabel="ReturnJson.java" index="4">
+<position info="not_deleted" x="1028" y="0"/>
+</item>
+<item historyLabel="getjson.jsp" index="3">
+<position info="not_deleted" x="1720" y="430"/>
+</item>
+<item historyLabel="registerQueryTelServlet.java" index="2">
+<position info="not_deleted" x="1064" y="0"/>
+</item>
+<item historyLabel="ReturnJson.java" index="4">
+<position info="not_deleted" x="1028" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="1">
+<position info="not_deleted" x="794" y="0"/>
+</item>
+<item historyLabel="getjson.jsp" index="3">
+<position info="not_deleted" x="1750" y="394"/>
+</item>
+<item historyLabel="ajaxtel.js" index="0">
+<position info="not_deleted" x="1401" y="0"/>
+</item>
+<item historyLabel="ReturnJson.java" index="4">
+<position info="not_deleted" x="1028" y="0"/>
+</item>
+<item historyLabel="registerQueryTelServlet.java" index="2">
+<position info="not_deleted" x="1064" y="0"/>
+</item>
+<item historyLabel="register.jsp" index="5">
+<position/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="1575" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="7">
+<position info="not_deleted" x="794" y="0"/>
+</item>
+<item historyLabel="registerQueryTelServlet.java" index="2">
+<position/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position/>
+</item>
+<item historyLabel="registerQueryTelServlet.java" index="2">
+<position info="not_deleted" x="660" y="0"/>
+</item>
+<item historyLabel="registerQueryTelServlet.java" index="2">
+<position info="not_deleted" x="1133" y="0"/>
+</item>
+<item historyLabel="registerQueryTelServlet.java" index="2">
+<position info="not_deleted" x="779" y="0"/>
+</item>
+<item historyLabel="registerQueryTelServlet.java" index="2">
+<position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="queryTelDAO.java" index="8">
+<position info="not_deleted" x="880" y="0"/>
+</item>
+<item historyLabel="registerQueryTelServlet.java" index="2">
+<position info="not_deleted" x="1366" y="0"/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position/>
+</item>
+<item historyLabel="register.jsp" index="5">
+<position info="not_deleted" x="8379" y="0"/>
+</item>
+<item historyLabel="register.js" index="9">
+<position/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="1575" y="0"/>
+</item>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="3798" y="163"/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="1575" y="0"/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position/>
+</item>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="3613" y="153"/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="1121" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="7">
+<position info="not_deleted" x="794" y="0"/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="311" y="11"/>
+</item>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="3613" y="153"/>
+</item>
+<item historyLabel="register.jsp" index="5">
+<position info="not_deleted" x="3538" y="16"/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="311" y="11"/>
+</item>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="3613" y="153"/>
+</item>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="3404" y="0"/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="325" y="0"/>
+</item>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="3404" y="0"/>
+</item>
+<item historyLabel="register.jsp" index="5">
+<position info="not_deleted" x="8703" y="0"/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="460" y="0"/>
+</item>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="3404" y="0"/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="1238" y="0"/>
+</item>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="3466" y="49"/>
+</item>
+<item historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="1481" y="9"/>
+</item>
+<item historyLabel="register.jsp" index="5">
+<position info="not_deleted" x="8703" y="0"/>
+</item>
+<item active="true" historyLabel="ajaxtel.js" index="6">
+<position info="not_deleted" x="1481" y="9"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topleft"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -269,9 +484,54 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" name="register.js" tooltip="CMS/WebRoot/js/register.js">
+<persistable path="/CMS/WebRoot/js/register.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="queryTelDAO.java" tooltip="CMS/src/com/haolei/dao/ajaxdao/queryTelDAO.java">
+<persistable path="/CMS/src/com/haolei/dao/ajaxdao/queryTelDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" tooltip="JsonAjax/WebRoot/WEB-INF/web.xml">
+<persistable path="/JsonAjax/WebRoot/WEB-INF/web.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReturnJson.java" tooltip="JsonAjax/src/com/json/servlets/ReturnJson.java">
+<persistable path="/JsonAjax/src/com/json/servlets/ReturnJson.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="getjson.jsp" tooltip="JsonAjax/WebRoot/getjson.jsp">
+<persistable path="/JsonAjax/WebRoot/getjson.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="registerQueryTelServlet.java" tooltip="CMS/src/com/haolei/servlet/ajaxservlet/registerQueryTelServlet.java">
+<persistable path="/CMS/src/com/haolei/servlet/ajaxservlet/registerQueryTelServlet.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="test.jsp" tooltip="CMS/WebRoot/test.jsp">
+<persistable path="/CMS/WebRoot/test.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" name="ajaxtel.js" tooltip="CMS/WebRoot/js/ajaxtel.js">
+<persistable path="/CMS/WebRoot/js/ajaxtel.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="JsonAjax/WebRoot/index.jsp">
+<persistable path="/JsonAjax/WebRoot/index.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="MyJsp.jsp" tooltip="JsonAjax/WebRoot/MyJsp.jsp">
+<persistable path="/JsonAjax/WebRoot/MyJsp.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" tooltip="CMS/WebRoot/WEB-INF/web.xml">
+<persistable path="/CMS/WebRoot/WEB-INF/web.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JsonServlet.java" tooltip="JsonAjax/src/com/json/servlets/JsonServlet.java">
+<persistable path="/JsonAjax/src/com/json/servlets/JsonServlet.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="queryCardDAO.java" tooltip="CMS/src/com/haolei/dao/ajaxdao/queryCardDAO.java">
+<persistable path="/CMS/src/com/haolei/dao/ajaxdao/queryCardDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="queryqqDAO.java" tooltip="CMS/src/com/haolei/dao/ajaxdao/queryqqDAO.java">
+<persistable path="/CMS/src/com/haolei/dao/ajaxdao/queryqqDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RegisterServlet.java" tooltip="CMS/src/com/haolei/servlet/RegisterServlet.java">
+<persistable path="/CMS/src/com/haolei/servlet/RegisterServlet.java"/>
+</file>
+</mruList>
 </workbench>

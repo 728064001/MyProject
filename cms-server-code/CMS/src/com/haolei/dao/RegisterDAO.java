@@ -79,7 +79,7 @@ public class RegisterDAO {
 //		System.out.println(postid);
 		
 		//将数据插入Person_tab表中
-		String insertPersonStr = "insert into person_tab (uuid,username,password,tel,icq,brithday,age,card,companyid,depid,postid,imagepath) values (?,?,?,?,?,?,?,?,?,?,?,?)";
+		String insertPersonStr = "insert into person_tab (uuid,username,password,sex,tel,icq,brithday,age,card,companyid,depid,postid,imagepath) values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		int num = 0;
 		try{
 			pstm = conn.prepareStatement(insertPersonStr);
@@ -87,15 +87,16 @@ public class RegisterDAO {
 			pstm.setString(1, person.getUuid());
 			pstm.setString(2, person.getUsername());
 			pstm.setString(3, person.getPassword());
-			pstm.setString(4, person.getTel());
-			pstm.setString(5, person.getIcq());
-			pstm.setString(6, person.getBrithday());
-			pstm.setInt(7, person.getAge());
-			pstm.setString(8, person.getCard());
-			pstm.setInt(9, companyid);
-			pstm.setInt(10, depid);
-			pstm.setInt(11, postid);
-			pstm.setString(12, person.getImagepath());
+			pstm.setString(4, person.getSex());
+			pstm.setString(5, person.getTel());
+			pstm.setString(6, person.getIcq());
+			pstm.setString(7, person.getBrithday());
+			pstm.setInt(8, person.getAge());
+			pstm.setString(9, person.getCard());
+			pstm.setInt(10, companyid);
+			pstm.setInt(11, depid);
+			pstm.setInt(12, postid);
+			pstm.setString(13, person.getImagepath());
 			
 			num = pstm.executeUpdate();
 		}catch(Exception e){
