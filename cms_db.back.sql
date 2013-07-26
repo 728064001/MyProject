@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50151
 File Encoding         : 65001
 
-Date: 2013-07-23 18:32:20
+Date: 2013-07-26 18:28:46
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -329,12 +329,13 @@ CREATE TABLE `otherquipment_tab` (
 DROP TABLE IF EXISTS `person_tab`;
 CREATE TABLE `person_tab` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(40) NOT NULL,
+  `uuid` varchar(80) NOT NULL,
   `username` varchar(10) NOT NULL,
-  `password` varchar(8) NOT NULL,
+  `password` varchar(16) NOT NULL,
+  `sex` varchar(2) NOT NULL,
   `tel` varchar(12) NOT NULL,
   `icq` varchar(10) NOT NULL,
-  `brithday` date DEFAULT NULL,
+  `brithday` varchar(10) DEFAULT NULL,
   `age` int(11) DEFAULT NULL,
   `card` varchar(19) DEFAULT NULL,
   `companyid` int(11) NOT NULL,
@@ -342,13 +343,13 @@ CREATE TABLE `person_tab` (
   `depid` int(11) NOT NULL,
   `imagepath` varchar(70) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `person_postid_fk` (`postid`),
-  KEY `person_depid_fk` (`depid`),
-  KEY `person_companyid_fk` (`companyid`),
-  CONSTRAINT `person_companyid_fk` FOREIGN KEY (`companyid`) REFERENCES `company_tab` (`id`),
-  CONSTRAINT `person_depid_fk` FOREIGN KEY (`depid`) REFERENCES `dep_tab` (`id`),
-  CONSTRAINT `person_postid_fk` FOREIGN KEY (`postid`) REFERENCES `post_tab` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  KEY `person_companyid_fks` (`companyid`),
+  KEY `person_depid_fks` (`depid`),
+  KEY `person_postid_fks` (`postid`),
+  CONSTRAINT `person_companyid_fks` FOREIGN KEY (`companyid`) REFERENCES `company_tab` (`id`),
+  CONSTRAINT `person_depid_fks` FOREIGN KEY (`depid`) REFERENCES `dep_tab` (`id`),
+  CONSTRAINT `person_postid_fks` FOREIGN KEY (`postid`) REFERENCES `post_tab` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of person_tab
