@@ -17,6 +17,8 @@
 			document.getElementById("regbut").disabled = true;
 		}
 	}
+	
+	
 //即时验证  -->
     // 用户名验证 -->
 	function userInputOnblur(){
@@ -94,16 +96,18 @@
 	
 	// 验证电话号码 -->
 	function telInputOnblur(){
-		sendRequest();
+		
 		var telStr=document.getElementById("tel").value.trim();
 		var teltipobj=document.getElementById("teltip");
 		var telReg=/^\d*$/;
+		
 		if(telStr.length>=7&&telStr.length<=12){
 			if(telReg.test(telStr)){
-				(document.getElementById("tel")).style.border="#66FF33 2px solid";
-				teltipobj.childNodes[0].nodeValue="ok";
-				teltipobj.style.color="#0000FF";
-				return true;
+					ajaxreturn("/CMS/registerQueryTelServlet",telStr);
+					(document.getElementById("tel")).style.border="#66FF33 2px solid";
+					teltipobj.childNodes[0].nodeValue="ok";
+					teltipobj.style.color="#0000FF";
+				
 			}else{
 				(document.getElementById("tel")).style.border="red 2px solid";	
 				teltipobj.childNodes[0].nodeValue="电话号码格式错误!(请输入合法的号码)!";
@@ -267,6 +271,7 @@
 
 
 // 提交时验证 -->
+	var args=null;
 	function register(){
 		//验证用户名  -->
 		var usernameStr=document.getElementById("username").value.trim();
@@ -341,9 +346,13 @@
 		
 		
 	//验证电话号码  -->
+		
 		var telStr=document.getElementById("tel").value.trim();
 		var teltipobj=document.getElementById("teltip");
 		var telReg=/^\d*$/;
+
+		
+		alert("args is:"+args);
 		if(telStr.length<7||telStr.length>12){
 				(document.getElementById("tel")).style.border="red 2px solid";	
 				teltipobj.childNodes[0].nodeValue="电话号码长度错误!(7-12位)";
@@ -356,9 +365,10 @@
 				teltipobj.style.color="red";
 				return false;
 			}else{
-				(document.getElementById("tel")).style.border="#66FF33 2px solid";
-				teltipobj.childNodes[0].nodeValue="ok";
-				teltipobj.style.color="#0000FF";
+					(document.getElementById("tel")).style.border="#66FF33 2px solid";
+					teltipobj.childNodes[0].nodeValue="ok";
+					teltipobj.style.color="#0000FF";
+				
 			}
 		} 	
 	//验证QQ  -->

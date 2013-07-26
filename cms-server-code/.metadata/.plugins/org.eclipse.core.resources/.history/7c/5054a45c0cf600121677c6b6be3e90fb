@@ -1,0 +1,51 @@
+		var stvalue="";		
+
+			
+			var xmlhttprequest;
+			function createXmlHttpRequest(){
+				if(window.navigator.appName == "Microsoft Internet Explorer"){
+					xmlhttprequest = new ActiveXObject("Microsoft.XMLHTTP");
+				}else{
+					xmlhttprequest = new XMLHttpRequest();
+				}
+			}
+
+			function sendRequest(rulstr,objvalue){
+//				alert(rulstr+"  "+objvalue);
+				createXmlHttpRequest();
+				xmlhttprequest.open("POST",rulstr,true);
+				xmlhttprequest.onreadystatechange = handleStateChange;
+				xmlhttprequest.setRequestHeader("Content-Type","application/x-www-form-rulencoded;");
+				xmlhttprequest.send(objvalue);
+			}
+
+			function handleStateChange(){
+				if(xmlhttprequest.readyState == 4)
+				{
+					if(xmlhttprequest.status == 200){
+//						alert("getRequest sended");
+						parseResults();
+					}else{
+						alert("error1");
+					}
+				}else{
+					
+				}
+			}
+	
+			function parseResults(){
+			var returntext = xmlhttprequest.responseText;
+//				alert(typeof(returntext));
+				var jsondatas = eval('('+returntext+')');
+//				alert(jsondatas.status);
+				if(jsondatas.status=="yes"){
+					
+					stvalue = "yes";
+					
+				}else{
+					stvalue = "no";
+				}
+			}
+			
+	
+	}

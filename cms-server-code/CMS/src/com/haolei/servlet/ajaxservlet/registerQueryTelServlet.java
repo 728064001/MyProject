@@ -24,7 +24,7 @@ public class registerQueryTelServlet extends HttpServlet {
 		Person person = new Person();
 		queryTelDAO qt = new queryTelDAO();
 		PrintWriter pr = response.getWriter();
-		System.out.println("en");
+//		System.out.println("en");
 		//接收 tel ajax
 		StringBuffer jsonBuf = new StringBuffer();
 		char[] buf = new char[1];

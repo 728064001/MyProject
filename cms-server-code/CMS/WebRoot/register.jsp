@@ -179,6 +179,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<td style="height: 84px; width: 379px;"></td>
 	</tr>
 </table>
+
 <script type="text/javascript" src="js/ajaxtel.js"></script>
 <script type="text/javascript" src="js/register.js"></script>
 

@@ -1,4 +1,4 @@
-#Fri Jul 26 14:13:22 CST 2013
+#Fri Jul 26 22:01:10 CST 2013
 tomcat6Server.JsonAjax.shouldBackup=false
 tomcat6Server.CMS.earProjectName=
 tomcat6Server.CMS.isDeployed=true
@@ -13,7 +13,7 @@ tomcat6Server.JsonAjax.isExploded=true
 tomcat6Server.CMS.shouldOverwrite=false
 tomcat6Server.CMS.contextRoot=/CMS
 tomcat6Server.CMS.deployIsOverProject=false
-tomcat6Server.CMS.deploymentPath=D\:\\apache-tomcat-x86\\apache-tomcat-6.0.35\\webapps\\CMS
+tomcat6Server.CMS.deploymentPath=D\:\\apache-tomcat-6.0.35\\webapps\\CMS
 tomcat6Server.CMS.type=WebDeployment
 tomcat6Server.JsonAjax.deployIsOverProject=false
 tomcat6Server.JsonAjax.isDeployed=true

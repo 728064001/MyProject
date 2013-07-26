@@ -774,3 +774,320 @@ java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
 	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
 	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2013-07-26 20:17:05.429 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 20:17:40.544
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 20:17:40.809
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 20:17:40.809
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-26 20:17:40.903
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.eclipse.help.base 4 0 2013-07-26 20:44:12.414
+!MESSAGE An error occured while pre-processing help XHTML document "/org.springframework.bundle.spring.doc/spring-form.tld.html" for search indexing
+!STACK 0
+org.xml.sax.SAXParseException: The entity "nbsp" was referenced, but not declared.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.help.internal.dynamic.DocumentReader.read(DocumentReader.java:56)
+	at org.eclipse.help.internal.dynamic.XMLProcessor.process(XMLProcessor.java:49)
+	at org.eclipse.help.internal.xhtml.DynamicXHTMLProcessor.process(DynamicXHTMLProcessor.java:76)
+	at org.eclipse.help.internal.search.XHTMLSearchParticipant.preprocess(XHTMLSearchParticipant.java:58)
+	at org.eclipse.help.search.XMLSearchParticipant.addDocument(XMLSearchParticipant.java:301)
+	at org.eclipse.help.internal.search.HTMLSearchParticipant.addDocument(HTMLSearchParticipant.java:51)
+	at org.eclipse.help.internal.search.SearchIndex.addDocument(SearchIndex.java:219)
+	at org.eclipse.help.internal.search.IndexingOperation.addDocuments(IndexingOperation.java:246)
+	at org.eclipse.help.internal.search.IndexingOperation.addNewDocuments(IndexingOperation.java:158)
+	at org.eclipse.help.internal.search.IndexingOperation.execute(IndexingOperation.java:105)
+	at org.eclipse.help.internal.search.LocalSearchManager.updateIndex(LocalSearchManager.java:624)
+	at org.eclipse.help.internal.search.LocalSearchManager.ensureIndexUpdated(LocalSearchManager.java:598)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:27)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.help.base 4 0 2013-07-26 20:44:16.485
+!MESSAGE An error occured while pre-processing help XHTML document "/org.springframework.bundle.spring.doc/spring.tld.html" for search indexing
+!STACK 0
+org.xml.sax.SAXParseException: The entity "nbsp" was referenced, but not declared.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.help.internal.dynamic.DocumentReader.read(DocumentReader.java:56)
+	at org.eclipse.help.internal.dynamic.XMLProcessor.process(XMLProcessor.java:49)
+	at org.eclipse.help.internal.xhtml.DynamicXHTMLProcessor.process(DynamicXHTMLProcessor.java:76)
+	at org.eclipse.help.internal.search.XHTMLSearchParticipant.preprocess(XHTMLSearchParticipant.java:58)
+	at org.eclipse.help.search.XMLSearchParticipant.addDocument(XMLSearchParticipant.java:301)
+	at org.eclipse.help.internal.search.HTMLSearchParticipant.addDocument(HTMLSearchParticipant.java:51)
+	at org.eclipse.help.internal.search.SearchIndex.addDocument(SearchIndex.java:219)
+	at org.eclipse.help.internal.search.IndexingOperation.addDocuments(IndexingOperation.java:246)
+	at org.eclipse.help.internal.search.IndexingOperation.addNewDocuments(IndexingOperation.java:158)
+	at org.eclipse.help.internal.search.IndexingOperation.execute(IndexingOperation.java:105)
+	at org.eclipse.help.internal.search.LocalSearchManager.updateIndex(LocalSearchManager.java:624)
+	at org.eclipse.help.internal.search.LocalSearchManager.ensureIndexUpdated(LocalSearchManager.java:598)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:27)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.help.base 4 4 2013-07-26 20:44:19.746
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-07-26 20:44:19.746
+!MESSAGE Exception occurred while adding document /org.springframework.bundle.spring.doc/spring-form.tld.html to index.
+!STACK 0
+java.io.IOException: Read error
+	at java.io.FileInputStream.read(Native Method)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager$RewindableInputStream.read(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at org.eclipse.help.search.XMLSearchParticipant.addDocument(XMLSearchParticipant.java:302)
+	at org.eclipse.help.internal.search.HTMLSearchParticipant.addDocument(HTMLSearchParticipant.java:51)
+	at org.eclipse.help.internal.search.SearchIndex.addDocument(SearchIndex.java:219)
+	at org.eclipse.help.internal.search.IndexingOperation.addDocuments(IndexingOperation.java:246)
+	at org.eclipse.help.internal.search.IndexingOperation.addNewDocuments(IndexingOperation.java:158)
+	at org.eclipse.help.internal.search.IndexingOperation.execute(IndexingOperation.java:105)
+	at org.eclipse.help.internal.search.LocalSearchManager.updateIndex(LocalSearchManager.java:624)
+	at org.eclipse.help.internal.search.LocalSearchManager.ensureIndexUpdated(LocalSearchManager.java:598)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:27)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-07-26 20:44:19.746
+!MESSAGE Exception occurred while adding document /org.springframework.bundle.spring.doc/spring.tld.html to index.
+!STACK 0
+java.io.IOException: Read error
+	at java.io.FileInputStream.read(Native Method)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager$RewindableInputStream.read(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at org.eclipse.help.search.XMLSearchParticipant.addDocument(XMLSearchParticipant.java:302)
+	at org.eclipse.help.internal.search.HTMLSearchParticipant.addDocument(HTMLSearchParticipant.java:51)
+	at org.eclipse.help.internal.search.SearchIndex.addDocument(SearchIndex.java:219)
+	at org.eclipse.help.internal.search.IndexingOperation.addDocuments(IndexingOperation.java:246)
+	at org.eclipse.help.internal.search.IndexingOperation.addNewDocuments(IndexingOperation.java:158)
+	at org.eclipse.help.internal.search.IndexingOperation.execute(IndexingOperation.java:105)
+	at org.eclipse.help.internal.search.LocalSearchManager.updateIndex(LocalSearchManager.java:624)
+	at org.eclipse.help.internal.search.LocalSearchManager.ensureIndexUpdated(LocalSearchManager.java:598)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:27)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-26 20:44:33.770
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-07-26 20:52:03.048
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.
+
+!ENTRY com.genuitec.eclipse.easie.core 1 0 2013-07-26 21:23:57.970
+!MESSAGE Error starting Tomcat  6.x server
+!STACK 0
+com.genuitec.eclipse.core.GenuitecCoreException: Tomcat home directory:
+	at com.genuitec.eclipse.easie.tomcat.Tomcat.start(Tomcat.java:52)
+	at com.genuitec.eclipse.easie.core.ui.action.ServerStartAction.Ă(Unknown Source)
+	at com.genuitec.eclipse.easie.core.ui.action.ServerStartAction.basicRun(Unknown Source)
+	at com.genuitec.eclipse.core.ui.action.LicenseValidatingAction.run(Unknown Source)
+	at com.genuitec.eclipse.core.ui.action.LicenseValidatingAction.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$6.handleEvent(ActionContributionItem.java:443)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+Caused by: com.genuitec.eclipse.core.GenuitecCoreException: Tomcat home directory:
+	at com.genuitec.eclipse.easie.tomcat.Tomcat.validateConfiguration(Tomcat.java:86)
+	at com.genuitec.eclipse.easie.tomcat.Tomcat.start(Tomcat.java:48)
+	... 32 more
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.090
+!MESSAGE NLS missing message: JavaMetaUtils_warning_default_package in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.090
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_doesnt_exist_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.100
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_doesnt_exist_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.100
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_not_jre_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.100
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_not_jre_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.100
+!MESSAGE NLS missing message: JavaVMUtility_launchconfig_default_server_type_id_attr in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.100
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_browse_jar_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.110
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_invalidfile_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.110
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_invalidfile_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.110
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_add_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.110
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_down_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.110
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_edit_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.120
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_remove_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.120
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_up_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.120
+!MESSAGE NLS missing message: MELibraryWizardPage_description in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.120
+!MESSAGE NLS missing message: MELibraryWizardPage_error_selection_onlyone in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.120
+!MESSAGE NLS missing message: MELibraryWizardPage_error_selection_zero in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.130
+!MESSAGE NLS missing message: MELibraryWizardPage_list_library_selector_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-26 21:23:58.130
+!MESSAGE NLS missing message: MELibraryWizardPage_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2013-07-26 22:06:28.479
+!MESSAGE Resource is out of sync with the file system: '/JsonAjax/WebRoot/WEB-INF/web.xml'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/JsonAjax/WebRoot/WEB-INF/web.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:613)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:276)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:685)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:877)
+	at org.eclipse.jst.jsp.core.internal.contentmodel.tld.TLDCMDocumentManager.handlePreludes(TLDCMDocumentManager.java:987)
+	at org.eclipse.jst.jsp.core.internal.contentmodel.tld.TLDCMDocumentManager$DirectiveStructuredDocumentRegionHandler.nodeParsed(TLDCMDocumentManager.java:151)
+	at org.eclipse.wst.xml.core.internal.parser.XMLSourceParser.fireNodeParsed(XMLSourceParser.java:125)
+	at org.eclipse.jst.jsp.core.internal.parser.JSPSourceParser.parseNodes(JSPSourceParser.java:296)
+	at org.eclipse.wst.xml.core.internal.parser.XMLSourceParser.getDocumentRegions(XMLSourceParser.java:162)
+	at org.eclipse.wst.sse.core.internal.text.StructuredDocumentReParser._core_reparse_text(StructuredDocumentReParser.java:309)
+	at org.eclipse.wst.sse.core.internal.text.StructuredDocumentReParser.core_reparse(StructuredDocumentReParser.java:708)
+	at org.eclipse.jst.jsp.core.internal.parser.JSPReParser.reparse(JSPReParser.java:143)
+	at org.eclipse.wst.sse.core.internal.text.StructuredDocumentReParser.reparse(StructuredDocumentReParser.java:1284)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.updateModel(BasicStructuredDocument.java:2686)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(BasicStructuredDocument.java:1919)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2395)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$0(JobSafeStructuredDocument.java:1)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$1.run(JobSafeStructuredDocument.java:98)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(EditorExecutionContext.java:42)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(JobSafeStructuredDocument.java:109)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.set(BasicStructuredDocument.java:2912)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.handleFileContentChanged(ResourceTextFileBuffer.java:479)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer$2.execute(ResourceFileBuffer.java:151)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer$SafeFileChange.run(ResourceFileBuffer.java:86)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:129)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3659)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3296)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2013-07-26 22:06:28.480
+!MESSAGE Resource is out of sync with the file system: '/JsonAjax/WebRoot/WEB-INF/web.xml'.
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2013-07-27 00:24:54.307
+!MESSAGE Resource is out of sync with the file system: '/JqueryAjax/WebRoot/WEB-INF/web.xml'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/JqueryAjax/WebRoot/WEB-INF/web.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:613)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:276)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:685)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:877)
+	at org.eclipse.jst.jsp.core.internal.contentmodel.tld.TLDCMDocumentManager.handlePreludes(TLDCMDocumentManager.java:987)
+	at org.eclipse.jst.jsp.core.internal.contentmodel.tld.TLDCMDocumentManager$DirectiveStructuredDocumentRegionHandler.nodeParsed(TLDCMDocumentManager.java:151)
+	at org.eclipse.wst.xml.core.internal.parser.XMLSourceParser.fireNodeParsed(XMLSourceParser.java:125)
+	at org.eclipse.jst.jsp.core.internal.parser.JSPSourceParser.parseNodes(JSPSourceParser.java:296)
+	at org.eclipse.wst.xml.core.internal.parser.XMLSourceParser.getDocumentRegions(XMLSourceParser.java:162)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.reparse(BasicStructuredDocument.java:2332)
+	at org.eclipse.jst.jsp.core.internal.contentmodel.TaglibController$FileBufferListener.bufferCreated(TaglibController.java:128)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$11.run(TextFileBufferManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireBufferCreated(TextFileBufferManager.java:734)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:124)
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getModel(FileBufferModelManager.java:641)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:322)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl._commonGetModel(ModelManagerImpl.java:308)
+	at org.eclipse.wst.sse.core.internal.model.ModelManagerImpl.getModelForRead(ModelManagerImpl.java:1097)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchDocument.getJSPTranslation(JSPSearchDocument.java:115)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchDocument.getPath(JSPSearchDocument.java:162)
+	at org.eclipse.jst.jsp.core.internal.java.search.JavaSearchDocumentDelegate.<init>(JavaSearchDocumentDelegate.java:30)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchSupport.createSearchDocument(JSPSearchSupport.java:402)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPSearchSupport.addJspFile(JSPSearchSupport.java:296)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPIndexManager$ProcessFilesJob.run(JSPIndexManager.java:262)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2013-07-27 00:24:54.308
+!MESSAGE Resource is out of sync with the file system: '/JqueryAjax/WebRoot/WEB-INF/web.xml'.

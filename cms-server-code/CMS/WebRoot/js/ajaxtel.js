@@ -1,4 +1,6 @@
-			//create xmlhttprequest object
+				
+function ajaxreturn(rulstr,objvalue){
+			sendRequest(rulstr,objvalue)
 			var xmlhttprequest;
 			function createXmlHttpRequest(){
 				if(window.navigator.appName == "Microsoft Internet Explorer"){
@@ -8,21 +10,20 @@
 				}
 			}
 
-			function sendRequest(){
-				var url ="/CMS/registerQueryTelServlet";
-				var sendData = document.getElementById("tel").value;
+			function sendRequest(rulstr,objvalue){
+//				alert(rulstr+"  "+objvalue);
 				createXmlHttpRequest();
-				xmlhttprequest.open("POST",url,true);
+				xmlhttprequest.open("POST",rulstr,true);
 				xmlhttprequest.onreadystatechange = handleStateChange;
 				xmlhttprequest.setRequestHeader("Content-Type","application/x-www-form-rulencoded;");
-				xmlhttprequest.send(sendData);
+				xmlhttprequest.send(objvalue);
 			}
 
 			function handleStateChange(){
 				if(xmlhttprequest.readyState == 4)
 				{
 					if(xmlhttprequest.status == 200){
-						alert("getRequest sended");
+//						alert("getRequest sended");
 						parseResults();
 					}else{
 						alert("error1");
@@ -31,23 +32,22 @@
 					
 				}
 			}
-			
+			var stvalue;
 			function parseResults(){
-			var returntext = xmlhttprequest.responseText;
 			var teltipobj=document.getElementById("teltip");
-				alert(typeof(returntext));
+			var returntext = xmlhttprequest.responseText;
+//				alert(typeof(returntext));
 				var jsondatas = eval('('+returntext+')');
-				alert(jsondatas.status);
+//				alert(jsondatas.status);
 				if(jsondatas.status=="yes"){
-				
-				(document.getElementById("tel")).style.border="#66FF33 2px solid";
-				teltipobj.childNodes[0].nodeValue="ok";
-				teltipobj.style.color="#0000FF";
+					(document.getElementById("tel")).style.border="#66FF33 2px solid";
+					teltipobj.childNodes[0].nodeValue="ok";
+					teltipobj.style.color="#0000FF";
 				}else{
 					(document.getElementById("tel")).style.border="red 2px solid";	
-				teltipobj.childNodes[0].nodeValue="该电话号码已经被注册!";
-				teltipobj.style.color="red";
+					teltipobj.childNodes[0].nodeValue="电话已经被注册!";
+					teltipobj.style.color="red";
 				}
-			
-		
 			}
+		
+}	
