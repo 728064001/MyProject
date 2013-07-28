@@ -77,7 +77,7 @@ public class RegisterDAO {
 //		System.out.println(companyid);
 //		System.out.println(depid);
 //		System.out.println(postid);
-		
+		System.out.println(person.getSex());
 		//将数据插入Person_tab表中
 		String insertPersonStr = "insert into person_tab (uuid,username,password,sex,tel,icq,brithday,age,card,companyid,depid,postid,imagepath) values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		int num = 0;

@@ -1,4 +1,6 @@
 //载入-->
+	var args;
+
 	function int(){
 		//document.getElementById("xieyi").checked = true;
 		var regbut = document.getElementById("regbut").disabled = true;
@@ -350,9 +352,7 @@
 		var telStr=document.getElementById("tel").value.trim();
 		var teltipobj=document.getElementById("teltip");
 		var telReg=/^\d*$/;
-
-		
-		alert("args is:"+args);
+	
 		if(telStr.length<7||telStr.length>12){
 				(document.getElementById("tel")).style.border="red 2px solid";	
 				teltipobj.childNodes[0].nodeValue="电话号码长度错误!(7-12位)";
@@ -365,11 +365,49 @@
 				teltipobj.style.color="red";
 				return false;
 			}else{
-					(document.getElementById("tel")).style.border="#66FF33 2px solid";
-					teltipobj.childNodes[0].nodeValue="ok";
-					teltipobj.style.color="#0000FF";
-				
+		//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+			var xmlhttprequest;
+			function createXmlHttpRequest(){
+				if(window.navigator.appName == "Microsoft Internet Explorer"){
+					xmlhttprequest = new ActiveXObject("Microsoft.XMLHTTP");
+				}else{
+					xmlhttprequest = new XMLHttpRequest();
+				}
 			}
+			function sendRequest(){
+//				alert(rulstr+"  "+objvalue);
+				createXmlHttpRequest();
+				xmlhttprequest.open("POST","/CMS/registerQueryTelServlet",true);
+				xmlhttprequest.onreadystatechange = handleStateChange;
+				xmlhttprequest.setRequestHeader("Content-Type","application/x-www-form-rulencoded;");
+				xmlhttprequest.send(telStr);
+			}
+			function handleStateChange(){
+				if(xmlhttprequest.readyState == 4)
+				{
+					if(xmlhttprequest.status == 200){
+//						alert("getRequest sended");
+						parseResults();
+					}else{
+						alert("error1");
+					}
+				}else{
+					
+				}
+			}
+			function parseResults(){
+			var teltipobj=document.getElementById("teltip");
+			var returntext = xmlhttprequest.responseText;
+//				alert(typeof(returntext));
+				var jsondatas = eval('('+returntext+')');
+//				alert(jsondatas.status);
+				if(!jsondatas.status!="yes"){
+				return flase;
+				
+				}
+			}
+		//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$		
+				}
 		} 	
 	//验证QQ  -->
 		var qqStr=document.getElementById("qq").value.trim();

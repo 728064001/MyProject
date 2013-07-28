@@ -63,9 +63,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<strong>性 别：</strong></td>
 				<td style="height: 45px; width: 196px">					
 				<strong>
-				<input class="radio-text" name="sex" type="radio" onmouseout="sexradioOnblur()" onblur="sexradioOnblur()" /></strong><span class="radio-text"><strong>男&nbsp;&nbsp; 
+				<input class="radio-text" name="sex" value="男" type="radio" onmouseout="sexradioOnblur()" onblur="sexradioOnblur()" /></strong><span class="radio-text"><strong>男&nbsp;&nbsp; 
 				</strong></span><strong>
-				<input class="radio-text" name="sex" type="radio" /><span class="radio-text">女</span></strong></td>
+				<input class="radio-text" name="sex" value="女" type="radio" /><span class="radio-text">女</span></strong></td>
 				<td style="height: 45px" class="tagtip-style" id="sextip">
 				&nbsp;</td>
 			</tr>
@@ -181,6 +181,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </table>
 
 <script type="text/javascript" src="js/ajaxtel.js"></script>
+<script type="text/javascript" src="js/ajaxteltruefalse.js"></script>
 <script type="text/javascript" src="js/register.js"></script>
 
 <

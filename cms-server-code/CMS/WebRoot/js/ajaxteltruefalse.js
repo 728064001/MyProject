@@ -1,7 +1,9 @@
 				
-function ajaxreturntruefalse(rulstr,objvalue){
-			
-			sendRequest(rulstr,objvalue)
+function ajaxreturntruefalse(urlstr,objvalue){
+			this.args= true;
+			this.urlstr = urlstr;
+			this.objvalue = objvalue;
+				
 			var xmlhttprequest;
 			function createXmlHttpRequest(){
 				if(window.navigator.appName == "Microsoft Internet Explorer"){
@@ -10,16 +12,14 @@ function ajaxreturntruefalse(rulstr,objvalue){
 					xmlhttprequest = new XMLHttpRequest();
 				}
 			}
-
-			function sendRequest(rulstr,objvalue){
+			function sendRequest(){
 //				alert(rulstr+"  "+objvalue);
 				createXmlHttpRequest();
-				xmlhttprequest.open("POST",rulstr,true);
+				xmlhttprequest.open("POST",urlstr,true);
 				xmlhttprequest.onreadystatechange = handleStateChange;
 				xmlhttprequest.setRequestHeader("Content-Type","application/x-www-form-rulencoded;");
 				xmlhttprequest.send(objvalue);
 			}
-
 			function handleStateChange(){
 				if(xmlhttprequest.readyState == 4)
 				{
@@ -33,7 +33,6 @@ function ajaxreturntruefalse(rulstr,objvalue){
 					
 				}
 			}
-			
 			function parseResults(){
 			var teltipobj=document.getElementById("teltip");
 			var returntext = xmlhttprequest.responseText;
@@ -41,17 +40,11 @@ function ajaxreturntruefalse(rulstr,objvalue){
 				var jsondatas = eval('('+returntext+')');
 //				alert(jsondatas.status);
 				if(jsondatas.status!="yes"){
-					alert("go");
-//					(document.getElementById("tel")).style.border="red 2px solid";	
-//					teltipobj.childNodes[0].nodeValue="电话已经被注册!";
-//					teltipobj.style.color="red";					
-					args= false;
+				return true;
+				
 				}else{
-//					(document.getElementById("tel")).style.border="#66FF33 2px solid";
-//					teltipobj.childNodes[0].nodeValue="ok";
-//					teltipobj.style.color="#0000FF";	
-					args = true;
+				return false;
 				}
 			}
-		return args;
+			
 }	
