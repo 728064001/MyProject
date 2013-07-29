@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+ <!-- 
+    <servlet>  
+    <servlet-name>returnCompanyNameServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ReturnCompanyJsonDataServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>returnCompanyNameServlet</servlet-name>  
+    <url-pattern>/returnCompanyNameServlet</url-pattern>  
+  </servlet-mapping>  
+ 
+  --> 
+    <servlet>  
+    <servlet-name>RegisterServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.RegisterServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>RegisterServlet</servlet-name>  
+    <url-pattern>/RegisterServlet</url-pattern>  
+  </servlet-mapping>  
+
+ <!--tel ajax -->
+   <servlet>  
+    <servlet-name>registerQueryQQServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ajaxservlet.registerQueryQQServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>registerQueryQQServlet</servlet-name>  
+    <url-pattern>/registerQueryQQServlet</url-pattern>  
+  </servlet-mapping>  
+ 
+ <servlet>  
+    <servlet-name>registerQueryTelServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ajaxservlet.registerQueryTelServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>registerQueryTelServlet</servlet-name>  
+    <url-pattern>/registerQueryTelServlet</url-pattern>  
+  </servlet-mapping>  
+  
+ 
+</web-app>

@@ -1,5 +1,5 @@
 //载入-->
-	var args;
+	var flag = true;
 
 	function int(){
 		//document.getElementById("xieyi").checked = true;
@@ -19,6 +19,56 @@
 			document.getElementById("regbut").disabled = true;
 		}
 	}
+//ajax return 
+	function ajaxreturn(urlstr,obj,tipobj){
+			sendRequest();
+			var xmlhttprequest;
+			function createXmlHttpRequest(){
+				if(window.navigator.appName == "Microsoft Internet Explorer"){
+					xmlhttprequest = new ActiveXObject("Microsoft.XMLHTTP");
+				}else{
+					xmlhttprequest = new XMLHttpRequest();
+				}
+			}
+			
+			function sendRequest(){
+//				alert(rulstr+"  "+objvalue);
+				createXmlHttpRequest();
+				xmlhttprequest.open("POST",urlstr,true);
+				
+				xmlhttprequest.onreadystatechange = handleStateChange;
+				xmlhttprequest.setRequestHeader("Content-Type","application/x-www-form-rulencoded;");
+				xmlhttprequest.send(obj.value.trim());
+			}
+
+			function handleStateChange(){
+				if(xmlhttprequest.readyState == 4)
+				{
+					if(xmlhttprequest.status == 200){
+						var returntext = xmlhttprequest.responseText;
+//						alert(typeof(returntext));
+						var jsondatas = eval('('+returntext+')');
+							if(jsondatas.status=="yes"){
+								obj.style.border="#66FF33 2px solid";
+								tipobj.childNodes[0].nodeValue="ok";
+								tipobj.style.color="#0000FF";
+								flag = true;
+							}else{
+								obj.style.border="red 2px solid";	
+								tipobj.childNodes[0].nodeValue="已经被注册!";
+								tipobj.style.color="red";
+								flag = false;
+							}
+					}else{
+//						////alert("error1");
+					}
+				}else{
+					
+				}
+			}
+}	
+
+	
 	
 	
 //即时验证  -->
@@ -105,7 +155,7 @@
 		
 		if(telStr.length>=7&&telStr.length<=12){
 			if(telReg.test(telStr)){
-					ajaxreturn("/CMS/registerQueryTelServlet",telStr);
+					ajaxreturn("/CMS/registerQueryTelServlet",document.getElementById("tel"),teltipobj);
 					(document.getElementById("tel")).style.border="#66FF33 2px solid";
 					teltipobj.childNodes[0].nodeValue="ok";
 					teltipobj.style.color="#0000FF";
@@ -131,21 +181,19 @@
 		var qqReg=/^\d*$/;
 		if(qqStr.length>=4&&qqStr.length<=15){
 			if(qqReg.test(qqStr)){
+				ajaxreturn("/CMS/registerQueryQqServlet",document.getElementById("qq"),qqtipobj);
 				(document.getElementById("qq")).style.border="#66FF33 2px solid";
 				qqtipobj.childNodes[0].nodeValue="ok";
 				qqtipobj.style.color="#0000FF";
-				return true;
 			}else{
 				(document.getElementById("qq")).style.border="red 2px solid";	
 				qqtipobj.childNodes[0].nodeValue="请输入正确的号码!";
 				qqtipobj.style.color="red";
-				return false;
 			}
 		}else{
 				(document.getElementById("qq")).style.border="red 2px solid";	
 				qqtipobj.childNodes[0].nodeValue="QQ号码长度不正确!";
 				qqtipobj.style.color="red";
-				return false;
 		}
 	}
 	
@@ -366,45 +414,9 @@
 				return false;
 			}else{
 		//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-			var xmlhttprequest;
-			function createXmlHttpRequest(){
-				if(window.navigator.appName == "Microsoft Internet Explorer"){
-					xmlhttprequest = new ActiveXObject("Microsoft.XMLHTTP");
-				}else{
-					xmlhttprequest = new XMLHttpRequest();
-				}
-			}
-			function sendRequest(){
-//				alert(rulstr+"  "+objvalue);
-				createXmlHttpRequest();
-				xmlhttprequest.open("POST","/CMS/registerQueryTelServlet",true);
-				xmlhttprequest.onreadystatechange = handleStateChange;
-				xmlhttprequest.setRequestHeader("Content-Type","application/x-www-form-rulencoded;");
-				xmlhttprequest.send(telStr);
-			}
-			function handleStateChange(){
-				if(xmlhttprequest.readyState == 4)
-				{
-					if(xmlhttprequest.status == 200){
-//						alert("getRequest sended");
-						parseResults();
-					}else{
-						alert("error1");
-					}
-				}else{
-					
-				}
-			}
-			function parseResults(){
-			var teltipobj=document.getElementById("teltip");
-			var returntext = xmlhttprequest.responseText;
-//				alert(typeof(returntext));
-				var jsondatas = eval('('+returntext+')');
-//				alert(jsondatas.status);
-				if(!jsondatas.status!="yes"){
-				return flase;
-				
-				}
+			ajaxreturn("/CMS/registerQueryTelServlet",document.getElementById("tel"),teltipobj);
+			if(flag == false){
+				return false
 			}
 		//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$		
 				}
@@ -425,9 +437,11 @@
 				qqtipobj.style.color="red";
 				return false;
 			}else{
-				(document.getElementById("qq")).style.border="#66FF33 2px solid";
-				qqtipobj.childNodes[0].nodeValue="ok";
-				qqtipobj.style.color="#0000FF";
+				ajaxreturn("/CMS/registerQueryQqServlet",document.getElementById("qq"),qqtipobj);
+				if(flag!=true){
+					return false;
+				}
+				
 			}
 		}		
 	//生日日期验证  -->

@@ -46,6 +46,7 @@ public class registerQueryTelServlet extends HttpServlet {
 			js.put("status", "no");
 			pr.print(js);
 		}
+		pr.flush();
 		pr.close();
 	}
 	
