@@ -1,3 +1,0 @@
-var jsonda = sendAjax("CMS/returnCompanyNameServlet");
-
-alert(jsonda);

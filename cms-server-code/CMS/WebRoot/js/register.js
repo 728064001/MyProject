@@ -7,8 +7,9 @@
 		
 		//modifiy form attribute
 		//get form
-		var getform = document.getElementById("form");
-		getform.setAttribute("action","RegisterServlet");
+		var getrform = document.getElementById("formregister");
+		getrform.setAttribute("action","RegisterServlet");
+		
 	}
 // checkbox method
 	function checkboxonchange(){
@@ -260,6 +261,8 @@
 		var cardtipobj=document.getElementById("cardtip");
 		var cardReg=/^(\d{14}|\d{17})(\d|[xX])$/;
 		if(cardReg.test(cardStr)){
+			ajaxreturn("/CMS/registerQueryCardServlet",document.getElementById("card"),cardtipobj);
+				alert("ok");
 				(document.getElementById("card")).style.border="#66FF33 2px solid";
 				cardtipobj.childNodes[0].nodeValue="ok";
 				cardtipobj.style.color="#0000FF";
@@ -506,9 +509,10 @@
 				cardtipobj.style.color="red";
 				return false;
 		}else{
-				(document.getElementById("card")).style.border="#66FF33 2px solid";
-				cardtipobj.childNodes[0].nodeValue="ok";
-				cardtipobj.style.color="#0000FF";
+				ajaxreturn("/CMS/registerQueryCardServlet",document.getElementById("card"),cardtipobj);
+				if(flag==false){
+					return false;
+				}
 		}	
 		
 		

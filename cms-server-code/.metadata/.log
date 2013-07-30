@@ -1341,3 +1341,46 @@ Caused by: com.genuitec.eclipse.core.GenuitecCoreException: Tomcat home director
 
 !ENTRY org.eclipse.osgi 2 1 2013-07-29 11:08:07.679
 !MESSAGE NLS missing message: MELibraryWizardPage_title in: com.genuitec.eclipse.core.platformmessages
+!SESSION 2013-07-30 09:18:57.715 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-30 09:19:22.438
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-30 09:19:22.698
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-30 09:19:22.700
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-30 09:19:22.764
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-30 09:25:32.848
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-07-30 09:35:31.106
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.
+
+!ENTRY com.genuitec.eclipse.core 2 2 2013-07-30 15:41:00.549
+!MESSAGE Undeployment failure on Tomcat  6.x. Could not delete D:\apache-tomcat-x86\apache-tomcat-6.0.35\webapps\CMS. If a file is locked, you can wait until the lock times out to redeploy, or stop the server and redeploy, or manually remove the deployment at D:\apache-tomcat-x86\apache-tomcat-6.0.35\webapps\CMS
+
+!ENTRY com.genuitec.eclipse.core 2 2 2013-07-30 15:42:28.652
+!MESSAGE Undeployment failure on Tomcat  6.x. Could not delete D:\apache-tomcat-x86\apache-tomcat-6.0.35\webapps\CMS. If a file is locked, you can wait until the lock times out to redeploy, or stop the server and redeploy, or manually remove the deployment at D:\apache-tomcat-x86\apache-tomcat-6.0.35\webapps\CMS
+
+!ENTRY com.genuitec.eclipse.core 2 2 2013-07-30 15:42:31.024
+!MESSAGE Undeployment failure on Tomcat  6.x. Could not delete D:\apache-tomcat-x86\apache-tomcat-6.0.35\webapps\CMS. If a file is locked, you can wait until the lock times out to redeploy, or stop the server and redeploy, or manually remove the deployment at D:\apache-tomcat-x86\apache-tomcat-6.0.35\webapps\CMS

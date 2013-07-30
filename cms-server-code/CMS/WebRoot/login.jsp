@@ -19,7 +19,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-<script src="js/jquery-1.10.1.js"></script>
 <style type="text/css">
 .table1{
 	border-style: solid;
@@ -87,7 +86,7 @@ a.regist-style:link{
 
   </head>
   
-<body>
+<body onload="init()">
 	<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 500px">
 		<!-- MSTableType="layout" -->
 		<tr>
@@ -110,14 +109,14 @@ a.regist-style:link{
 			<!--content-->
 			<div id="tabs">
 			    <div id="tabs-1">
-			  		<form method="POST">
+			  		<form id="formlogin" method="POST">
 			      	  <table id="table2" cellpadding="0" cellspacing="0" class="f7" style="width: 100%; height: 100%">
 								<tr>
 									<td style="height: 81px; width: 111px;" class="style6">
 									<strong>用户名：</strong></td>
 									<td style="height: 81px; width: 329px;" class="f6">
-										<input name="username" id="username" style="width: 162px; height: 30px" type="text" onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'" /></td>
-									<td style="height: 81px" class="usertiptext-style">
+										<input name="username" id="username" style="width: 162px; height: 30px" type="text" onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'" onblur="userInputOnblur()" /></td>
+									<td style="height: 81px" class="usertiptext-style" id="usernametip">
 									请输入你的中文姓名</td>
 								</tr>
 								<tr>
@@ -125,24 +124,22 @@ a.regist-style:link{
 									<strong>密&nbsp; 码：</strong></td>
 									<td style="height: 94px; width: 329px;" class="f6">
 									
-									<input name="password" id="password" style="width: 165px; height: 30px" type="password"  onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'" /></td>
-									<td style="height: 94px" class="passwordtiptext-style">请输入8位密码</td>
+									<input name="password" id="password" style="width: 165px; height: 30px" type="password"  onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'" onblur="passwordInputOnblur()" /></td>
+									<td style="height: 94px" class="passwordtiptext-style" id="passwordtip">请输入8位密码</td>
 								</tr>
 								<tr>
 									<td style="height: 94px; width: 111px;" class="style9">
-									部&nbsp; 门：</td>
+									手机号：</td>
 									<td style="height: 94px; width: 329px;" class="f6">
+										<input name="tel" id="tel" style="width: 165px; height: 30px" type="text"  onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'" onblur="telInputOnblur()" />
 									
-									<select name="Select1" style="width: 123px; height: 28px">
-									<option></option>
-									</select></td>
-									<td style="height: 94px" class="passwordtiptext-style">
-									请选择您所在部门</td>
+									<td style="height: 94px" class="passwordtiptext-style" id="teltip">
+									请输入您的手机号</td>
 								</tr>
 								<tr>
 									<td style="width: 111px">&nbsp;</td>
 									<td style="width: 329px">
-									<input name="Submit1" style="width: 130px; height: 47px" type="submit" value="登   录" />&nbsp;
+									<input name="Submit1" style="width: 130px; height: 47px" type="submit" value="登   录" onclick="return subminting()"/>&nbsp;
 									<span class="forgetpasswordtext-style">
 									<br />
 									<br />
@@ -174,12 +171,7 @@ a.regist-style:link{
 		</td>
 		</tr>
 	</table>
-	<script type="text/javascript">
-		var notregist = "";
-		var getpasswordinput = document.getElementById("password");
-		var getusernameinput = document.getElementById("username");
-				
-	</script>
+	<script type="text/javascript" src="js/login.js"></script>
 </body>
 
 </html>

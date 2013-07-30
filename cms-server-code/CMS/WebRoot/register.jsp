@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<td style="height: 238px; width: 379px">
 		&nbsp;</td>
 		<td style="height: 238px; width: 660px" align="left" valign="top">
-		<form id="form" method="post">
+		<form id="formregister" method="post">
 		<table border="0" ellspacing="0" class="main-table-style" style="width: 100%; height: 100%">
 			<tr bgcolor="#808080">
 				<td colspan="3" style="height: 54px; text-align: center" class="table-head-style">

@@ -1,7 +1,0 @@
-package com.haolei.tools;
-
-import javax.servlet.Filter;
-
-public class EncodingFilter implements Filter {
-
-}

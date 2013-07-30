@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.haolei.entity.Person" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -132,10 +132,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
 	<script type="text/javascript">
 		function load(){
-			$(function(){
-				$("#goods").hide();
-				$("#maintain").hide();
-				$("#resignation").hide();
+		$(function(){
+			$("#goods").hide();
+			$("#maintain").hide();
+			$("#resignation").hide();
 				
 			$("#of").hide();
 			$("#bo").hide();
@@ -146,6 +146,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 			});
 		}
+		
+		
 		function c1(){
 			$(function(){
 				$("#cmail").show();
@@ -223,7 +225,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<td class="style3">
 						<table cellspacing="1" class="style4" style="width: 400px; height: 60px">
 						<tr>
-							<td class="style13">IP:192.168.1.1</td>
+							<td class="style13">IP:<%=(session.getAttribute("ip").toString()) %></td>
 							<td class="style7">修改个人信息</td>
 						</tr>
 						<tr>
@@ -231,7 +233,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<td class="style7">&nbsp;</td>
 						</tr>
 						<tr>
-							<td class="style13">XXXXXXXX 欢迎登录CMS</td>
+							<%Person person = (Person)session.getAttribute("logined"); %>
+							<td class="style13"><%=person.getUsername() %> 欢迎登录CMS</td>
 							<td class="style7">log out</td>
 						</tr>
 					</table>

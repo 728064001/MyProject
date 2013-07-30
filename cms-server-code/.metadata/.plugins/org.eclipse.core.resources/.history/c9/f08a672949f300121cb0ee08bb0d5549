@@ -1,8 +1,0 @@
-package com.haolei.dao;
-
-public class Dbconn {
-	private static String DRIVER = "com.mysql.jdbc.Driver";
-	private static String URL = "jdbc:mysql://localhost:3306/pagination";
-	private static String NAME = "root";
-	private static String PASS	= "zyeeda";
-}
