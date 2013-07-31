@@ -10,33 +10,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<title>ajax</title>
 		<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
 		<script type="text/javascript">
-			//create json 
-			//get value
-			var u;
-			var p;
-			var jsonObj;
-			
-			function getvalues(){
-				u = $("#username").val();
-				p = $("#password").val();
-				jsonObj = {
-					"username":u,
-					"password":p
-				}
-				return jsonObj;
-			}
-			
 
 			$(function(){
 					$("#login").click(
 						function(){
-							alert(getvalues().username);
+							
 							$.ajax({
-								url: "http://10.1.1.82:8080/JqueryAjax/ReturnJson",
+								url: "/JqueryAjax/ReturnJson",
 							   type: "POST",
 							   dataType:'json',
 							   success:function(json) {
-							     alert(json.address);
+							     alert(json.status);
 							   }
 							});
 						}
@@ -46,8 +30,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</head>
 
 	<body>
-		username:<input id="username" /><br/>
-		password:<input type="password" id="password" /><br/>
 		<input type="button" id="login" value="Log in" />
 	</body>
 </html>

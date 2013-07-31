@@ -3,4 +3,7 @@
 <profile id="extjs" name="extjs">use namespace ExtJS;
 include 'E:\\Development\\Frame\\EXTjs\\ext-4.2\\ext-all-dev.js';
 </profile>
+<profile id="Jquery" name="Jquery">use namespace jQuery;
+include 'E:\\Development\\package\\js\\jquery-1.8.0.js';
+</profile>
 </profiles>

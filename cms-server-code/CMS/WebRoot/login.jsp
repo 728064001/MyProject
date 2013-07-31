@@ -83,7 +83,7 @@ a.regist-style:link{
 	font-weight: bold;
 }
 </style>
-
+<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
   </head>
   
 <body onload="init()">
@@ -115,7 +115,7 @@ a.regist-style:link{
 									<td style="height: 81px; width: 111px;" class="style6">
 									<strong>用户名：</strong></td>
 									<td style="height: 81px; width: 329px;" class="f6">
-										<input name="username" id="username" style="width: 162px; height: 30px" type="text" onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'" onblur="userInputOnblur()" /></td>
+										<input name="username" id="username" style="width: 162px; height: 30px" type="text" onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'"/></td>
 									<td style="height: 81px" class="usertiptext-style" id="usernametip">
 									请输入你的中文姓名</td>
 								</tr>
@@ -124,14 +124,14 @@ a.regist-style:link{
 									<strong>密&nbsp; 码：</strong></td>
 									<td style="height: 94px; width: 329px;" class="f6">
 									
-									<input name="password" id="password" style="width: 165px; height: 30px" type="password"  onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'" onblur="passwordInputOnblur()" /></td>
+									<input name="password" id="password" style="width: 165px; height: 30px" type="password"  onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'"/></td>
 									<td style="height: 94px" class="passwordtiptext-style" id="passwordtip">请输入8位密码</td>
 								</tr>
 								<tr>
 									<td style="height: 94px; width: 111px;" class="style9">
 									手机号：</td>
 									<td style="height: 94px; width: 329px;" class="f6">
-										<input name="tel" id="tel" style="width: 165px; height: 30px" type="text"  onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'" onblur="telInputOnblur()" />
+										<input name="tel" id="tel" style="width: 165px; height: 30px" type="text"  onmouseover="this.style.border='#FFAB3F 2px solid'" onmouseout="this.style.border='#ABADB3 1px solid'"  />
 									
 									<td style="height: 94px" class="passwordtiptext-style" id="teltip">
 									请输入您的手机号</td>

@@ -1,10 +1,10 @@
-#Mon Jul 29 18:21:59 CST 2013
-TOMCAT_HOME=D\:\\apache-tomcat-x86\\apache-tomcat-6.0.35
-TOMCAT_TEMP=D\:\\apache-tomcat-x86\\apache-tomcat-6.0.35\\temp
-LIBRARY_PATH="D\:\\Program Files\\MyEclipse 6.5\\bin;D\:\\apache-tomcat-x86\\apache-tomcat-6.0.35\\bin"
-TOMCAT_BASE=D\:\\apache-tomcat-x86\\apache-tomcat-6.0.35
-ENDORSED_DIRS="D\:\\apache-tomcat-x86\\apache-tomcat-6.0.35/common/endorsed"
+#Wed Jul 31 18:27:49 CST 2013
+TOMCAT_HOME=D\:\\apache-tomcat-6.0.36
+TOMCAT_TEMP=D\:\\apache-tomcat-6.0.36\\temp
+LIBRARY_PATH="D\:\\Program Files\\Java\\jdk1.7.0_17\\bin;D\:\\apache-tomcat-6.0.36\\bin"
+TOMCAT_BASE=D\:\\apache-tomcat-6.0.36
+ENDORSED_DIRS="D\:\\apache-tomcat-6.0.36/common/endorsed"
 eclipse.preferences.version=1
-JDK_INSTALLATION_NAME=MyEclipse 6.5
-JDK_HOME=D\:\\Program Files\\MyEclipse 6.5
+JDK_INSTALLATION_NAME=jdk1.7.0_17
+JDK_HOME=D\:\\Program Files\\Java\\jdk1.7.0_17
 SERVER_ENABLEMENT=true

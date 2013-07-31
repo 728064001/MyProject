@@ -1,12 +1,22 @@
-#Tue Jul 30 15:44:18 CST 2013
-tomcat6Server.CMS.shouldOverwrite=false
+#Wed Jul 31 15:24:57 CST 2013
+tomcat6Server.JqueryAjax.isExploded=true
+tomcat6Server.CMS.earProjectName=
+tomcat6Server.CMS.isDeployed=true
+tomcat6Server.JqueryAjax.shouldBackup=false
 tomcat6Server.CMS.isUptoDate=true
 tomcat6Server.CMS.shouldBackup=false
-tomcat6Server.CMS.deploymentPath=D\:\\apache-tomcat-x86\\apache-tomcat-6.0.35\\webapps\\CMS
-tomcat6Server.CMS.type=WebDeployment
-tomcat6Server.CMS.isDeployed=true
-tomcat6Server.CMS.earProjectName=
-tomcat6Server.CMS.deployIsOverProject=false
-eclipse.preferences.version=1
-tomcat6Server.CMS.contextRoot=/CMS
+tomcat6Server.JqueryAjax.type=WebDeployment
 tomcat6Server.CMS.isExploded=true
+tomcat6Server.JqueryAjax.deploymentPath=D\:\\apache-tomcat-6.0.36\\webapps\\JqueryAjax
+eclipse.preferences.version=1
+tomcat6Server.JqueryAjax.isDeployed=true
+tomcat6Server.JqueryAjax.shouldOverwrite=false
+tomcat6Server.CMS.shouldOverwrite=false
+tomcat6Server.CMS.contextRoot=/CMS
+tomcat6Server.CMS.deployIsOverProject=false
+tomcat6Server.JqueryAjax.deployIsOverProject=false
+tomcat6Server.CMS.deploymentPath=D\:\\apache-tomcat-6.0.36\\webapps\\CMS
+tomcat6Server.JqueryAjax.earProjectName=
+tomcat6Server.JqueryAjax.contextRoot=/JqueryAjax
+tomcat6Server.CMS.type=WebDeployment
+tomcat6Server.JqueryAjax.isUptoDate=true

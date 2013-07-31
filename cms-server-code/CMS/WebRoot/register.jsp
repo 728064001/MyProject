@@ -18,8 +18,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="description" content="This is my page">
 
 	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
  </head>
-<body onload="int()">
+<body>
 
 <table border="0" ellpadding="0" cellspacing="0" style="width: 100%; height: 670px">
 	<tr>
@@ -63,9 +64,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<strong>性 别：</strong></td>
 				<td style="height: 45px; width: 196px">					
 				<strong>
-				<input class="radio-text" name="sex" value="男" type="radio" onmouseout="sexradioOnblur()" onblur="sexradioOnblur()" /></strong><span class="radio-text"><strong>男&nbsp;&nbsp; 
+				<input class="radio-text" name="sex" value="男" type="radio" /></strong><span class="radio-text"><strong>男&nbsp;&nbsp; 
 				</strong></span><strong>
-				<input class="radio-text" name="sex" value="女" type="radio" onmouseout="sexradioOnblur()" onblur="sexradioOnblur()" /><span class="radio-text">女</span></strong></td>
+				<input class="radio-text" name="sex" value="女" type="radio" /><span class="radio-text">女</span></strong></td>
 				<td style="height: 45px" class="tagtip-style" id="sextip">
 				&nbsp;</td>
 			</tr>
@@ -157,7 +158,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</tr>
 			<tr>
 				<td class="td-font-style" style="width: 138px; height: 88px;"></td>
-				<td style="height: 88px; width: 196px"><span>&nbsp;<input name="xieyi" id="xieyi" type="checkbox" onchange="checkboxonchange()" />				
+				<td style="height: 88px; width: 196px"><span>&nbsp;<input name="xieyi" id="xieyi" type="checkbox" />				
 				<span class="style9">同意</span><a href="xieyi.html" target="_blank"><span class="style9">用户协议</span></a><span class="style9">&nbsp;
 				</span>				</span><br/><br/>
 					<input name="regist" id="regbut" type="submit" value="注  册" style="width: 103px; height: 45px" onclick="return register()"/>	</td>

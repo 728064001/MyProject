@@ -1,4 +1,4 @@
-#Tue Jul 30 18:35:47 CST 2013
+#Wed Jul 31 18:27:49 CST 2013
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.templates_migrated=true
 proposalOrderMigrated=true
@@ -8,7 +8,7 @@ org.eclipse.jdt.ui.text.code_templates_migrated=true
 org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8"?><templates/>
 useAnnotationsPrefPage=true
 spelling_locale=en_GB
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.haolei.dao.CompanyNameListDAO"><rhs name\="com.haolei.dao.CompanyNameListDAO"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.haolei.dao.CompanyNameListDAO"><rhs name\="com.haolei.dao.CompanyNameListDAO"/></lhs><lhs name\="net.sf.json.JSON"><rhs name\="net.sf.json.JSONObject"/></lhs><lhs name\="java.util.Map"><rhs name\="net.sf.json.JSONObject"/></lhs><lhs name\="net.sf.json.AbstractJSON"><rhs name\="net.sf.json.JSONObject"/></lhs></history>
 org.eclipse.jface.textfont=1|Courier New|14.25|1|WINDOWS|1|-19|0|0|0|700|0|0|0|0|3|2|1|49|Courier New;
 org.eclipse.jdt.ui.editor.tab.width=
 org.eclipse.jdt.ui.formatterprofiles.version=11

@@ -19,31 +19,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-		<script type="text/javascript" src="js/ajaxtel.js">	</script>
+		<script type="text/javascript" src="js/jquery-1.10.1.js">	</script>
 	</head>
 
 	<body>
-		<input  id = "tel" />
-		<input type="button" value="get JSON Data form Servlet" onclick="sendRequest()"/><br/>
-
-		<h2>Show json:</h2>
-		<div id="d"></div>
-		 
-	<table width="200" border="1" bgcolor="#c0c0c0">
-	<tbody>
-
-	<tr>
-	<th>姓名</th>
-	<th>年龄</th>
-	<th>住址</th></tr>
-	<tr>
-	<td>&nbsp;</td>
-	<td>&nbsp;</td>
-	<td>&nbsp;</td></tr>
-	<tr>
-	<td>&nbsp;</td>
-	<td>&nbsp;</td>
-	<td>&nbsp;</td></tr>
-	</tbody></table>
+		<script type="text/javascript">
+		$(function(){
+					$("#test").click(function(){
+					$.ajax({
+					url: "/CMS/registerQueryTelServlet",
+					 type: "POST",
+					 dataType:'json',
+					 data: "15815523493",
+					 success:function(json) {
+						alert(json.status);
+					 }
+				});
+			});
+		});
+		</script>
+		<input type="button" id="test" value="test" />
 	</body>
 </html>

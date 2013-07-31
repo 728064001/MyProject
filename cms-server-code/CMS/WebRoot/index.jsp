@@ -324,7 +324,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</td>
 		</tr>
 		<tr>
-			<td style="height: 718px; padding-left:5px" align="right" valign="top">
+			<td style="height: 718px; padding-left:5px" align="left" valign="top">
 			<!--cmail-->
 			<div id="cmail" style="position: absolute; width: 1065px; height: 718px; z-index: 1">
 				<p>

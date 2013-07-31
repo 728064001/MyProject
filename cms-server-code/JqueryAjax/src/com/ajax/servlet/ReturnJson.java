@@ -30,7 +30,7 @@ public class ReturnJson extends HttpServlet {
 //		String jsonStr = jsonBuf.toString();
 //		System.out.print(jsonStr);
 		
-		
+//		
 		
 		
 		//get outputstream
@@ -38,56 +38,11 @@ public class ReturnJson extends HttpServlet {
 		/*
 		 * create json Object;
 		 */
-//		
-//		JSONObject jsonobject = new JSONObject();
-//		jsonobject.put("username", "狮子");
-//		jsonobject.put("age",21);
-//		jsonobject.put("address", "shenzhen");
-//		
-		JSONObject jsonobject = new JSONObject();
+		JSONObject j = new JSONObject();
+		j.put("status", "huiii");
 		
-		JSONArray jsonarray = new JSONArray();
-		
-		jsonobject.put("page",1);
-		jsonobject.put("total",50);
-		jsonobject.put("records", 100);
-		
-//		JSONObject cell = new JSONObject();
-//		cell.put("id", 1);
-//		cell.put("name", "shitou");
-//		cell.put("address", "shenzhen");
-//		jsonarray.add(cell);
-		
-		for(int i =0;i<=100;i++){
-			JSONObject cell = new JSONObject();
-			cell.put("id", 1);
-			cell.put("name", "shitou");
-			cell.put("address", "shenzhen");
-			jsonarray.add(cell);
-		}
-		
-//		JSONObject cell2 = new JSONObject();
-//		cell2.put("id", 2);
-//		cell2.put("name", "lion");
-//		cell2.put("address", "shenzhen");
-//		jsonarray.add(cell2);
-//		
-//		JSONObject cell3 = new JSONObject();
-//		cell3.put("id", 3);
-//		cell3.put("name", "xiaoxiao");
-//		cell3.put("address", "shenzhen");
-//		jsonarray.add(cell3);
-//		
-//		JSONObject cell4 = new JSONObject();
-//		cell4.put("id", 4);
-//		cell4.put("name", "haolei");
-//		cell4.put("address", "shenzhen");
-//		jsonarray.add(cell4);
-		
-		
-		jsonobject.put("rows", jsonarray);
-		pr.print(jsonobject);
-		System.out.println(jsonobject);
+		pr.print(j);
+		System.out.println(j);
 		pr.flush();
 		pr.close();
 	}

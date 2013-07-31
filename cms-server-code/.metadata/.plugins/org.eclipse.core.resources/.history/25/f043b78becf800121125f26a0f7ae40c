@@ -1,5 +1,0 @@
-//载入时
-function init(){
-		var getlform = document.getElementById("formlogin");
-		getlform.setAttribute("action","LoginServlet");
-}

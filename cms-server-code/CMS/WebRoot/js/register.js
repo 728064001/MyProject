@@ -1,234 +1,191 @@
 //载入-->
 	var flag = true;
+	$(function(){
+		//get register button
+		$("#regbut").attr({"disabled":true});
+//		ajaxreturn("/CMS/registerQueryTelServlet","15815523495");
+	});
 
-	function int(){
-		//document.getElementById("xieyi").checked = true;
-		var regbut = document.getElementById("regbut").disabled = true;
-		
-		//modifiy form attribute
-		//get form
-		var getrform = document.getElementById("formregister");
-		getrform.setAttribute("action","RegisterServlet");
-		
-	}
 // checkbox method
-	function checkboxonchange(){
-		var xieyicheckbox = document.getElementById("xieyi").checked;
-		if(xieyicheckbox){
-			document.getElementById("regbut").disabled = false;
+	$("#xieyi").change(function(){
+		if($("#xieyi").is(":checked")==true){
+			$("#regbut").attr({"disabled":false});
 		}else{
-			document.getElementById("regbut").disabled = true;
+			$("#regbut").attr({"disabled":true});
 		}
-	}
+	});
+	
 //ajax return 
-	function ajaxreturn(urlstr,obj,tipobj){
-			sendRequest();
-			var xmlhttprequest;
-			function createXmlHttpRequest(){
-				if(window.navigator.appName == "Microsoft Internet Explorer"){
-					xmlhttprequest = new ActiveXObject("Microsoft.XMLHTTP");
-				}else{
-					xmlhttprequest = new XMLHttpRequest();
-				}
-			}
-			
-			function sendRequest(){
-//				alert(rulstr+"  "+objvalue);
-				createXmlHttpRequest();
-				xmlhttprequest.open("POST",urlstr,true);
-				
-				xmlhttprequest.onreadystatechange = handleStateChange;
-				xmlhttprequest.setRequestHeader("Content-Type","application/x-www-form-rulencoded;");
-				xmlhttprequest.send(obj.value.trim());
-			}
-
-			function handleStateChange(){
-				if(xmlhttprequest.readyState == 4)
-				{
-					if(xmlhttprequest.status == 200){
-						var returntext = xmlhttprequest.responseText;
-//						alert(typeof(returntext));
-						var jsondatas = eval('('+returntext+')');
-							if(jsondatas.status=="yes"){
-								obj.style.border="#66FF33 2px solid";
-								tipobj.childNodes[0].nodeValue="ok";
-								tipobj.style.color="#0000FF";
-								flag = true;
-							}else{
-								obj.style.border="red 2px solid";	
-								tipobj.childNodes[0].nodeValue="已经被注册!";
-								tipobj.style.color="red";
-								flag = false;
-							}
+function ajaxreturn(urlstr,obj,objtip){
+		$(function(){
+			$.ajax({
+				url: urlstr,
+				type: "POST",
+				dataType:'json',
+				data: $.trim(obj.val()),
+				success:function(json) {
+					if(json.status=="yes"){
+						//set style 
+						obj.css("border-color","#0000FF","border-width","2px","border-style","solid");
+						objtip.html("OK");
+						objtip.css("color","#0000FF");
+						flag = true;
 					}else{
-//						////alert("error1");
+						obj.css("border-color","red","border-width","2px","border-style","solid");
+						objtip.html("该号码已经被注册!");
+						objtip.css("color","red");
+						flag = false;
 					}
-				}else{
-					
 				}
-			}
-}	
+			});
+		});
+}
 
 	
 	
 	
 //即时验证  -->
-    // 用户名验证 -->
-	function userInputOnblur(){
-		var usernameStr=document.getElementById("username").value.trim();
-		var usernametipobj=document.getElementById("usernametip");
-		// 中文正则 -->
-		var reg = /[\u4E00-\u9FA5\uf900-\ufa2d]/ig; 		
-		if(usernameStr.length>1&&usernameStr.length<5){			
-			if(reg.test(usernameStr)){
-				(document.getElementById("username")).style.border="#66FF33 2px solid";
-				usernametipobj.childNodes[0].nodeValue="ok";
-				usernametipobj.style.color="#0000FF";
-				return true;
-			}else{			
-				(document.getElementById("username")).style.border="red 2px solid";	
-				usernametipobj.childNodes[0].nodeValue="请输入中文";
-				usernametipobj.style.color="red";
-				return false;
+// 用户名验证 -->
+$("#username").blur(function(){
+	var usernameStr = $.trim($("#username").val());
+	var usernamelen = usernameStr.length;
+	var usernametipobj = $("#usernametip");
+	var reg = /[\u4e00-\u9fa5],{0,}$/;
+	if(usernamelen>1&&usernamelen<5){
+		if(reg.test(usernameStr)){
+			$("#username").css("border-color","#0000FF","border-width","2px","border-style","solid");
+			usernametipobj.html("OK");
+			usernametipobj.css("color","#0000FF");
+		}else{
+			$("#username").css("border-color","red","border-width","2px","border-style","solid");
+			usernametipobj.html("请输入中文字符");
+			usernametipobj.css("color","red");
+		}
+	}else{
+		$("#username").css("border-color","red","border-width","2px","border-style","solid");
+		usernametipobj.html("2-4个中文字符");
+		usernametipobj.css("color","red");
+	}
+});
+
+// 密码验证 -->
+$("#password").blur(function(){
+	var passwordStr = $.trim($("#password").val());
+	var passwordlen = passwordStr.length;
+	var passwordtipobj = $("#passwordtip");
+	if(passwordlen>=8&&passwordlen<=16){
+		$("#password").css("border-color","#0000FF","border-width","2px","border-style","solid");
+		passwordtipobj.html("OK");
+		passwordtipobj.css("color","#0000FF");
+	}else{
+		$("#password").css("border-color","red","border-width","2px","border-style","solid");
+		passwordtipobj.html("密码长度为8-16个字符");
+		passwordtipobj.css("color","red");	
+	}
+});
+
+// 重复密码验证 -->
+$("#repeatpassword").blur(function(){
+	var passwordStr = $.trim($("#password").val());
+	var passwordlen = passwordStr.length;
+	var repeatpasswordStr = $.trim($("#repeatpassword").val());
+	var repeatpasswordlen = repeatpasswordStr.length;
+	var repeatpasswordtipobj = $("#repeatpasswordtip");
+	if(repeatpasswordlen!=0&&repeatpasswordlen==passwordlen&&passwordStr==repeatpasswordStr){
+		$("#repeatpassword").css("border-color","#0000FF","border-width","2px","border-style","solid");
+		repeatpasswordtipobj.html("OK");
+		repeatpasswordtipobj.css("color","#0000FF");	
+	}else{
+		$("#repeatpassword").css("border-color","red","border-width","2px","border-style","solid");
+		repeatpasswordtipobj.html("与前一次输入的密码不匹配!");
+		repeatpasswordtipobj.css("color","red");		
+	}
+});
+
+//验证性别
+$(":radio").mouseout(function(){
+	var getsexradio = $("input:radio[name='sex']");
+	var sextipobj = $("#sextip");
+//	alert(getsexradio.is(":checked"));
+	if(getsexradio.is(":checked")){
+		sextipobj.html("OK");
+		sextipobj.css("color","#0000FF");			
+	}else{
+		sextipobj.html("请选择性别！");
+		sextipobj.css("color","red");		
+	}
+});
+	
+// 验证电话号码 -->
+$("#tel").blur(function(){
+	var telStr = $.trim($("#tel").val());
+	var tellen = telStr.length;
+	var teltipobj = $("#teltip");
+	var telReg=/^\d*$/;
+	if(tellen>=7&&tellen<=12){
+		if(telReg.test(telStr)){
+			ajaxreturn("/CMS/registerQueryTelServlet",$("#tel"),teltipobj);
+			$("#tel").css("border-color","#0000FF","border-width","2px","border-style","solid");
+			teltipobj.html("OK");
+			teltipobj.css("color","#0000FF");				
+		}else{
+			$("#tel").css("border-color","red","border-width","2px","border-style","solid");
+			teltipobj.html("电话号码格式错误!(请输入合法的号码)!");
+			teltipobj.css("color","red");			
+		}
+	}else{
+		$("#tel").css("border-color","red","border-width","2px","border-style","solid");
+		teltipobj.html("电话号码长度错误!(7-12位)!");
+		teltipobj.css("color","red");				
+	}
+});
+	
+// 验证QQ -->
+$("#qq").blur(function(){
+	var qqStr = $.trim($("#qq").val());
+	var qqlen = qqStr.length;
+	var qqtipobj = $("#qqtip");
+	var qqReg=/^\d*$/;
+	if(qqlen>=4&&qqlen<=15){
+		ajaxreturn("/CMS/registerQueryQqServlet",$("#qq"),qqtipobj);
+		$("#qq").css("border-color","#0000FF","border-width","2px","border-style","solid");
+		qqtipobj.html("OK");
+		qqtipobj.css("color","#0000FF");
+	}else{
+		$("#qq").css("border-color","red","border-width","2px","border-style","solid");
+		qqtipobj.html("QQ号码长度不正确!");
+		qqtipobj.css("color","red");
+	}
+});
+	
+//农历生日 -->
+$("#brithday").blur(function(){
+	var brithdayStr = $.trim($("#brithday").val());
+	var brithdaylen = brithdayStr.length;
+	var brithdaytipobj = $("#brithdaytip");
+	var brithdayReg=/^\d*$/;
+	if(brithdayReg.test(brithdayStr)){
+		if(brithdaylen==4){
+			if(((brithdayStr.substring(0,2)>0)&&(brithdayStr.substring(0,2)<=12))&&((brithdayStr.substring(2,4)>0)&&(brithdayStr.substring(2,4)<=29))){
+				$("#brithday").css("border-color","#0000FF","border-width","2px","border-style","solid");
+				brithdaytipobj.html("OK");
+				brithdaytipobj.css("color","#0000FF");			
+			}else{
+				$("#brithday").css("border-color","red","border-width","2px","border-style","solid");
+				brithdaytipobj.html("农历日期范围错误，如:0609");
+				brithdaytipobj.css("color","red");	
 			}
 		}else{
-				(document.getElementById("username")).style.border="red 2px solid";	
-				usernametipobj.childNodes[0].nodeValue="2-4个中文字符";
-				usernametipobj.style.color="red";
-				return false;
+			$("#brithday").css("border-color","red","border-width","2px","border-style","solid");
+			brithdaytipobj.html("农历日期长度错误，如:0609");
+			brithdaytipobj.css("color","red");				
 		}
+	}else{
+		$("#brithday").css("border-color","red","border-width","2px","border-style","solid");
+		brithdaytipobj.html("农历日期错误，如:0609");
+		brithdaytipobj.css("color","red");			
 	}
-	
-	// 密码验证 -->
-	function passwordInputOnblur(){
-		var passwordStr=document.getElementById("password").value.trim();
-		var passwordtipobj=document.getElementById("passwordtip");
-		if(passwordStr.length>=8&&passwordStr.length<=16){
-				(document.getElementById("password")).style.border="#66FF33 2px solid";
-				passwordtipobj.childNodes[0].nodeValue="ok";
-				passwordtipobj.style.color="#0000FF";
-				return true;
-		}else{
-				(document.getElementById("password")).style.border="red 2px solid";	
-				passwordtipobj.childNodes[0].nodeValue="密码长度为8-16个字符";
-				passwordtipobj.style.color="red";
-				return false;
-		}
-	}
-	
-	// 重复密码验证 -->
-	function repeatPasswordInputOnblur(){
-		var passwordStr=document.getElementById("password").value.trim();
-		var repeatpasswordStr=document.getElementById("repeatpassword").value.trim();
-		var repeatpasswordtipobj=document.getElementById("repeatpasswordtip");
-		if(repeatpasswordStr.length==passwordStr.length&&passwordStr==repeatpasswordStr){
-				(document.getElementById("repeatpassword")).style.border="#66FF33 2px solid";
-				repeatpasswordtipobj.childNodes[0].nodeValue="ok";
-				repeatpasswordtipobj.style.color="#0000FF";
-				return true;
-		}else{
-				(document.getElementById("repeatpassword")).style.border="red 2px solid";	
-				repeatpasswordtipobj.childNodes[0].nodeValue="与前一次输入的密码不匹配!";
-				repeatpasswordtipobj.style.color="red";
-				return false;
-		}
-	}
-	//验证性别
-	function sexradioOnblur(){
-		var getsexradio = document.getElementsByName("sex");
-		var sextipobj = document.getElementById("sextip");
-		if(getsexradio[0].checked||getsexradio[1].checked){
-				sextipobj.childNodes[0].nodeValue="ok";
-				sextipobj.style.color="#0000FF";
-		}else{
-				sextipobj.childNodes[0].nodeValue="请选择性别";
-				sextipobj.style.color="red";
-		}
-	}
-	
-	
-	// 验证电话号码 -->
-	function telInputOnblur(){
-		
-		var telStr=document.getElementById("tel").value.trim();
-		var teltipobj=document.getElementById("teltip");
-		var telReg=/^\d*$/;
-		
-		if(telStr.length>=7&&telStr.length<=12){
-			if(telReg.test(telStr)){
-					ajaxreturn("/CMS/registerQueryTelServlet",document.getElementById("tel"),teltipobj);
-					(document.getElementById("tel")).style.border="#66FF33 2px solid";
-					teltipobj.childNodes[0].nodeValue="ok";
-					teltipobj.style.color="#0000FF";
-				
-			}else{
-				(document.getElementById("tel")).style.border="red 2px solid";	
-				teltipobj.childNodes[0].nodeValue="电话号码格式错误!(请输入合法的号码)!";
-				teltipobj.style.color="red";
-				return false;
-			}
-		}else{
-				(document.getElementById("tel")).style.border="red 2px solid";	
-				teltipobj.childNodes[0].nodeValue="电话号码长度错误!(7-12位)";
-				teltipobj.style.color="red";
-				return false;
-		} 
-	}
-	
-	// 验证QQ -->
-	function qqInputOnblur(){
-		var qqStr=document.getElementById("qq").value.trim();
-		var qqtipobj=document.getElementById("qqtip");
-		var qqReg=/^\d*$/;
-		if(qqStr.length>=4&&qqStr.length<=15){
-			if(qqReg.test(qqStr)){
-				ajaxreturn("/CMS/registerQueryQqServlet",document.getElementById("qq"),qqtipobj);
-				(document.getElementById("qq")).style.border="#66FF33 2px solid";
-				qqtipobj.childNodes[0].nodeValue="ok";
-				qqtipobj.style.color="#0000FF";
-			}else{
-				(document.getElementById("qq")).style.border="red 2px solid";	
-				qqtipobj.childNodes[0].nodeValue="请输入正确的号码!";
-				qqtipobj.style.color="red";
-			}
-		}else{
-				(document.getElementById("qq")).style.border="red 2px solid";	
-				qqtipobj.childNodes[0].nodeValue="QQ号码长度不正确!";
-				qqtipobj.style.color="red";
-		}
-	}
-	
-	//农历生日 -->
-	function brithdayInputOnblur(){
-		var brithdayStr=document.getElementById("brithday").value.trim();
-		var brithdaytipobj=document.getElementById("brithdaytip");
-		var brithdayReg=/^\d*$/;
-		if(brithdayReg.test(brithdayStr)){
-			if(brithdayStr.length==4){
-				if(((brithdayStr.substring(0,2)>0)&&(brithdayStr.substring(0,2)<=12))&&((brithdayStr.substring(2,4)>0)&&(brithdayStr.substring(2,4)<=29))){
-				(document.getElementById("brithday")).style.border="#66FF33 2px solid";
-				brithdaytipobj.childNodes[0].nodeValue="ok";
-				brithdaytipobj.style.color="#0000FF";
-				return true;
-			}else{
-				(document.getElementById("brithday")).style.border="red 2px solid";	
-				brithdaytipobj.childNodes[0].nodeValue="农历日期范围错误，如:0609";
-				brithdaytipobj.style.color="red";
-				return false;
-				}
-			}else{
-				(document.getElementById("brithday")).style.border="red 2px solid";	
-				brithdaytipobj.childNodes[0].nodeValue="农历日期长度错误，如:0609";
-				brithdaytipobj.style.color="red";
-				return false;
-			}
-		}else{
-				(document.getElementById("brithday")).style.border="red 2px solid";	
-				brithdaytipobj.childNodes[0].nodeValue="农历日期错误，如:0609";
-				brithdaytipobj.style.color="red";
-				return false;
-		}
-	}
+});
 	
 	//年龄验证  -->
 	function ageInputOnblur(){
