@@ -43,20 +43,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<td style="text-align: center; width: 138px; height: 45px;" class="username-style">
 				<strong>用户名：</strong></td>
 				<td style="height: 45px; width: 196px">					
-				<input name="username" id="username" type="text" style="width: 159px; height: 25px" onblur="userInputOnblur()" />
+				<input name="username" id="username" type="text" style="width: 159px; height: 25px"  />
 				</td>
 				<td style="height: 45px" class="tagtip-style" id="usernametip">输入中文姓名</td>
 			</tr>
 			<tr>
 				<td class="tagname-style" style="width: 138px; height: 45px;"><strong>密&nbsp;&nbsp; 码：</strong></td>
 				<td style="height: 45px; width: 196px">					
-				<input name="password" id="password" type="password" style="width: 159px; height: 25px" onblur="passwordInputOnblur()" /></td>
+				<input name="password" id="password" type="password" style="width: 159px; height: 25px"  /></td>
 				<td style="height: 45px" class="tagtip-style" id="passwordtip">8-16位密码</td>
 			</tr>
 			<tr>
 				<td class="tagname-style" style="width: 138px; height: 45px;"><strong>重复输入密码：</strong></td>
 				<td style="height: 45px; width: 196px">					
-				<input name="repeatpassword" id="repeatpassword" type="password" style="width: 159px; height: 25px" onblur="repeatPasswordInputOnblur()"/></td>
+				<input name="repeatpassword" id="repeatpassword" type="password" style="width: 159px; height: 25px" /></td>
 				<td style="height: 45px" class="tagtip-style" id="repeatpasswordtip">&nbsp;</td>
 			</tr>
 			<tr>
@@ -75,38 +75,38 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<tr>
 				<td class="tagname-style" style="width: 138px; height: 45px;"><strong>联系电话：</strong></td>
 				<td style="height: 45px; width: 196px">					
-				<input name="tel" id="tel" type="text" style="width: 159px; height: 25px" onblur="telInputOnblur()" /></td>
+				<input name="tel" id="tel" type="text" style="width: 159px; height: 25px"  /></td>
 				<td style="height: 45px" class="tagtip-style" id="teltip">最多12个字符</td>
 			</tr>
 			<tr>
 				<td class="tagname-style" style="width: 138px; height: 45px;"><strong>QQ:</strong></td>
 				<td style="height: 45px; width: 196px">					
-				<input name="qq" id="qq" type="text" style="width: 159px; height: 25px" onblur="qqInputOnblur()" /></td>
+				<input name="qq" id="qq" type="text" style="width: 159px; height: 25px"  /></td>
 				<td style="height: 45px" class="tagtip-style" id="qqtip">&nbsp;</td>
 			</tr>
 			<tr>
 				<td class="tagname-style" style="width: 138px; height: 45px;"><strong>生日日期：</strong></td>
 				<td style="height: 45px; width: 196px">					
-				<input name="brithday" id="brithday" type="text" style="width: 159px; height: 25px" onblur="brithdayInputOnblur()"/></td>
+				<input name="brithday" id="brithday" type="text" style="width: 159px; height: 25px" /></td>
 				<td style="height: 45px" class="tagtip-style" id="brithdaytip">4位农历日期,如:农历九月六日 为 0906</td>
 			</tr>
 			<tr>
 				<td class="tagname-style" style="width: 138px; height: 45px;"><strong>年&nbsp; 龄：</strong></td>
 				<td style="height: 45px; width: 196px">					
-				<input name="age" id="age" type="text" style="width: 159px; height: 25px" onblur="ageInputOnblur()" /></td>
+				<input name="age" id="age" type="text" style="width: 159px; height: 25px"  /></td>
 				<td style="height: 45px" class="tagtip-style" id="agetip">1-100</td>
 			</tr>
 			<tr>
 				<td class="tagname-style" style="width: 138px; height: 45px;"><strong>身份证：</strong></td>
 				<td style="height: 45px; width: 196px">					
-				<input name="card" id="card" type="text" style="width: 159px; height: 25px" onblur="cardInputOnblur()" /></td>
+				<input name="card" id="card" type="text" style="width: 159px; height: 25px"  /></td>
 				<td style="height: 45px" class="tagtip-style" id="cardtip">最多19个字符</td>
 			</tr>
 			<tr>
 				<td class="tagname-style" style="width: 138px; height: 45px;"><strong>所&nbsp; 
 				属：</strong></td>
 				<td style="height: 45px; width: 196px">					
-					<select name="comp" id="comp" style="width: 109px; height: 25px" onblur="componblur()" >
+					<select name="comp" id="comp" style="width: 109px; height: 25px"  >
 					<option value="=请选择=">=请选择=</option>
 					<%
 					CompanyNameListDAO companynamelistdao = new CompanyNameListDAO();
@@ -123,7 +123,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<tr>
 				<td class="tagname-style" style="width: 138px; height: 45px;"><strong>部&nbsp; 门：</strong></td>
 				<td style="height: 45px; width: 196px" align="left" valign="middle">
-					<select name="dep" id="dep" style="width: 109px; height: 25px" onblur="deponblur()">
+					<select name="dep" id="dep" style="width: 109px; height: 25px" >
 					<option value="=请选择=">=请选择=</option>
 					<%
 					DepNameListDAO depnamelistdao = new DepNameListDAO();

@@ -86,7 +86,7 @@ a.regist-style:link{
 <script type="text/javascript" src="js/jquery-1.10.1.js"></script>
   </head>
   
-<body onload="init()">
+<body>
 	<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 500px">
 		<!-- MSTableType="layout" -->
 		<tr>
@@ -135,6 +135,16 @@ a.regist-style:link{
 									
 									<td style="height: 94px" class="passwordtiptext-style" id="teltip">
 									请输入您的手机号</td>
+								</tr>
+								<tr>
+									<td style="height: 94px; width: 111px;" class="style9">
+									登录身份：</td>
+									<td style="height: 94px; width: 329px;" class="f6">
+									
+									<input name="useridentity" type="radio" value="普通用户" /><span style="font-size:small">普通用户</span>&nbsp;&nbsp;
+									<input name="useridentity" type="radio" value="管理员" /><span style="font-size:small">管理员</span></td>
+									<td style="height: 94px" class="passwordtiptext-style" id="useridentitytip">
+									请选择您的登录身份</td>
 								</tr>
 								<tr>
 									<td style="width: 111px">&nbsp;</td>

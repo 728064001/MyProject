@@ -79,7 +79,7 @@ public class RegisterDAO {
 //		System.out.println(postid);
 		System.out.println(person.getSex());
 		//将数据插入Person_tab表中
-		String insertPersonStr = "insert into person_tab (uuid,username,password,sex,tel,icq,brithday,age,card,companyid,depid,postid,imagepath) values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+		String insertPersonStr = "insert into person_tab (uuid,username,password,sex,tel,icq,brithday,age,card,companyid,depid,postid,isadmin,imagepath) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		int num = 0;
 		try{
 			pstm = conn.prepareStatement(insertPersonStr);
@@ -96,7 +96,8 @@ public class RegisterDAO {
 			pstm.setInt(10, companyid);
 			pstm.setInt(11, depid);
 			pstm.setInt(12, postid);
-			pstm.setString(13, person.getImagepath());
+			pstm.setString(13, person.getIsadmin());
+			pstm.setString(14, person.getImagepath());
 			
 			num = pstm.executeUpdate();
 		}catch(Exception e){

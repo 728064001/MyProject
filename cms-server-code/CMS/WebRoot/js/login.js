@@ -1,1 +1,174 @@
-var _0x1bb1=["\x23\x66\x6F\x72\x6D\x6C\x6F\x67\x69\x6E","\x61\x63\x74\x69\x6F\x6E","\x4C\x6F\x67\x69\x6E\x53\x65\x72\x76\x6C\x65\x74","\x61\x74\x74\x72","\x76\x61\x6C","\x23\x75\x73\x65\x72\x6E\x61\x6D\x65","\x74\x72\x69\x6D","\x6C\x65\x6E\x67\x74\x68","\x23\x75\x73\x65\x72\x6E\x61\x6D\x65\x74\x69\x70","\x74\x65\x73\x74","\x62\x6F\x72\x64\x65\x72\x2D\x63\x6F\x6C\x6F\x72","\x23\x36\x36\x46\x46\x33\x33","\x62\x6F\x72\x64\x65\x72\x2D\x77\x69\x64\x74\x68","\x32\x70\x78","\x62\x6F\x72\x64\x65\x72\x2D\x73\x74\x79\x6C\x65","\x73\x6F\x6C\x69\x64","\x63\x73\x73","\x4F\x4B","\x68\x74\x6D\x6C","\x63\x6F\x6C\x6F\x72","\x23\x30\x30\x30\x30\x46\x46","\x6F\x6B","\x72\x65\x64","\u8BF7\u8F93\u5165\u4E2D\u6587\u5B57\u7B26","\x32\x2D\x34\u4E2A\u4E2D\u6587\u5B57\u7B26","\x62\x6C\x75\x72","\x23\x70\x61\x73\x73\x77\x6F\x72\x64","\x23\x70\x61\x73\x73\x77\x6F\x72\x64\x74\x69\x70","\x36\x36\x46\x46\x33\x33","\u5BC6\u7801\u957F\u5EA6\u4E3A\x38\x2D\x31\x36\u4E2A\u5B57\u7B26","\x23\x74\x65\x6C","\x23\x74\x65\x6C\x74\x69\x70","\u7535\u8BDD\u53F7\u7801\u683C\u5F0F\u9519\u8BEF\x21\x28\u8BF7\u8F93\u5165\u5408\u6CD5\u7684\u53F7\u7801\x29\x21","\u7535\u8BDD\u53F7\u7801\u957F\u5EA6\u9519\u8BEF\x21\x28\x37\x2D\x31\x32\u4F4D\x29",""];function init(){$(function (){var _0x9e82x2=$(_0x1bb1[0]);_0x9e82x2[_0x1bb1[3]](_0x1bb1[1],_0x1bb1[2]);} );} ;$(_0x1bb1[5])[_0x1bb1[25]](function (){var _0x9e82x3=$[_0x1bb1[6]]($(_0x1bb1[5])[_0x1bb1[4]]());var _0x9e82x4=_0x9e82x3[_0x1bb1[7]];var _0x9e82x5=$(_0x1bb1[8]);var _0x9e82x6=/[\u4e00-\u9fa5],{0,}$/;if(_0x9e82x4>1&&_0x9e82x4<5){if(_0x9e82x6[_0x1bb1[9]](_0x9e82x3)){$(_0x1bb1[5])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[11],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82x5[_0x1bb1[18]](_0x1bb1[17]);_0x9e82x5[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[20]);} else {alert(_0x1bb1[21]);$(_0x1bb1[5])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[22],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82x5[_0x1bb1[18]](_0x1bb1[23]);_0x9e82x5[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[22]);} ;} else {$(_0x1bb1[5])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[22],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82x5[_0x1bb1[18]](_0x1bb1[24]);_0x9e82x5[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[22]);} ;} );$(_0x1bb1[26])[_0x1bb1[25]](function (){var _0x9e82x7=$[_0x1bb1[6]]($(_0x1bb1[26])[_0x1bb1[4]]());var _0x9e82x8=$(_0x1bb1[27]);var _0x9e82x9=_0x9e82x7[_0x1bb1[7]];if(_0x9e82x9>=8&&_0x9e82x9<=16){$(_0x1bb1[26])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[28],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82x8[_0x1bb1[18]](_0x1bb1[17]);_0x9e82x8[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[20]);} else {$(_0x1bb1[26])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[22],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82x8[_0x1bb1[18]](_0x1bb1[29]);_0x9e82x8[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[22]);} ;} );$(_0x1bb1[30])[_0x1bb1[25]](function (){var _0x9e82xa=$[_0x1bb1[6]]($(_0x1bb1[30])[_0x1bb1[4]]());var _0x9e82xb=_0x9e82xa[_0x1bb1[7]];var _0x9e82xc=$(_0x1bb1[31]);var _0x9e82xd=/^\d*$/;if(_0x9e82xa[_0x1bb1[7]]>=7&&_0x9e82xa[_0x1bb1[7]]<=12){if(_0x9e82xd[_0x1bb1[9]](_0x9e82xa)){$(_0x1bb1[30])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[11],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82xc[_0x1bb1[18]](_0x1bb1[17]);_0x9e82xc[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[20]);} else {$(_0x1bb1[30])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[22],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82xc[_0x1bb1[18]](_0x1bb1[32]);_0x9e82xc[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[22]);} ;} else {$(_0x1bb1[30])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[22],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82xc[_0x1bb1[18]](_0x1bb1[33]);_0x9e82xc[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[22]);} ;} );function subminting(){var _0x9e82x3=$[_0x1bb1[6]]($(_0x1bb1[5])[_0x1bb1[4]]());var _0x9e82x4=_0x9e82x3[_0x1bb1[7]];var _0x9e82x5=$(_0x1bb1[8]);var _0x9e82x6=/[\u4e00-\u9fa5],{0,}$/;if(_0x9e82x3==null||_0x9e82x3==_0x1bb1[34]||_0x9e82x4<=1||_0x9e82x4>5){$(_0x1bb1[5])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[22],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82x5[_0x1bb1[18]](_0x1bb1[24]);_0x9e82x5[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[22]);return false;} else {if(!_0x9e82x6[_0x1bb1[9]](_0x9e82x3)){$(_0x1bb1[5])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[22],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82x5[_0x1bb1[18]](_0x1bb1[23]);_0x9e82x5[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[22]);return false;} else {$(_0x1bb1[5])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[11],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82x5[_0x1bb1[18]](_0x1bb1[17]);_0x9e82x5[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[20]);} ;} ;var _0x9e82x7=$[_0x1bb1[6]]($(_0x1bb1[26])[_0x1bb1[4]]());var _0x9e82x8=$(_0x1bb1[27]);var _0x9e82x9=_0x9e82x7[_0x1bb1[7]];if(_0x9e82x7==_0x1bb1[34]||_0x9e82x7==null||_0x9e82x9<8||_0x9e82x9>16){$(_0x1bb1[26])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[22],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82x8[_0x1bb1[18]](_0x1bb1[29]);_0x9e82x8[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[22]);return false;} else {$(_0x1bb1[26])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[20],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82x8[_0x1bb1[18]](_0x1bb1[17]);_0x9e82x8[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[20]);} ;var _0x9e82xa=$[_0x1bb1[6]]($(_0x1bb1[30])[_0x1bb1[4]]());var _0x9e82xb=_0x9e82xa[_0x1bb1[7]];var _0x9e82xc=$(_0x1bb1[31]);var _0x9e82xd=/^\d*$/;if(_0x9e82xb<7||_0x9e82xb>12){$(_0x1bb1[30])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[22],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82xc[_0x1bb1[18]](_0x1bb1[33]);_0x9e82xc[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[22]);return false;} else {if(!_0x9e82xd[_0x1bb1[9]](_0x9e82xa)){$(_0x1bb1[30])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[22],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82xc[_0x1bb1[18]](_0x1bb1[32]);_0x9e82xc[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[22]);return false;} else {$(_0x1bb1[30])[_0x1bb1[16]](_0x1bb1[10],_0x1bb1[20],_0x1bb1[12],_0x1bb1[13],_0x1bb1[14],_0x1bb1[15]);_0x9e82xc[_0x1bb1[18]](_0x1bb1[17]);_0x9e82xc[_0x1bb1[16]](_0x1bb1[19],_0x1bb1[20]);} ;} ;return true;} ;
+//载入时
+
+	$(function(){
+		//get form obj
+		var loginformobj = $("#formlogin");
+		loginformobj.attr("action","LoginServlet");
+	});
+
+
+//即时验证
+	//用户名验证
+			$("#username").blur(function(){
+					//get usernamevalue
+					var usernameStr =$.trim( $("#username").val());
+ 					var usernamelen = usernameStr.length;
+					//get usernametipobj
+					var usernametipobj =$("#usernametip");
+					// 中文正则 -->
+					var reg = /[\u4e00-\u9fa5],{0,}$/; 
+					if(usernamelen > 1 && usernamelen < 5){
+							if(reg.test(usernameStr)){
+								$("#username").css("border-color","#66FF33","border-width","2px","border-style","solid");
+								usernametipobj.html("OK");
+								usernametipobj.css("color","#0000FF");
+							}else{	
+								alert("ok");
+								$("#username").css("border-color","red","border-width","2px","border-style","solid");
+								usernametipobj.html("请输入中文字符");
+								usernametipobj.css("color","red");
+							}
+					}else{
+							$("#username").css("border-color","red","border-width","2px","border-style","solid");
+							usernametipobj.html("2-4个中文字符");
+							usernametipobj.css("color","red");
+					}
+			});
+
+
+	
+	// 密码验证 -->
+	$("#password").blur(function(){
+		var passwordStr = $.trim($("#password").val());
+		var passwordtipobj = $("#passwordtip");
+		var passwordlen = passwordStr.length;
+		if(passwordlen>=8 && passwordlen<=16){
+				$("#password").css("border-color","66FF33","border-width","2px","border-style","solid");
+				passwordtipobj.html("OK");
+				passwordtipobj.css("color","#0000FF");
+		}else{
+				$("#password").css("border-color","red","border-width","2px","border-style","solid");
+				passwordtipobj.html("密码长度为8-16个字符");
+				passwordtipobj.css("color","red");
+		}
+		
+	});		
+
+	
+	//电话号码验证
+	$("#tel").blur(function(){
+		var telStr = $.trim($("#tel").val());
+		var tellen = telStr.length;
+		var teltipobj = $("#teltip");
+		var telReg=/^\d*$/;
+		if(telStr.length>=7&&telStr.length<=12){
+			if(telReg.test(telStr)){
+				$("#tel").css("border-color","#66FF33","border-width","2px","border-style","solid");
+				teltipobj.html("OK");
+				teltipobj.css("color","#0000FF")
+				
+			}else{
+				$("#tel").css("border-color","red","border-width","2px","border-style","solid");
+				teltipobj.html("电话号码格式错误!(请输入合法的号码)!");
+				teltipobj.css("color","red");
+			}
+		}else{
+				$("#tel").css("border-color","red","border-width","2px","border-style","solid");
+				teltipobj.html("电话号码长度错误!(7-12位)");
+				teltipobj.css("color","red");
+		} 
+	});
+	//登录身份验证
+$(":radio").mouseout(function(){
+	var getidentityradio = $("input:radio[name='useridentity']");
+	var identitytipobj = $("#useridentitytip");
+	if(getidentityradio.is(":checked")){
+		identitytipobj.html("OK");
+		identitytipobj.css("color","#0000FF");			
+	}else{
+		identitytipobj.html("请选择登录身份！");
+		identitytipobj.css("color","red");		
+	}
+});
+	
+	
+//提交时验证
+	function subminting(){
+	//用户名验证
+	//get usernamevalue
+	var usernameStr =$.trim( $("#username").val());
+ 	var usernamelen = usernameStr.length;
+	//get usernametipobj
+	var usernametipobj =$("#usernametip");
+	// 中文正则 -->
+	var reg = /[\u4e00-\u9fa5],{0,}$/; 
+		if(usernameStr==null||usernameStr==""||usernamelen<=1||usernamelen>5){
+			$("#username").css("border-color","red","border-width","2px","border-style","solid");
+			usernametipobj.html("2-4个中文字符");
+			usernametipobj.css("color","red");
+			return false;			
+		}else{
+			if(!reg.test(usernameStr)){
+				$("#username").css("border-color","red","border-width","2px","border-style","solid");
+				usernametipobj.html("请输入中文字符");
+				usernametipobj.css("color","red");
+				return false;			
+			}else{
+				$("#username").css("border-color","#66FF33","border-width","2px","border-style","solid");
+				usernametipobj.html("OK");
+				usernametipobj.css("color","#0000FF");
+			}	
+		}
+	//密码验证
+		var passwordStr = $.trim($("#password").val());
+		var passwordtipobj = $("#passwordtip");
+		var passwordlen = passwordStr.length;
+		if(passwordStr==""||passwordStr==null||passwordlen<8||passwordlen>16){
+			$("#password").css("border-color","red","border-width","2px","border-style","solid");
+			passwordtipobj.html("密码长度为8-16个字符");
+			passwordtipobj.css("color","red");
+			return false;
+		
+		}else{
+			$("#password").css("border-color","#0000FF","border-width","2px","border-style","solid");
+			passwordtipobj.html("OK");
+			passwordtipobj.css("color","#0000FF");
+		}	
+		
+	//电话号码验证
+		var telStr = $.trim($("#tel").val());
+		var tellen = telStr.length;
+		var teltipobj = $("#teltip");
+		var telReg=/^\d*$/;
+		if(tellen<7||tellen>12){
+			$("#tel").css("border-color","red","border-width","2px","border-style","solid");
+			teltipobj.html("电话号码长度错误!(7-12位)");
+			teltipobj.css("color","red");
+			return false;
+		}else{
+			if(!telReg.test(telStr)){
+				$("#tel").css("border-color","red","border-width","2px","border-style","solid");
+				teltipobj.html("电话号码格式错误!(请输入合法的号码)!");
+				teltipobj.css("color","red");
+				return false;
+			}else{
+				$("#tel").css("border-color","#0000FF","border-width","2px","border-style","solid");
+				teltipobj.html("OK");
+				teltipobj.css("color","#0000FF");
+			}
+		} 	
+		
+		//身份验证
+	var getidentityradio = $("input:radio[name='useridentity']");
+	var identitytipobj = $("#useridentitytip");
+	if(!getidentityradio.is(":checked")){
+		identitytipobj.html("请选择登录身份！");
+		identitytipobj.css("color","red");	
+		return false;
+	}else{
+		identitytipobj.html("OK");
+		identitytipobj.css("color","#0000FF");		
+	}
+		
+	return true;
+	}

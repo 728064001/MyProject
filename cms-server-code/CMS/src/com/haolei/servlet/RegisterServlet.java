@@ -33,6 +33,7 @@ public class RegisterServlet extends HttpServlet {
 		person.setBrithday(request.getParameter("brithday"));
 		person.setAge(Integer.parseInt(request.getParameter("age")));
 		person.setCard(request.getParameter("card"));
+		person.setIsadmin("普通用户");
 		person.setImagepath("");
 		
 		Company company = new Company();

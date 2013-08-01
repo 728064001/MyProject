@@ -8,8 +8,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    
-    <title>My JSP 'index.jsp' starting page</title>
+    <%Person person = (Person)session.getAttribute("logined"); %>
+    <title>CMS--<%=person.getUsername()%> onLine</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -233,7 +233,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<td class="style7">&nbsp;</td>
 						</tr>
 						<tr>
-							<%Person person = (Person)session.getAttribute("logined"); %>
 							<td class="style13"><%=person.getUsername() %> 欢迎登录CMS</td>
 							<td class="style7">log out</td>
 						</tr>
@@ -248,7 +247,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<table cellspacing="1" class="style8" style="width: 100%; height: 100%">
 				<tr>
 					<td align="center" style="height: 148px" valign="middle">
-					<img src="image/userimage.gif" /></td>
+					<img src="image/userimage.jpg" /></td>
 				</tr>
 				<tr>
 					<td align="left" valign="top">

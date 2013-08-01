@@ -26,16 +26,21 @@ public class LoginServlet extends HttpServlet {
 		person.setPassword(request.getParameter("password"));
 		person.setTel(request.getParameter("tel"));
 		String ipaddr = request.getRemoteAddr();
-		boolean flag = logindao.login(person);
-		
-		if(flag){
+		int flag = logindao.login(person);
+		String identity = request.getParameter("useridentity");
+		if((flag==0||flag==1) && identity.equals("普通用户")){
+			System.out.println("yes");
 			session.setAttribute("logined", person);
 			session.setAttribute("ip", ipaddr);
 			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+			rd.forward(request, response);
+		}else if(flag==1 && identity.equals("管理员")){
+			session.setAttribute("adminlogined", person);
+			session.setAttribute("adminip", ipaddr);
+			RequestDispatcher rd = request.getRequestDispatcher("admin.jsp");
 			rd.forward(request, response);
 		}else{
 			response.sendRedirect("ERROR.jsp");
 		}
 	}
-	
 }

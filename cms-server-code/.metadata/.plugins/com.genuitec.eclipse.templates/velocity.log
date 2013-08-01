@@ -1,31 +1,30 @@
-Thu Jul 25 10:00:31 CST 2013  [debug] AvalonLogSystem initialized using logfile 'E:\git\MyProject\cms-server-code\.metadata\.plugins\com.genuitec.eclipse.templates\velocity.log'
-Thu Jul 25 10:00:31 CST 2013   [info] ************************************************************** 
-Thu Jul 25 10:00:31 CST 2013   [info] Starting Jakarta Velocity v1.4
-Thu Jul 25 10:00:31 CST 2013   [info] RuntimeInstance initializing.
-Thu Jul 25 10:00:31 CST 2013   [info] Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
-Thu Jul 25 10:00:31 CST 2013   [info] Trying to use logger class org.apache.velocity.runtime.log.AvalonLogSystem
-Thu Jul 25 10:00:31 CST 2013   [info] Using logger class org.apache.velocity.runtime.log.AvalonLogSystem
-Thu Jul 25 10:00:31 CST 2013   [info] Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
-Thu Jul 25 10:00:31 CST 2013   [info] Resource Loader Instantiated: com.genuitec.eclipse.templates.internal.PluginResourceLoader
-Thu Jul 25 10:00:31 CST 2013   [info] ResourceCache : initialized. (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
-Thu Jul 25 10:00:31 CST 2013   [info] Default ResourceManager initialization complete.
-Thu Jul 25 10:00:31 CST 2013   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-Thu Jul 25 10:00:31 CST 2013   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-Thu Jul 25 10:00:31 CST 2013   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-Thu Jul 25 10:00:31 CST 2013   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Include
-Thu Jul 25 10:00:31 CST 2013   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-Thu Jul 25 10:00:31 CST 2013   [info] Created: 20 parsers.
-Thu Jul 25 10:00:31 CST 2013   [info] Velocimacro : initialization starting.
-Thu Jul 25 10:00:31 CST 2013   [info] Velocimacro : adding VMs from VM library template : VM_global_library.vm
-Thu Jul 25 10:00:31 CST 2013  [error] ResourceManager : unable to find resource 'VM_global_library.vm' in any resource loader.
-Thu Jul 25 10:00:31 CST 2013   [info] Velocimacro : error using  VM library template VM_global_library.vm : org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'VM_global_library.vm'
-Thu Jul 25 10:00:31 CST 2013   [info] Velocimacro :  VM library template macro registration complete.
-Thu Jul 25 10:00:31 CST 2013   [info] Velocimacro : allowInline = true : VMs can be defined inline in templates
-Thu Jul 25 10:00:31 CST 2013   [info] Velocimacro : allowInlineToOverride = true : VMs defined inline may replace previous VM definitions
-Thu Jul 25 10:00:31 CST 2013   [info] Velocimacro : allowInlineLocal = true : VMs defined inline will be local to their defining template only.
-Thu Jul 25 10:00:31 CST 2013   [info] Velocimacro : messages on  : VM system will output logging messages
-Thu Jul 25 10:00:31 CST 2013   [info] Velocimacro : autoload off  : VM system will not automatically reload global library macros
-Thu Jul 25 10:00:31 CST 2013   [info] Velocimacro : initialization complete.
-Thu Jul 25 10:00:31 CST 2013   [info] Velocity successfully started.
-Thu Jul 25 10:00:31 CST 2013   [info] ResourceManager : found templates/web.xml.vm with loader com.genuitec.eclipse.templates.internal.PluginResourceLoader
-Thu Jul 25 10:00:31 CST 2013   [info] ResourceManager : found /templates/velocity/welcome/Jsp.vtl with loader com.genuitec.eclipse.templates.internal.PluginResourceLoader
+Thu Aug 01 14:29:38 CST 2013  [debug] AvalonLogSystem initialized using logfile 'E:\git\MyProject\cms-server-code\.metadata\.plugins\com.genuitec.eclipse.templates\velocity.log'
+Thu Aug 01 14:29:38 CST 2013   [info] ************************************************************** 
+Thu Aug 01 14:29:38 CST 2013   [info] Starting Jakarta Velocity v1.4
+Thu Aug 01 14:29:38 CST 2013   [info] RuntimeInstance initializing.
+Thu Aug 01 14:29:38 CST 2013   [info] Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+Thu Aug 01 14:29:38 CST 2013   [info] Trying to use logger class org.apache.velocity.runtime.log.AvalonLogSystem
+Thu Aug 01 14:29:38 CST 2013   [info] Using logger class org.apache.velocity.runtime.log.AvalonLogSystem
+Thu Aug 01 14:29:38 CST 2013   [info] Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+Thu Aug 01 14:29:38 CST 2013   [info] Resource Loader Instantiated: com.genuitec.eclipse.templates.internal.PluginResourceLoader
+Thu Aug 01 14:29:38 CST 2013   [info] ResourceCache : initialized. (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+Thu Aug 01 14:29:38 CST 2013   [info] Default ResourceManager initialization complete.
+Thu Aug 01 14:29:38 CST 2013   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+Thu Aug 01 14:29:38 CST 2013   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+Thu Aug 01 14:29:38 CST 2013   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+Thu Aug 01 14:29:38 CST 2013   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Include
+Thu Aug 01 14:29:38 CST 2013   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+Thu Aug 01 14:29:39 CST 2013   [info] Created: 20 parsers.
+Thu Aug 01 14:29:39 CST 2013   [info] Velocimacro : initialization starting.
+Thu Aug 01 14:29:39 CST 2013   [info] Velocimacro : adding VMs from VM library template : VM_global_library.vm
+Thu Aug 01 14:29:39 CST 2013   [info] ResourceManager : found VM_global_library.vm with loader com.genuitec.eclipse.templates.internal.PluginResourceLoader
+Thu Aug 01 14:29:39 CST 2013   [info] Velocimacro :  VM library template macro registration complete.
+Thu Aug 01 14:29:39 CST 2013   [info] Velocimacro : allowInline = true : VMs can be defined inline in templates
+Thu Aug 01 14:29:39 CST 2013   [info] Velocimacro : allowInlineToOverride = true : VMs defined inline may replace previous VM definitions
+Thu Aug 01 14:29:39 CST 2013   [info] Velocimacro : allowInlineLocal = true : VMs defined inline will be local to their defining template only.
+Thu Aug 01 14:29:39 CST 2013   [info] Velocimacro : messages on  : VM system will output logging messages
+Thu Aug 01 14:29:39 CST 2013   [info] Velocimacro : autoload off  : VM system will not automatically reload global library macros
+Thu Aug 01 14:29:39 CST 2013   [info] Velocimacro : initialization complete.
+Thu Aug 01 14:29:39 CST 2013   [info] Velocity successfully started.
+Thu Aug 01 14:29:39 CST 2013   [info] ResourceManager : found templates/jsp/Jsp.vtl with loader com.genuitec.eclipse.templates.internal.PluginResourceLoader
+Thu Aug 01 14:29:39 CST 2013   [info] ResourceManager : found templates/jsp/JSPMetaTags.vtl with loader com.genuitec.eclipse.templates.internal.PluginResourceLoader

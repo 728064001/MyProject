@@ -19,6 +19,7 @@ public class Person {
 	private int	companyid;
 	private int postid; //职位ID	
 	private int depid; //部门ID
+	private String isadmin; //是否是管理员
 	
 	
 	public Person(){}
@@ -113,6 +114,14 @@ public class Person {
 
 	public void setSex(String sex) {
 		this.sex = sex;
+	}
+
+	public String getIsadmin() {
+		return isadmin;
+	}
+
+	public void setIsadmin(String isadmin) {
+		this.isadmin = isadmin;
 	}
 	
 
