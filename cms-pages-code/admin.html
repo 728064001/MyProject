@@ -5,6 +5,7 @@
 <meta content="zh-cn" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>管理员</title>
+<link rel="stylesheet" href="css/zTreeStyle/zTreeStyle.css" />
 <style type="text/css">
 body{
  margin:0;
@@ -38,10 +39,177 @@ body{
 .style7 {
 	text-align: center;
 }
+.style8 {
+	border-style: solid;
+	border-width: 1px;
+	background-color: #CCCCCC;
+}
+.style9 {
+	border: 1px solid #000000;
+}
+.style10 {
+	font-family: 新宋体;
+	font-size: small;
+}
+.style11 {
+	font-size: small;
+}
 </style>
 <script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+<script type="text/javascript" src="js/jquery.ztree.core-3.5.js"></script>
 <script type="text/javascript">
-	
+	var setting = {
+			view:{
+				showLine:false
+			},
+			data: {
+				simpleData: {
+					enable: true
+				}
+			}
+		};
+var zNodes =[
+			{ name:"人员管理",open:true,iconOpen:"image/treeimage/person_open.png",iconClose:"image/treeimage/person_close.png",
+				children: [
+					{ name:"人员管理", isParent:false}
+				]},
+			{ name:"邮箱管理",open:true,iconOpen:"image/treeimage/mail_open.png",iconClose:"image/treeimage/mail_close.png",
+
+				children: [
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+						]},
+					{ name:"父节点22 - 折叠",
+						children: [
+							{ name:"叶子节点221"},
+							{ name:"叶子节点222"},
+							{ name:"叶子节点223"},
+							{ name:"叶子节点224"}
+						]},
+					{ name:"父节点23 - 折叠",
+						children: [
+							{ name:"叶子节点231"},
+							{ name:"叶子节点232"},
+							{ name:"叶子节点233"},
+							{ name:"叶子节点234"}
+						]}
+				]},
+			{ name:"借记管理", open:true,iconOpen:"image/treeimage/borrow_open.png",iconClose:"image/treeimage/borrow_close.png",
+
+				children:[
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]},
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]},
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]}
+				]
+			},
+			{ name:"硬件维护", open:true,iconOpen:"image/treeimage/hardwaremaintenance_open.png",iconClose:"image/treeimage/hardwaremaintenance_close.png",
+
+				children:[
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]},
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]},
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]}
+				]
+			},
+			{ name:"离职流程", open:true,iconOpen:"image/treeimage/resignation_open.png",iconClose:"image/treeimage/resignation_close.png",
+
+				children:[
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]},
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]},
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]}
+				]
+			},
+			{ name:"日志", open:true,iconOpen:"image/treeimage/log_open.png",iconClose:"image/treeimage/log_close.png",
+
+				children:[
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]},
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]},
+					{ name:"父节点21 - 展开",
+						children: [
+							{ name:"叶子节点211"},
+							{ name:"叶子节点212"},
+							{ name:"叶子节点213"},
+							{ name:"叶子节点214"}
+					]}
+				]
+			}
+
+
+
+
+		];		
+		$(function(){
+			$.fn.zTree.init($("#treeDemo"),setting,zNodes);
+		});
 </script>
 </head>
 
@@ -69,7 +237,61 @@ body{
 		</td>
 	</tr>
 	<tr>
-		<td style="width: 211px; height: 808px;" align="left" valign="top"></td>
+		<td style="width: 211px; height: 808px;" align="left" valign="top">
+		<table cellspacing="1" class="style8" style="width: 100%; height: 100%">
+			<tr>
+				<td align="left" style="height: 281px" valign="top">
+				<table cellspacing="1" class="style9" style="width: 100%; height: 100%">
+					<tr>
+						<td class="style7" style="height: 95px">
+						<img src="image/userimage.gif" height="85" width="85" /></td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+						<table cellspacing="1" style="width: 100%; height: 100%">
+							<tr>
+								<td class="style7" colspan="2"><strong>石头</strong></td>
+							</tr>
+							<tr>
+								<td class="style10" style="width: 69px">性别:</td>
+								<td>
+								<img alt="" height="11" src="image/male.gif" width="11" /></td>
+							</tr>
+							<tr>
+								<td class="style10" style="width: 69px">帮派:</td>
+								<td>xxxxxxxxxxxxxx</td>
+							</tr>
+							<tr>
+								<td class="style10" style="width: 69px">职务:</td>
+								<td>xxxxxxxxxxx</td>
+							</tr>
+							<tr>
+								<td class="style10" style="width: 69px">书信:</td>
+								<td>xxxxxxxxxxxx</td>
+							</tr>
+							<tr>
+								<td class="style10" style="width: 69px">我的装备</td>
+								<td>&nbsp;</td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="left" valign="top">
+				<hr /><hr/>
+				[<strong><span class="style11">业务区]
+				<!--tree-->
+				</span></strong>
+				<div>
+				<ul id="treeDemo" class="ztree"></ul></div>
+				<hr/>
+				</td>
+			</tr>
+		</table>
+		</td>
 		<td style="height: 808px"></td>
 	</tr>
 	<tr bgcolor="#C0C0C0">
