@@ -11,32 +11,32 @@ body{
  margin:0;
  padding:0;
 }
-.style1 {
+.admin-main-tab-style {
 	border-style: solid;
 	border-width: 1px;
  margin:0,auto;
 }
-.style2 {
+.admin-child-tab-td-null-style {
 	text-align: right;
 }
-.style3 {
+.admin-main-tab-td-logo-style {
 	font-family: 华文琥珀;
 	font-size: 50px;
 }
-.style4 {
+.admin-main-tab-td-admins-style {
 	font-size: medium;
 }
-.style5 {
+.admin-main-tab-td-style {
 	text-align: left;
 }
-.style6 {
+.admin-child-tab-style {
 	border: 1px solid #000000;
 	float:right;
 	margin-left: 185px;
 	color: #CC3300;
 	font-size: small;
 }
-.style7 {
+.admin-child-tab-td-welcome-style {
 	text-align: center;
 }
 .style8 {
@@ -47,16 +47,30 @@ body{
 .style9 {
 	border: 1px solid #000000;
 }
-.style10 {
+.admin-main-tab-style0 {
 	font-family: 新宋体;
 	font-size: small;
 }
-.style11 {
+.admin-main-tab-style1 {
 	font-size: small;
+}
+.admin-main-tab-admin-child-tab-td-null-style {
+	border: 1px solid #515151;
+}
+.admin-main-tab-admin-main-tab-td-logo-style {
+	font-size: small;
+	font-family: 黑体;
+}
+.admin-main-tab-admin-main-tab-td-admins-style {
+	font-size: small;
+	font-family: 华文细黑;
+	 line-height:32px;
 }
 </style>
 <script type="text/javascript" src="js/jquery-1.10.1.js"></script>
 <script type="text/javascript" src="js/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript" src="js/jquery.ztree.excheck-3.5.js"></script>
+<script type="text/javascript" src="js/jquery.ztree.exedit-3.5.js"></script>
 <script type="text/javascript">
 	var setting = {
 			view:{
@@ -69,74 +83,52 @@ body{
 			}
 		};
 var zNodes =[
-			{ name:"人员管理",open:true,iconOpen:"image/treeimage/person_open.png",iconClose:"image/treeimage/person_close.png",
+			{ name:"人员管理", open:true,iconOpen:"image/treeimage/person_open.png",iconClose:"image/treeimage/person_close.png",
 				children: [
-					{ name:"人员管理", isParent:false}
+					{ name:"人员管理", isParent:false, "click":"test();"}
 				]},
 			{ name:"邮箱管理",open:true,iconOpen:"image/treeimage/mail_open.png",iconClose:"image/treeimage/mail_close.png",
 
 				children: [
-					{ name:"父节点21 - 展开",
+					{ name:"公司邮箱",
 						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
-						]},
-					{ name:"父节点22 - 折叠",
+							{ name:"邮箱信息"},
+							{ name:"待办项"}
+					]},
+					{ name:"回收站", 
 						children: [
-							{ name:"叶子节点221"},
-							{ name:"叶子节点222"},
-							{ name:"叶子节点223"},
-							{ name:"叶子节点224"}
-						]},
-					{ name:"父节点23 - 折叠",
-						children: [
-							{ name:"叶子节点231"},
-							{ name:"叶子节点232"},
-							{ name:"叶子节点233"},
-							{ name:"叶子节点234"}
-						]}
+							{ name:"已删除的邮箱"}
+					]},
+					{ name:"设置", isParent:false}
 				]},
 			{ name:"借记管理", open:true,iconOpen:"image/treeimage/borrow_open.png",iconClose:"image/treeimage/borrow_close.png",
 
 				children:[
-					{ name:"父节点21 - 展开",
+					{ name:"借记状态", 
 						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
+							{ name:"图书借记状态"},
+							{ name:"电子用品借记状态"},
+							{ name:"历史记录"}
 					]},
-					{ name:"父节点21 - 展开",
+					{ name:"物品管理", 
 						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
-					]},
-					{ name:"父节点21 - 展开",
-						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
+							{ name:"图书管理"},
+							{ name:"电子用品管理"},
+							{ name:"借用授权"}
 					]}
 				]
 			},
 			{ name:"硬件维护", open:true,iconOpen:"image/treeimage/hardwaremaintenance_open.png",iconClose:"image/treeimage/hardwaremaintenance_close.png",
 
 				children:[
-					{ name:"父节点21 - 展开",
+					{ name:"维护待办",
 						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
+							{ name:"待办项"},
+							{ name:"记录"}
 					]},
-					{ name:"父节点21 - 展开",
+					{ name:"IP管理",
 						children: [
-							{ name:"叶子节点211"},
+							{ name:"IP信息表"},
 							{ name:"叶子节点212"},
 							{ name:"叶子节点213"},
 							{ name:"叶子节点214"}
@@ -150,55 +142,29 @@ var zNodes =[
 					]}
 				]
 			},
-			{ name:"离职流程", open:true,iconOpen:"image/treeimage/resignation_open.png",iconClose:"image/treeimage/resignation_close.png",
+			{ name:"离职流程",  open:true,iconOpen:"image/treeimage/resignation_open.png",iconClose:"image/treeimage/resignation_close.png",
 
 				children:[
-					{ name:"父节点21 - 展开",
+					{ name:"离职登记",
 						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
+							{ name:"登记"}
 					]},
-					{ name:"父节点21 - 展开",
+					{ name:"记录",
 						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
-					]},
-					{ name:"父节点21 - 展开",
-						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
+							{ name:"已离职信息"}
 					]}
 				]
 			},
 			{ name:"日志", open:true,iconOpen:"image/treeimage/log_open.png",iconClose:"image/treeimage/log_close.png",
 
 				children:[
-					{ name:"父节点21 - 展开",
+					{ name:"系统日志",
 						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
+							{ name:"系统日志"}
 					]},
-					{ name:"父节点21 - 展开",
+					{ name:"业务日志",
 						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
-					]},
-					{ name:"父节点21 - 展开",
-						children: [
-							{ name:"叶子节点211"},
-							{ name:"叶子节点212"},
-							{ name:"叶子节点213"},
-							{ name:"叶子节点214"}
+							{ name:"业务日志"}
 					]}
 				]
 			}
@@ -210,20 +176,25 @@ var zNodes =[
 		$(function(){
 			$.fn.zTree.init($("#treeDemo"),setting,zNodes);
 		});
+		
+		//工作区窗体
+				
+		function test(){
+			alert("test");
+		}
 </script>
 </head>
 
 <body>
-
-<table align="center" cellspacing="1" class="style1" style="width: 1300px; height: 900px">
+<table align="center" cellspacing="1" class="admin-main-tab-style" style="width: 1300px; height: 900px">
 	<tr bgcolor="#C0C0C0">
-		<td class="style5" style="height: 17px; width: 211px">
-		<span class="style3">CMS</span> <span class="style4"><strong>admin</strong></span></td>
-		<td class="style2" style="height: 17px">
-		<table cellspacing="1" class="style6" style="width: 220px; height: 100%">
+		<td class="admin-main-tab-td-style" style="height: 17px; width: 211px">
+		<span class="admin-main-tab-td-logo-style">CMS</span> <span class="admin-main-tab-td-admins-style"><strong>admin</strong></span></td>
+		<td class="admin-child-tab-td-null-style" style="height: 17px">
+		<table cellspacing="1" class="admin-child-tab-style" style="width: 220px; height: 100%">
 			<tr>
 				<td>IP:192.168.1.1</td>
-				<td class="style7">修改信息</td>
+				<td class="admin-child-tab-td-welcome-style">修改信息</td>
 			</tr>
 			<tr>
 				<td>2013/8/1 23:14</td>
@@ -231,7 +202,7 @@ var zNodes =[
 			</tr>
 			<tr>
 				<td>XX 欢迎登录 CMS</td>
-				<td class="style7">Logout</td>
+				<td class="admin-child-tab-td-welcome-style">Logout</td>
 			</tr>
 		</table>
 		</td>
@@ -243,34 +214,34 @@ var zNodes =[
 				<td align="left" style="height: 281px" valign="top">
 				<table cellspacing="1" class="style9" style="width: 100%; height: 100%">
 					<tr>
-						<td class="style7" style="height: 95px">
+						<td class="admin-child-tab-td-welcome-style" style="height: 95px">
 						<img src="image/userimage.gif" height="85" width="85" /></td>
 					</tr>
 					<tr>
 						<td align="left" valign="top">
 						<table cellspacing="1" style="width: 100%; height: 100%">
 							<tr>
-								<td class="style7" colspan="2"><strong>石头</strong></td>
+								<td class="admin-child-tab-td-welcome-style" colspan="2"><strong>石头</strong></td>
 							</tr>
 							<tr>
-								<td class="style10" style="width: 69px">性别:</td>
+								<td class="admin-main-tab-style0" style="width: 69px">性别:</td>
 								<td>
 								<img alt="" height="11" src="image/male.gif" width="11" /></td>
 							</tr>
 							<tr>
-								<td class="style10" style="width: 69px">帮派:</td>
+								<td class="admin-main-tab-style0" style="width: 69px">帮派:</td>
 								<td>xxxxxxxxxxxxxx</td>
 							</tr>
 							<tr>
-								<td class="style10" style="width: 69px">职务:</td>
+								<td class="admin-main-tab-style0" style="width: 69px">职务:</td>
 								<td>xxxxxxxxxxx</td>
 							</tr>
 							<tr>
-								<td class="style10" style="width: 69px">书信:</td>
+								<td class="admin-main-tab-style0" style="width: 69px">书信:</td>
 								<td>xxxxxxxxxxxx</td>
 							</tr>
 							<tr>
-								<td class="style10" style="width: 69px">我的装备</td>
+								<td class="admin-main-tab-style0" style="width: 69px">我的装备</td>
 								<td>&nbsp;</td>
 							</tr>
 						</table>
@@ -282,25 +253,98 @@ var zNodes =[
 			<tr>
 				<td align="left" valign="top">
 				<hr /><hr/>
-				[<strong><span class="style11">业务区]
+				<strong><span class="admin-main-tab-style1">[ 业务区 ]<br/>
 				<!--tree-->
 				</span></strong>
 				<div>
 				<ul id="treeDemo" class="ztree"></ul></div>
-				<hr/>
+				dfasdf<hr/>
 				</td>
 			</tr>
 		</table>
 		</td>
-		<td style="height: 808px"></td>
+		<td style="height: 808px" bgcolor="#FAFAFA" align="left" valign="top">
+		<!--业务工作区-->
+		<!--人员信息-->
+		<div id="personinfo" style="position: absolute;background-color:white; width: 1080px; height: 808px; z-index: 2">
+			<table cellspacing="1" class="admin-main-tab-admin-child-tab-td-null-style" style="width: 100%; height: 100%">
+				<tr>
+					<td bgcolor="#808080" style="height: 20px">
+					<table cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+						<tr>
+							<td>&nbsp;<strong><span class="admin-main-tab-admin-main-tab-td-logo-style">人员信息&nbsp;</span></strong></td>
+							<td class="admin-child-tab-td-null-style">
+							<img alt="" height="23" src="image/personinfo_close.png" width="26" /></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="height: 33px"><span class="admin-main-tab-style1">UUID</span>:<input name="Text1" type="text" style="width: 81px" /> 
+					<span class="admin-main-tab-style1">姓名</span>:<input name="Text2" type="text" style="width: 59px" />&nbsp;<span class="admin-main-tab-style1">性别</span>:<select name="Select1">
+						<option value="--">--</option>
+						<option value="女">女</option>
+						<option value="男">男</option>
+						</select>&nbsp;<span class="admin-main-tab-style1">公司</span>:<select name="Select2" style="width: 65px">
+						<option value="--">--</option>
+						<option value="女">女</option>
+						<option value="男">男</option>
+						</select>&nbsp;<span class="admin-main-tab-style1">部门:</span><select name="Select3" style="width: 65px">
+						<option value="--">--</option>
+						<option value="女">女</option>
+						<option value="男">男</option>
+						</select>&nbsp;<span class="admin-main-tab-style1">职位</span>:<select name="Select4" style="width: 65px">
+						<option value="--">--</option>
+						<option value="女">女</option>
+						<option value="男">男</option>
+						</select>&nbsp;&nbsp;<span class="admin-main-tab-style1"> 
+					身份证:</span><input name="Text7" type="text" style="width: 145px" /> 
+					<span class="admin-main-tab-style1">电话:</span><input name="Text8" type="text" style="width: 81px" />&nbsp;&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 63px" /></td>
+				</tr>
+				<tr>
+					<td align="left" valign="top">&nbsp;&nbsp;&nbsp; &nbsp;<img alt="" height="18" src="image/addperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">添加人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					</span>
+					<img alt="" class="admin-main-tab-admin-main-tab-td-admins-style" height="19" src="image/delperson.png" width="16" /><span class="admin-main-tab-admin-main-tab-td-admins-style">删除人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					</span>
+					<img alt="" class="admin-main-tab-admin-main-tab-td-admins-style" height="17" src="image/modifiyperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">修改人员信息</span><hr style="height: -12px"/>
+					a
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--copy person info-->
+		<div id="personinfo-copy" style="position: absolute;background-color:white; width: 1080px; height: 808px; z-index: 1">
+asdfasdfasdfasdfasdfasdfasf
+asdfasdfasdf
+asdfasdf
+asdf
+asdf
+asd
+fa
+sdf
+asd
+fa
+sdf
+as
+fas
+df
+asd
+fa
+sdfa
+sdfasdfasdfas
+dfasdf
+			</table>
+		</div>
+
+		<!---->	
+		</td>
 	</tr>
 	<tr bgcolor="#C0C0C0">
-		<td style="height: 33px;" class="style7" colspan="2">
+		<td style="height: 33px;" class="admin-child-tab-td-welcome-style" colspan="2">
 		<span style="color: rgb(81, 81, 81); font-family: Arial; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 24px; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">
 		Copyright ©&nbsp; 2013 zyeeda. All Rights Reserved</span></td>
 	</tr>
 </table>
-
 </body>
 
 </html>

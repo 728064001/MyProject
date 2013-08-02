@@ -1,9 +1,0 @@
-package com.haolei.dao.ajaxdao;
-
-public class queryTelDAO {
-	public boolean querytel(Person person){
-		
-		
-		return true;
-	}
-}

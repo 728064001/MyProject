@@ -41,6 +41,6 @@ public class CompanyNameListDAO {
 	public static void main(String[] args) {
 		CompanyNameListDAO dnyd = new CompanyNameListDAO();
 		List li = dnyd.returnCompanyNameList();
-		System.out.println(li.get(1));
+		System.out.println(li.get(0));
 	}
 }
