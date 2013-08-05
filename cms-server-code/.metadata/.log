@@ -1922,3 +1922,16 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
 
 !ENTRY org.eclipse.update.configurator 2013-08-05 10:53:39.585
 !MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-08-05 11:15:01.691
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

@@ -1,7 +1,0 @@
-package com.haolei.servlet.ajaxservlet;
-
-import javax.servlet.http.HttpServlet;
-
-class registerQueryQQServlet extends HttpServlet {
-	
-}

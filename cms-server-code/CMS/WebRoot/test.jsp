@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>从Servlet获取JSON数据</title>
+    <title>jquery创建表格</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -24,20 +24,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 	<body>
 		<script type="text/javascript">
-		$(function(){
-					$("#test").click(function(){
-					$.ajax({
-					url: "/CMS/registerQueryTelServlet",
-					 type: "POST",
-					 dataType:'json',
-					 data: "15815523493",
-					 success:function(json) {
-						alert(json.status);
-					 }
-				});
-			});
-		});
+	$(function(){
+			var dom_table = $("<table></table>");
+			dom_table.attr("border","1px");
+			dom_table.attr("cellspacing","0px");
+			dom_table.attr("id","tab");
+			dom_table.css("border-color","#0000FF","border-width","1px","border-style","solid");
+		    for (var j = 0; j < 5; j++) { 
+		        var dom_tr = $('<tr></tr>'); 
+		        for (var i = 0; i < 15; i++) { 
+		            var dom_td = $("<td>nihao</td>"); 
+		            dom_tr.append(dom_td); 
+		        } 
+		        dom_table.append(dom_tr); 
+		    } 
+		    $("#t").append(dom_table);
+	});
 		</script>
-		<input type="button" id="test" value="test" />
+		<div id="t" ></div>
 	</body>
 </html>

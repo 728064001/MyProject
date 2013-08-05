@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="728" maximized="true" width="683" x="521" y="-21">
+<window height="728" maximized="true" width="683" x="459" y="-19">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.ui.console.ConsoleView"/>
 </fastViewData>
@@ -55,6 +55,7 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -63,9 +64,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/admin.jsp"/>
 <editorState selectionHPixel="208" selectionLength="0" selectionOffset="5443"/>
 </editor>
-<editor activePart="true" focus="true" id="com.spket.js.jseditor" name="admin.js" partName="admin.js" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/js/admin.js" title="admin.js" tooltip="CMS/WebRoot/js/admin.js" workbook="DefaultEditorWorkbook">
+<editor id="com.spket.js.jseditor" name="admin.js" partName="admin.js" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/js/admin.js" title="admin.js" tooltip="CMS/WebRoot/js/admin.js" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/js/admin.js"/>
-<editorState selectionHPixel="0" selectionLength="4" selectionOffset="994"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1832"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="returnCDPServlet.java" partName="returnCDPServlet.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/servlet/ajaxservlet/returnCDPServlet.java" title="returnCDPServlet.java" tooltip="CMS/src/com/haolei/servlet/ajaxservlet/returnCDPServlet.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/servlet/ajaxservlet/returnCDPServlet.java"/>
@@ -74,9 +75,13 @@
 <editor id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" partName="web.xml" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/WEB-INF/web.xml" title="web.xml" tooltip="E:/git/MyProject/cms-server-code/CMS/WebRoot/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CMS/WebRoot/WEB-INF/web.xml"/>
 </editor>
+<editor activePart="true" focus="true" id="org.eclipse.jst.jsp.core.jspsource.source" name="test.jsp" partName="test.jsp" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/test.jsp" title="test.jsp" tooltip="CMS/WebRoot/test.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/test.jsp"/>
+<editorState selectionHPixel="66" selectionLength="0" selectionOffset="1115"/>
+</editor>
 <editor id="com.spket.js.jseditor" name="register.js" partName="register.js" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/js/register.js" title="register.js" tooltip="CMS/WebRoot/js/register.js" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/js/register.js"/>
-<editorState selectionHPixel="0" selectionLength="580" selectionOffset="434"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1080"/>
 </editor>
 </editors>
 <views>
@@ -114,7 +119,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.spket.js.jseditor" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="org.eclipse.jst.jsp.core.jspsource.source" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -281,49 +286,15 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/servlet/ajaxservlet/returnCDPServlet.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonLearning/src/com/zyeeda/json/createJSON.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSONExample/src/com/lion/JSONServlet.java"/>
 <editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" path="/CMS/WebRoot/WEB-INF/web.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonAjax/src/com/json/servlets/ReturnJson.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonAjax/src/com/json/servlets/JsonServlet.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonLearning/src/com/zyeeda/json/FirstJson.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonLearning/src/com/zyeeda/json/JsonArray.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/admin.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/register.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/admin.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/test.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/register.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/register.js"/>
 </editors>
-<item historyLabel="ReturnJson.java" index="4">
-<position/>
-</item>
-<item historyLabel="returnCDPServlet.java" index="0">
-<position/>
-</item>
-<item historyLabel="JsonServlet.java" index="5">
-<position/>
-</item>
-<item historyLabel="returnCDPServlet.java" index="0">
-<position/>
-</item>
-<item historyLabel="JSONServlet.java" index="2">
-<position/>
-</item>
-<item historyLabel="returnCDPServlet.java" index="0">
-<position/>
-</item>
-<item historyLabel="createJSON.java" index="1">
-<position/>
-</item>
-<item historyLabel="FirstJson.java" index="6">
-<position/>
-</item>
-<item historyLabel="createJSON.java" index="1">
-<position info="not_deleted" x="436" y="0"/>
-</item>
-<item historyLabel="JsonArray.java" index="7">
-<position/>
-</item>
-<item historyLabel="returnCDPServlet.java" index="0">
-<position/>
-</item>
 <item historyLabel="returnCDPServlet.java" index="0">
 <position/>
 </item>
@@ -342,7 +313,7 @@
 <item historyLabel="createJSON.java" index="1">
 <position info="not_deleted" x="436" y="0"/>
 </item>
-<item historyLabel="JsonArray.java" index="7">
+<item historyLabel="JsonArray.java" index="3">
 <position/>
 </item>
 <item historyLabel="createJSON.java" index="1">
@@ -369,75 +340,108 @@
 <item historyLabel="returnCDPServlet.java" index="0">
 <position info="not_deleted" x="302" y="0"/>
 </item>
-<item historyLabel="admin.js" index="8">
+<item historyLabel="admin.js" index="4">
 <position info="not_deleted" x="1188" y="0"/>
 </item>
-<item historyLabel="admin.js" index="8">
+<item historyLabel="admin.js" index="4">
 <position info="not_deleted" x="111" y="0"/>
 </item>
-<item historyLabel="admin.js" index="8">
+<item historyLabel="admin.js" index="4">
 <position info="not_deleted" x="491" y="0"/>
 </item>
-<item historyLabel="JsonArray.java" index="7">
+<item historyLabel="JsonArray.java" index="3">
 <position/>
 </item>
-<item historyLabel="admin.js" index="8">
+<item historyLabel="admin.js" index="4">
 <position info="not_deleted" x="491" y="0"/>
 </item>
 <item historyLabel="createJSON.java" index="1">
 <position info="not_deleted" x="654" y="4"/>
 </item>
-<item historyLabel="admin.js" index="8">
+<item historyLabel="admin.js" index="4">
 <position info="not_deleted" x="491" y="0"/>
+</item>
+<item historyLabel="register.js" index="5">
+<position/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position info="not_deleted" x="374" y="0"/>
+</item>
+<item historyLabel="web.xml" index="2"/>
+<item historyLabel="admin.js" index="4">
+<position info="not_deleted" x="374" y="0"/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position info="not_deleted" x="459" y="0"/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position info="not_deleted" x="518" y="0"/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position info="not_deleted" x="493" y="0"/>
+</item>
+<item historyLabel="admin.jsp" index="6">
+<position info="not_deleted" x="5443" y="0"/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position info="not_deleted" x="493" y="0"/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position info="not_deleted" x="1176" y="0"/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position info="not_deleted" x="677" y="0"/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position info="not_deleted" x="801" y="0"/>
+</item>
+<item historyLabel="admin.js" index="4">
+<position info="not_deleted" x="857" y="0"/>
+</item>
+<item historyLabel="test.jsp" index="7">
+<position/>
+</item>
+<item historyLabel="register.js" index="8">
+<position info="not_deleted" x="1347" y="5"/>
+</item>
+<item historyLabel="test.jsp" index="7">
+<position info="not_deleted" x="1118" y="0"/>
+</item>
+<item historyLabel="register.js" index="8">
+<position info="not_deleted" x="1335" y="74"/>
+</item>
+<item historyLabel="test.jsp" index="7">
+<position info="not_deleted" x="1118" y="0"/>
 </item>
 <item historyLabel="register.js" index="9">
 <position/>
 </item>
-<item historyLabel="admin.js" index="8">
-<position info="not_deleted" x="374" y="0"/>
+<item historyLabel="test.jsp" index="7">
+<position info="not_deleted" x="1064" y="7"/>
 </item>
-<item historyLabel="web.xml" index="3"/>
-<item historyLabel="admin.js" index="8">
-<position info="not_deleted" x="374" y="0"/>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="663" y="7"/>
 </item>
-<item historyLabel="admin.js" index="8">
-<position/>
+<item historyLabel="test.jsp" index="7">
+<position info="not_deleted" x="922" y="36"/>
 </item>
-<item historyLabel="admin.js" index="8">
-<position info="not_deleted" x="459" y="0"/>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="1080" y="0"/>
 </item>
-<item historyLabel="admin.js" index="8">
-<position info="not_deleted" x="518" y="0"/>
-</item>
-<item historyLabel="admin.js" index="8">
-<position info="not_deleted" x="493" y="0"/>
-</item>
-<item historyLabel="admin.jsp" index="10">
-<position info="not_deleted" x="5443" y="0"/>
-</item>
-<item historyLabel="admin.js" index="8">
-<position info="not_deleted" x="493" y="0"/>
-</item>
-<item historyLabel="admin.js" index="8">
-<position info="not_deleted" x="1176" y="0"/>
-</item>
-<item historyLabel="admin.js" index="8">
-<position/>
-</item>
-<item historyLabel="admin.js" index="8">
-<position info="not_deleted" x="677" y="0"/>
-</item>
-<item historyLabel="admin.js" index="8">
-<position/>
-</item>
-<item historyLabel="admin.js" index="8">
-<position/>
-</item>
-<item historyLabel="admin.js" index="8">
-<position info="not_deleted" x="801" y="0"/>
-</item>
-<item active="true" historyLabel="admin.js" index="8">
-<position info="not_deleted" x="857" y="0"/>
+<item active="true" historyLabel="test.jsp" index="7">
+<position info="not_deleted" x="922" y="36"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -462,6 +466,9 @@
 <mruList>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" name="register.js" tooltip="CMS/WebRoot/js/register.js">
 <persistable path="/CMS/WebRoot/js/register.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="test.jsp" tooltip="CMS/WebRoot/test.jsp">
+<persistable path="/CMS/WebRoot/test.jsp"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JsonArray.java" tooltip="JsonLearning/src/com/zyeeda/json/JsonArray.java">
 <persistable path="/JsonLearning/src/com/zyeeda/json/JsonArray.java"/>
@@ -501,9 +508,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" tooltip="CMS/WebRoot/index.jsp">
 <persistable path="/CMS/WebRoot/index.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.imageeditor.editor.ImageEditor" name="user.png" tooltip="CMS/WebRoot/image/user.png">
-<persistable path="/CMS/WebRoot/image/user.png"/>
 </file>
 </mruList>
 </workbench>
