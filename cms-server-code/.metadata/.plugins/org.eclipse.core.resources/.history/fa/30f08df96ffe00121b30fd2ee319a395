@@ -1,0 +1,26 @@
+package com.haolei.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
+import com.haolei.entity.Company;
+import com.haolei.entity.Dep;
+import com.haolei.entity.Person;
+import com.haolei.entity.Post;
+import com.haolei.tools.IdValueTwoQuery;
+import com.haolei.tools.queryRecordCount;
+public class ManagerPersonInfoDAO {
+	/*
+	 * ajax 查询人员信息
+	 */
+	public JSONObject returnPersonInfo(Person person, Company com, Dep de, Post pos, int rows, int pages){
+		return null;
+	}
+	/*
+	 * 
+	 */
+}

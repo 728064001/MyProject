@@ -123,20 +123,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</td>
 				</tr>
 				<tr>
-					<td style="height: 33px"><span class="admin-main-tab-style1">UUID</span>:<input name="Text1" type="text" style="width: 81px" /> 
-					<span class="admin-main-tab-style1">姓名</span>:<input name="Text2" type="text" style="width: 59px" />&nbsp;<span class="admin-main-tab-style1">性别</span>:<select name="Select1">
+					<td style="height: 33px"><span class="admin-main-tab-style1">UUID</span>:<input name="uuid" type="text" style="width: 81px" /> 
+					<span class="admin-main-tab-style1">姓名</span>:<input name="username" type="text" style="width: 59px" />&nbsp;<span class="admin-main-tab-style1">性别</span>:<select name="sex">
 						<option value="--">--</option>
 						<option value="女">女</option>
 						<option value="男">男</option>
 						</select>&nbsp;<span class="admin-main-tab-style1">公司</span>:<select name="comp" id="comp" style="width: 65px">
 						<option value="--">--</option>
-						</select>&nbsp;<span class="admin-main-tab-style1">部门:</span><select name="dep" id="dep" style="width: 65px">
+						</select>&nbsp;<span class="admin-main-tab-style1">部门:</span><select name="dep" id="dep" style="width: 85px">
 						<option value="--">--</option>
-						</select>&nbsp;<span class="admin-main-tab-style1">职位</span>:<select name="post" id="post" style="width: 65px">
+						</select>&nbsp;<span class="admin-main-tab-style1">职位</span>:<select name="post" id="post" style="width: 95px">
 						<option value="--">--</option>
 						</select>&nbsp;&nbsp;<span class="admin-main-tab-style1"> 
-					身份证:</span><input name="Text7" type="text" style="width: 145px" /> 
-					<span class="admin-main-tab-style1">电话:</span><input name="Text8" type="text" style="width: 81px" />&nbsp;&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 63px" /></td>
+					身份证:</span><input name="card" type="text" style="width: 145px" /> 
+					<span class="admin-main-tab-style1">电话:</span><input name="tel" type="text" style="width: 81px" />&nbsp;&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 63px" /></td>
 				</tr>
 				<tr>
 					<td align="left" valign="top">&nbsp;&nbsp;&nbsp; &nbsp;<img alt="" height="18" src="image/addperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">添加人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 

@@ -1935,3 +1935,126 @@ java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
 	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
 	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2013-08-06 09:39:56.367 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 09:40:00.379
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 09:40:00.436
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 09:40:00.438
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 09:40:00.481
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-08-06 09:50:28.234
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-08-06 10:21:48.755
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-08-06 16:28:07.402
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for ManagedBeanBean [in ManagedBeanBean.class [in com.sun.faces.config.beans [in D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.j2eedt.core_6.5.0.zmyeclipse650200806\data\libraryset\EE_5\jsf-impl.jar]]]]
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:975)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getHTMLContentReader(ProposalInfo.java:112)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:99)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:521)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2013-08-06 16:28:07.403
+!MESSAGE Unknown javadoc format for ManagedBeanBean [in ManagedBeanBean.class [in com.sun.faces.config.beans [in D:\Program Files\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.j2eedt.core_6.5.0.zmyeclipse650200806\data\libraryset\EE_5\jsf-impl.jar]]]
+!SESSION 2013-08-06 16:31:06.888 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 16:31:16.610
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 16:31:16.748
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 16:31:16.750
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 16:31:16.810
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-08-06 16:33:19.374
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-08-06 16:36:15.789
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.
+!SESSION 2013-08-06 17:55:55.184 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 17:55:59.226
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 17:55:59.285
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 17:55:59.287
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-06 17:55:59.312
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-08-06 17:56:04.260
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2013-08-06 17:56:16.254
+!MESSAGE A workspace crash was detected. The previous session did not exit normally. Not using saved taglib indexes
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-08-06 17:56:16.900
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-08-06 17:56:19.359
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

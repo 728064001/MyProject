@@ -1,0 +1,45 @@
+package com.haolei.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.haolei.entity.Company;
+import com.haolei.entity.Dep;
+import com.haolei.entity.Person;
+import com.haolei.entity.Post;
+
+public class PersonInfoServlet extends HttpServlet {
+
+	@Override
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String uuid = request.getParameter("uuid");
+		String username = request.getParameter("username");
+		String sex = request.getParameter("sex");
+		String company = request.getParameter("comp");
+		String dep = request.getParameter("dep");
+		String post = request.getParameter("post");
+		String card = request.getParameter("card");
+		String tel = request.getParameter("tel");
+		
+		Person person = new Person();
+		person.setUuid(uuid);
+		person.setUsername(username);
+		person.setSex(sex);
+		person.setTel(tel);
+		person.setCard(card);
+		
+		Dep de = new Dep();
+		de.setDep(dep);
+		
+		Company comp = new Company();
+		comp.setCompanyName(company);
+		
+		Post pos = new Post();
+		pos.setPost(post);
+	}
+}

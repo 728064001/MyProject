@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
-<window height="728" maximized="true" width="683" x="459" y="-19">
+<window height="728" maximized="true" width="683" x="489" y="30">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.ui.console.ConsoleView"/>
 </fastViewData>
@@ -52,36 +52,31 @@
 <presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
 <part id="0"/>
 <part id="1"/>
+<part id="4"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.jst.jsp.core.jspsource.source" name="admin.jsp" partName="admin.jsp" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/admin.jsp" title="admin.jsp" tooltip="CMS/WebRoot/admin.jsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/admin.jsp"/>
-<editorState selectionHPixel="208" selectionLength="0" selectionOffset="5443"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="7291"/>
 </editor>
 <editor id="com.spket.js.jseditor" name="admin.js" partName="admin.js" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/js/admin.js" title="admin.js" tooltip="CMS/WebRoot/js/admin.js" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/js/admin.js"/>
 <editorState selectionHPixel="0" selectionLength="0" selectionOffset="1832"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="returnCDPServlet.java" partName="returnCDPServlet.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/servlet/ajaxservlet/returnCDPServlet.java" title="returnCDPServlet.java" tooltip="CMS/src/com/haolei/servlet/ajaxservlet/returnCDPServlet.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/servlet/ajaxservlet/returnCDPServlet.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="302"/>
-</editor>
 <editor id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" partName="web.xml" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/WEB-INF/web.xml" title="web.xml" tooltip="E:/git/MyProject/cms-server-code/CMS/WebRoot/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/CMS/WebRoot/WEB-INF/web.xml"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jst.jsp.core.jspsource.source" name="test.jsp" partName="test.jsp" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/test.jsp" title="test.jsp" tooltip="CMS/WebRoot/test.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/test.jsp"/>
-<editorState selectionHPixel="66" selectionLength="0" selectionOffset="1115"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ManagerPersonInfoDAO.java" partName="ManagerPersonInfoDAO.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/dao/ManagerPersonInfoDAO.java" title="ManagerPersonInfoDAO.java" tooltip="CMS/src/com/haolei/dao/ManagerPersonInfoDAO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/dao/ManagerPersonInfoDAO.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="3262"/>
 </editor>
-<editor id="com.spket.js.jseditor" name="register.js" partName="register.js" path="E:/git/MyProject/cms-server-code/CMS/WebRoot/js/register.js" title="register.js" tooltip="CMS/WebRoot/js/register.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/WebRoot/js/register.js"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1080"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PersonInfoServlet.java" partName="PersonInfoServlet.java" path="E:/git/MyProject/cms-server-code/CMS/src/com/haolei/servlet/PersonInfoServlet.java" title="PersonInfoServlet.java" tooltip="CMS/src/com/haolei/servlet/PersonInfoServlet.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CMS/src/com/haolei/servlet/PersonInfoServlet.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="758"/>
 </editor>
 </editors>
 <views>
@@ -119,7 +114,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jst.jsp.core.jspsource.source" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -250,7 +245,7 @@
 <info part="org.eclipse.ui.views.TaskList" ratio="0.49953574" ratioLeft="538" ratioRight="539" relationship="2" relative="org.eclipse.ui.views.BookmarkView"/>
 <info part="com.genuitec.eclipse.ui.HTMLView" ratio="0.49953574" ratioLeft="538" ratioRight="539" relationship="2" relative="org.eclipse.ui.views.BookmarkView"/>
 <info part="org.eclipse.search.ui.views.SearchView" ratio="0.49953574" ratioLeft="538" ratioRight="539" relationship="2" relative="org.eclipse.ui.views.BookmarkView"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@f1b66c" ratio="0.7483974" ratioLeft="467" ratioRight="157" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@12c70d2" ratio="0.7496013" ratioLeft="470" ratioRight="157" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -284,164 +279,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/servlet/ajaxservlet/returnCDPServlet.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonLearning/src/com/zyeeda/json/createJSON.java"/>
-<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" path="/CMS/WebRoot/WEB-INF/web.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JsonLearning/src/com/zyeeda/json/JsonArray.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/admin.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/register.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/tools/queryRecordCount.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/servlet/PersonInfoServlet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/dao/ManagerPersonInfoDAO.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/admin.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/test.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/register.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" path="/CMS/WebRoot/js/register.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/dao/Dbconn.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/CMS/WebRoot/admin.jsp"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" path="/CMS/WebRoot/WEB-INF/web.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CMS/src/com/haolei/dao/ManagerPersonInfoDAO.java"/>
 </editors>
-<item historyLabel="returnCDPServlet.java" index="0">
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="returnCDPServlet.java" index="0">
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="returnCDPServlet.java" index="0">
-<position info="not_deleted" x="1560" y="0"/>
-</item>
-<item historyLabel="returnCDPServlet.java" index="0">
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="returnCDPServlet.java" index="0">
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="createJSON.java" index="1">
-<position info="not_deleted" x="436" y="0"/>
+<item historyLabel="queryRecordCount.java" index="0">
+<position info="not_deleted" x="248" y="11"/>
 </item>
-<item historyLabel="JsonArray.java" index="3">
+<item historyLabel="queryRecordCount.java" index="0">
+<position info="not_deleted" x="825" y="0"/>
+</item>
+<item historyLabel="PersonInfoServlet.java" index="1">
+<position info="not_deleted" x="912" y="12"/>
+</item>
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="createJSON.java" index="1">
-<position info="not_deleted" x="654" y="4"/>
-</item>
-<item historyLabel="returnCDPServlet.java" index="0">
-<position info="not_deleted" x="1570" y="0"/>
-</item>
-<item historyLabel="returnCDPServlet.java" index="0">
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="returnCDPServlet.java" index="0">
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="returnCDPServlet.java" index="0">
+<item historyLabel="admin.jsp" index="3">
+<position info="not_deleted" x="4947" y="2"/>
+</item>
+<item historyLabel="PersonInfoServlet.java" index="1">
+<position info="not_deleted" x="912" y="12"/>
+</item>
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="returnCDPServlet.java" index="0">
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="returnCDPServlet.java" index="0">
-<position info="not_deleted" x="2333" y="0"/>
-</item>
-<item historyLabel="returnCDPServlet.java" index="0">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="1188" y="0"/>
-</item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="111" y="0"/>
-</item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="491" y="0"/>
-</item>
-<item historyLabel="JsonArray.java" index="3">
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="491" y="0"/>
-</item>
-<item historyLabel="createJSON.java" index="1">
-<position info="not_deleted" x="654" y="4"/>
-</item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="491" y="0"/>
-</item>
-<item historyLabel="register.js" index="5">
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="374" y="0"/>
-</item>
-<item historyLabel="web.xml" index="2"/>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="374" y="0"/>
-</item>
-<item historyLabel="admin.js" index="4">
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
 <position/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="459" y="0"/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
+<position info="not_deleted" x="601" y="0"/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="518" y="0"/>
+<item historyLabel="Dbconn.java" index="4">
+<position info="not_deleted" x="198" y="6"/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="493" y="0"/>
+<item historyLabel="queryRecordCount.java" index="0">
+<position info="not_deleted" x="825" y="0"/>
 </item>
-<item historyLabel="admin.jsp" index="6">
-<position info="not_deleted" x="5443" y="0"/>
+<item historyLabel="Dbconn.java" index="4">
+<position info="not_deleted" x="198" y="6"/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="493" y="0"/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
+<position info="not_deleted" x="601" y="0"/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="1176" y="0"/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
+<position info="not_deleted" x="876" y="0"/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
+<position info="not_deleted" x="2788" y="0"/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="677" y="0"/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
+<position info="not_deleted" x="565" y="5"/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position/>
+<item historyLabel="PersonInfoServlet.java" index="1">
+<position info="not_deleted" x="1530" y="0"/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="2">
+<position info="not_deleted" x="565" y="5"/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="801" y="0"/>
+<item historyLabel="PersonInfoServlet.java" index="1">
+<position info="not_deleted" x="1530" y="0"/>
 </item>
-<item historyLabel="admin.js" index="4">
-<position info="not_deleted" x="857" y="0"/>
+<item historyLabel="PersonInfoServlet.java" index="1">
+<position info="not_deleted" x="1434" y="0"/>
 </item>
-<item historyLabel="test.jsp" index="7">
-<position/>
+<item historyLabel="PersonInfoServlet.java" index="1">
+<position info="not_deleted" x="1502" y="6"/>
 </item>
-<item historyLabel="register.js" index="8">
-<position info="not_deleted" x="1347" y="5"/>
+<item historyLabel="PersonInfoServlet.java" index="1">
+<position info="not_deleted" x="755" y="0"/>
 </item>
-<item historyLabel="test.jsp" index="7">
-<position info="not_deleted" x="1118" y="0"/>
+<item historyLabel="PersonInfoServlet.java" index="1">
+<position info="not_deleted" x="1711" y="0"/>
 </item>
-<item historyLabel="register.js" index="8">
-<position info="not_deleted" x="1335" y="74"/>
+<item historyLabel="admin.jsp" index="5">
+<position info="not_deleted" x="7291" y="0"/>
 </item>
-<item historyLabel="test.jsp" index="7">
-<position info="not_deleted" x="1118" y="0"/>
+<item historyLabel="PersonInfoServlet.java" index="1">
+<position info="not_deleted" x="758" y="0"/>
 </item>
-<item historyLabel="register.js" index="9">
-<position/>
+<item historyLabel="web.xml" index="6"/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="565" y="5"/>
 </item>
-<item historyLabel="test.jsp" index="7">
-<position info="not_deleted" x="1064" y="7"/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4240" y="0"/>
 </item>
-<item historyLabel="register.js" index="9">
-<position info="not_deleted" x="663" y="7"/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4268" y="0"/>
 </item>
-<item historyLabel="test.jsp" index="7">
-<position info="not_deleted" x="922" y="36"/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4437" y="0"/>
 </item>
-<item historyLabel="register.js" index="9">
-<position info="not_deleted" x="1080" y="0"/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4479" y="0"/>
 </item>
-<item active="true" historyLabel="test.jsp" index="7">
-<position info="not_deleted" x="922" y="36"/>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4541" y="0"/>
+</item>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4390" y="0"/>
+</item>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4286" y="0"/>
+</item>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4454" y="0"/>
+</item>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4498" y="0"/>
+</item>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4308" y="0"/>
+</item>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4325" y="0"/>
+</item>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4342" y="0"/>
+</item>
+<item historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="4360" y="0"/>
+</item>
+<item active="true" historyLabel="ManagerPersonInfoDAO.java" index="7">
+<position info="not_deleted" x="1580" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -449,9 +442,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topleft"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -459,19 +449,45 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@f1b66c"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dbconn.java" tooltip="CMS/src/com/haolei/dao/Dbconn.java">
+<persistable path="/CMS/src/com/haolei/dao/Dbconn.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="queryRecordCount.java" tooltip="CMS/src/com/haolei/tools/queryRecordCount.java">
+<persistable path="/CMS/src/com/haolei/tools/queryRecordCount.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IdValueTwoQuery.java" tooltip="CMS/src/com/haolei/tools/IdValueTwoQuery.java">
+<persistable path="/CMS/src/com/haolei/tools/IdValueTwoQuery.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PersonInfoServlet.java" tooltip="CMS/src/com/haolei/servlet/PersonInfoServlet.java">
+<persistable path="/CMS/src/com/haolei/servlet/PersonInfoServlet.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Company.java" tooltip="CMS/src/com/haolei/entity/Company.java">
+<persistable path="/CMS/src/com/haolei/entity/Company.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RegisterDAO.java" tooltip="CMS/src/com/haolei/dao/RegisterDAO.java">
+<persistable path="/CMS/src/com/haolei/dao/RegisterDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DepNameListDAO.java" tooltip="CMS/src/com/haolei/dao/DepNameListDAO.java">
+<persistable path="/CMS/src/com/haolei/dao/DepNameListDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JsonArray.java" tooltip="JsonLearning/src/com/zyeeda/json/JsonArray.java">
+<persistable path="/JsonLearning/src/com/zyeeda/json/JsonArray.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ManagerPersonInfo.java" tooltip="CMS/src/com/haolei/dao/ManagerPersonInfo.java">
+<persistable path="/CMS/src/com/haolei/dao/ManagerPersonInfo.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="admin.css" tooltip="CMS/WebRoot/css/admin.css">
+<persistable path="/CMS/WebRoot/css/admin.css"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.spket.js.jseditor" name="register.js" tooltip="CMS/WebRoot/js/register.js">
 <persistable path="/CMS/WebRoot/js/register.js"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="test.jsp" tooltip="CMS/WebRoot/test.jsp">
 <persistable path="/CMS/WebRoot/test.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JsonArray.java" tooltip="JsonLearning/src/com/zyeeda/json/JsonArray.java">
-<persistable path="/JsonLearning/src/com/zyeeda/json/JsonArray.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FirstJson.java" tooltip="JsonLearning/src/com/zyeeda/json/FirstJson.java">
 <persistable path="/JsonLearning/src/com/zyeeda/json/FirstJson.java"/>
@@ -481,33 +497,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JSONServlet.java" tooltip="JSONExample/src/com/lion/JSONServlet.java">
 <persistable path="/JSONExample/src/com/lion/JSONServlet.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JsonServlet.java" tooltip="JsonAjax/src/com/json/servlets/JsonServlet.java">
-<persistable path="/JsonAjax/src/com/json/servlets/JsonServlet.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReturnJson.java" tooltip="JsonAjax/src/com/json/servlets/ReturnJson.java">
-<persistable path="/JsonAjax/src/com/json/servlets/ReturnJson.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" name="web.xml" tooltip="CMS/WebRoot/WEB-INF/web.xml">
-<persistable path="/CMS/WebRoot/WEB-INF/web.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PostNameListDAO.java" tooltip="CMS/src/com/haolei/dao/PostNameListDAO.java">
-<persistable path="/CMS/src/com/haolei/dao/PostNameListDAO.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DepNameListDAO.java" tooltip="CMS/src/com/haolei/dao/DepNameListDAO.java">
-<persistable path="/CMS/src/com/haolei/dao/DepNameListDAO.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CompanyNameListDAO.java" tooltip="CMS/src/com/haolei/dao/CompanyNameListDAO.java">
-<persistable path="/CMS/src/com/haolei/dao/CompanyNameListDAO.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="returnCDPServlet.java" tooltip="CMS/src/com/haolei/servlet/ajaxservlet/returnCDPServlet.java">
-<persistable path="/CMS/src/com/haolei/servlet/ajaxservlet/returnCDPServlet.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="queryCDPJSONDAO.java" tooltip="CMS/src/com/haolei/dao/ajaxdao/queryCDPJSONDAO.java">
-<persistable path="/CMS/src/com/haolei/dao/ajaxdao/queryCDPJSONDAO.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" tooltip="CMS/WebRoot/index.jsp">
-<persistable path="/CMS/WebRoot/index.jsp"/>
 </file>
 </mruList>
 </workbench>

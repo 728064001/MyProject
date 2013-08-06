@@ -10,9 +10,13 @@
 <fullyQualifiedTypeName name="com.haolei.dao.ajaxdao.queryTelDAO"/>
 <fullyQualifiedTypeName name="com.haolei.dao.ajaxdao.queryqqDAO"/>
 <fullyQualifiedTypeName name="com.haolei.dao.ajaxdao.queryCardDAO"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="net.sf.json.JSONObject"/>
+<fullyQualifiedTypeName name="com.haolei.tools.IdValueTwoQuery"/>
+<fullyQualifiedTypeName name="com.haolei.tools.queryRecordCount"/>
+<fullyQualifiedTypeName name="com.haolei.entity.Company"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.haolei.dao.ManagerPersonInfoDAO"/>
 </qualifiedTypeNameHistroy>

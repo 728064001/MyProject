@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.haolei.dao.ManagerPersonInfo&apos; to &apos;ManagerPersonInfoDAO&apos;&#x0D;&#x0A;- Original project: &apos;CMS&apos;&#x0D;&#x0A;- Original element: &apos;com.haolei.dao.ManagerPersonInfo&apos;&#x0D;&#x0A;- Renamed element: &apos;com.haolei.dao.ManagerPersonInfoDAO&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ManagerPersonInfo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.haolei.dao{ManagerPersonInfo.java[ManagerPersonInfo" matchStrategy="1" name="ManagerPersonInfoDAO" qualified="false" references="true" similarDeclarations="false" stamp="1375771807786" textual="false" version="1.0"/>
+</session>

@@ -1,8 +1,0 @@
-package com.haolei.dao;
-
-public class LoginDAO {
-	public boolean login(Person person){
-
-		return true;
-	}
-}

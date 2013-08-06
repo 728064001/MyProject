@@ -8,6 +8,7 @@ import com.haolei.entity.Company;
 import com.haolei.entity.Dep;
 import com.haolei.entity.Person;
 import com.haolei.entity.Post;
+import com.haolei.tools.IdValueTwoQuery;
 
 public class RegisterDAO {
 	public boolean register(Person person, Company company, Dep dep, Post post){
@@ -21,56 +22,60 @@ public class RegisterDAO {
 		
 		
 		
-		//1.根据Company对象的CompanyName值，在Company_tab中查对应的ID
-		String queryCompanyidStr = "select id from Company_tab where companyname = ?";
-		int companyid=0;
-		try{
-			pstm = conn.prepareStatement(queryCompanyidStr);
-			pstm.setString(1, company.getCompanyName());
-			res = pstm.executeQuery();
-			while(res.next()){
-				companyid = res.getInt(1);
-			}
-		}catch(Exception e){
-			e.printStackTrace();
-			return false;
-		}finally{
-			Dbconn.closeALL(conn, pstm, res);
-		}
+//		//1.根据Company对象的CompanyName值，在Company_tab中查对应的ID
+//		String queryCompanyidStr = "select id from Company_tab where companyname = ?";
+//		int companyid=0;
+//		try{
+//			pstm = conn.prepareStatement(queryCompanyidStr);
+//			pstm.setString(1, company.getCompanyName());
+//			res = pstm.executeQuery();
+//			while(res.next()){
+//				companyid = res.getInt(1);
+//			}
+//		}catch(Exception e){
+//			e.printStackTrace();
+//			return false;
+//		}finally{
+//			Dbconn.closeALL(conn, pstm, res);
+//		}
+//		
+//		//根据Dep对象的dep值，在dep_tab中查询对应id
+//		String queryDepidStr = "select id from dep_tab where dep = ?";
+//		int depid=0;
+//		try{
+//			pstm = conn.prepareStatement(queryDepidStr);
+//			pstm.setString(1, dep.getDep());
+//			res = pstm.executeQuery();
+//			while(res.next()){
+//				depid = res.getInt(1);
+//			}
+//		}catch(Exception e){
+//			e.printStackTrace();
+//			return false;
+//		}finally{
+//			Dbconn.closeALL(conn, pstm, res);
+//		}
+//		
+//		//根据Post对象的post值，在post_tab中查询对应的ID
+//		String querypostidStr = "select id from post_tab where post = ?";
+//		int postid=0;
+//		try{
+//			pstm = conn.prepareStatement(querypostidStr);
+//			pstm.setString(1, post.getPost());
+//			res = pstm.executeQuery();
+//			while(res.next()){
+//				postid = res.getInt(1);
+//			}
+//		}catch(Exception e){
+//			e.printStackTrace();
+//			return false;
+//		}finally{
+//			Dbconn.closeALL(conn, pstm, res);
+//		}
+//		
+//		
 		
-		//根据Dep对象的dep值，在dep_tab中查询对应id
-		String queryDepidStr = "select id from dep_tab where dep = ?";
-		int depid=0;
-		try{
-			pstm = conn.prepareStatement(queryDepidStr);
-			pstm.setString(1, dep.getDep());
-			res = pstm.executeQuery();
-			while(res.next()){
-				depid = res.getInt(1);
-			}
-		}catch(Exception e){
-			e.printStackTrace();
-			return false;
-		}finally{
-			Dbconn.closeALL(conn, pstm, res);
-		}
-		
-		//根据Post对象的post值，在post_tab中查询对应的ID
-		String querypostidStr = "select id from post_tab where post = ?";
-		int postid=0;
-		try{
-			pstm = conn.prepareStatement(querypostidStr);
-			pstm.setString(1, post.getPost());
-			res = pstm.executeQuery();
-			while(res.next()){
-				postid = res.getInt(1);
-			}
-		}catch(Exception e){
-			e.printStackTrace();
-			return false;
-		}finally{
-			Dbconn.closeALL(conn, pstm, res);
-		}
+		IdValueTwoQuery iq = new IdValueTwoQuery();
 		
 		
 		//test
@@ -93,9 +98,9 @@ public class RegisterDAO {
 			pstm.setString(7, person.getBrithday());
 			pstm.setInt(8, person.getAge());
 			pstm.setString(9, person.getCard());
-			pstm.setInt(10, companyid);
-			pstm.setInt(11, depid);
-			pstm.setInt(12, postid);
+			pstm.setInt(10, iq.valueQueryId("company", company.getCompanyName()));
+			pstm.setInt(11, iq.valueQueryId("dep", dep.getDep()));
+			pstm.setInt(12, iq.valueQueryId("post", post.getPost()));
 			pstm.setString(13, person.getIsadmin());
 			pstm.setString(14, person.getImagepath());
 			

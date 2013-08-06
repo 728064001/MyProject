@@ -1,0 +1,22 @@
+package com.haolei.tools;
+
+import com.haolei.dao.Dbconn;
+
+public class IdValueTwoQuery {
+	/*
+	 * 这个类中有两个方法
+	 * 方法一：
+	 * 		根据名称查id
+	 * 
+	 * 
+	 * 方法二：
+	 * 		根据id查名称
+	 * 
+	 * 表：company_tab,dep_tab,post_tab
+	 * 
+	 */
+	public int valueQueryId(String tabName){
+		
+		return 0;
+	}
+}
