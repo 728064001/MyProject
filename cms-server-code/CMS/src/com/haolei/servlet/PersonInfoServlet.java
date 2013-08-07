@@ -24,6 +24,13 @@ public class PersonInfoServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
 		PrintWriter pr = response.getWriter();
+		//计数
+		int nowpage = Integer.parseInt(request.getParameter("nopage"));//当前页
+		int pagetop = Integer.parseInt(request.getParameter("pagetop"));//每页显示多少行
+		
+		int st = nowpage*pagetop;
+		int et = pagetop;
+		
 		String uuid = request.getParameter("uuid");
 		String username = request.getParameter("username");
 		String sex = request.getParameter("sex");
@@ -50,7 +57,7 @@ public class PersonInfoServlet extends HttpServlet {
 		pos.setPost(post);
 		
 		ManagerPersonInfoDAO managerpersoninfodao = new ManagerPersonInfoDAO();
-		JSONObject personjson = managerpersoninfodao.returnPersonInfo(person, com, de, pos, 2, 0);
+		JSONObject personjson = managerpersoninfodao.returnPersonInfo(person, com, de, pos);
 		pr.print(personjson);
 	}
 }

@@ -10,6 +10,16 @@ $(function(){
 	$("#personinfo_close_image").click(function(){
 		$("#personinfo").hide(); //点击关闭按钮时，隐藏人员信息窗口；
 	});	
+	
+	//点击查询是的事件
+		$(function(){
+			$("#search").click(
+				function(){
+					personsearch();
+				}
+			);		
+		});
+		
 });
 
 //从servlet端获取公司、部门、职位 的一组JSON,然后再调用方法把数据放到对应的地方
@@ -44,6 +54,22 @@ function viwedata(json){
 		postobj.append("<option value="+"'"+json.post[i].name+"'"+">"+json.post[i].name+"</option>");
 	}
 }
+//从servlet端获取人员信息JSON数据
+function returnPERSONinfo(args){
+		$(function(){
+			$.ajax({
+				url: args,
+				type: "POST",
+				dataType:'json',
+				success:function(json) {
+					alert(json.countnum);
+				}
+			});
+		});
+}
+
+
+
 	
 	
 	
@@ -151,9 +177,23 @@ var zNodes =[
 			$("#personinfo").show(); //tree 事件 显示人员信息窗口
 	}
 //tree 事件-------------------------^^^^^^^^^^^^^^------------------------------
+//tree 初始化
 		$(function(){
 			$.fn.zTree.init($("#treeDemo"),setting,zNodes);
 		});
-	
-
-		
+//tree 初始化-------------------------------------^^^^^^^^^^^^^^^^^----------------
+var nopage=1;
+var pagetop=4;
+function personsearch(){
+		var form_uuid = $("#uuid").val();
+		var form_username = $("#username").val();
+		var form_sex = $("#sex option:selected").text();
+		var form_comp = $("#comp option:selected").text();
+		var form_dep = $("#dep option:selected").text();
+		var form_post = $("#post option:selected").text();
+		var form_card = $("#card").val();
+		var form_tel = $("#tel").val();
+		var args = "/CMS/PersonInfoServlet?"+"&uuid="+form_uuid+"&username="+form_username+"&sex="+form_sex+"&comp="+form_comp+"&dep="+form_dep+"&post="+form_post+"&card="+form_card+"&tel="+form_tel+"&nopage="+nopage+"&pagetop="+pagetop;
+		alert(args);
+		returnPERSONinfo(args);
+		}

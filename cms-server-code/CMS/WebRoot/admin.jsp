@@ -123,8 +123,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</td>
 				</tr>
 				<tr>
-					<td style="height: 33px"><span class="admin-main-tab-style1">UUID</span>:<input name="uuid" type="text" style="width: 81px" /> 
-					<span class="admin-main-tab-style1">姓名</span>:<input name="username" type="text" style="width: 59px" />&nbsp;<span class="admin-main-tab-style1">性别</span>:<select name="sex">
+					<td style="height: 33px"><span class="admin-main-tab-style1">UUID</span>:<input name="uuid" id="uuid" type="text" style="width: 81px" /> 
+					<span class="admin-main-tab-style1">姓名</span>:<input name="username" id="username" type="text" style="width: 59px" />&nbsp;<span class="admin-main-tab-style1">性别</span>:<select name="sex" id="sex">
 						<option value="--">--</option>
 						<option value="女">女</option>
 						<option value="男">男</option>
@@ -135,8 +135,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</select>&nbsp;<span class="admin-main-tab-style1">职位</span>:<select name="post" id="post" style="width: 95px">
 						<option value="--">--</option>
 						</select>&nbsp;&nbsp;<span class="admin-main-tab-style1"> 
-					身份证:</span><input name="card" type="text" style="width: 145px" /> 
-					<span class="admin-main-tab-style1">电话:</span><input name="tel" type="text" style="width: 81px" />&nbsp;&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 63px" /></td>
+					身份证:</span><input name="card" id="card" type="text" style="width: 145px" /> 
+					<span class="admin-main-tab-style1">电话:</span><input name="tel" id="tel" type="text" style="width: 81px" />&nbsp;&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 63px" /></td>
 				</tr>
 				<tr>
 					<td align="left" valign="top">&nbsp;&nbsp;&nbsp; &nbsp;<img alt="" height="18" src="image/addperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">添加人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -144,7 +144,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<img alt="" class="admin-main-tab-admin-main-tab-td-admins-style" height="19" src="image/delperson.png" width="16" /><span class="admin-main-tab-admin-main-tab-td-admins-style">删除人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					</span>
 					<img alt="" class="admin-main-tab-admin-main-tab-td-admins-style" height="17" src="image/modifiyperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">修改人员信息</span><hr style="height: -12px"/>
-					
+					<!--根据ajax 返回的数据动态创建表格 -->
+					<div id="personinfotable"></div>
+						<span id="f" ><a id='mainpa'>首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id='uppa'>上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id='downpa'>下一页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+						跳转到<input type="text" width="80px" />页&nbsp;<input type="button" value="转到>"/>
+						</span><hr/>
+					<!--根据ajax 返回的数据动态创建表格 ----------------------------------->
 					</td>
 				</tr>
 			</table>
