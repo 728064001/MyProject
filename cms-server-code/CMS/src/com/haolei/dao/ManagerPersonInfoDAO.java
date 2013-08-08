@@ -104,13 +104,11 @@ public class ManagerPersonInfoDAO {
 				percell.put("company", iq.IdQueryValue("company", res.getInt("companyid")));
 				percell.put("dep", iq.IdQueryValue("dep", res.getInt("depid")));
 				percell.put("post", iq.IdQueryValue("post", res.getInt("postid")));
-				
 				perary.add(percell);
-				
 				}
 				nums++;
 			}
-			System.out.println(nums);
+//			System.out.println(nums);
 			perjson.put("vpages",vpages);//总页数
 			perjson.put("courows",recordcount);//符合查询条件的总数据行数
 //			perjson.put("countnum", eachpagevrow);//一页显示多少行
@@ -131,7 +129,7 @@ public class ManagerPersonInfoDAO {
 		Person p = new Person();
 		p.setUuid("");
 		p.setUsername("");
-		p.setSex("男");
+		p.setSex("");
 		p.setTel("");
 		p.setCard("");
 		Company c = new Company();
@@ -140,7 +138,7 @@ public class ManagerPersonInfoDAO {
 		d.setDep("");
 		Post ps = new Post();
 		ps.setPost("");
-		JSONObject j = mif.returnPersonInfo(p, c, d, ps,2,3);
-		System.out.println(j);
+		JSONObject j = mif.returnPersonInfo(p, c, d, ps,2,2);
+		
 	}
 }

@@ -135,8 +135,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</select>&nbsp;<span class="admin-main-tab-style1">职位</span>:<select name="post" id="post" style="width: 95px">
 						<option value="--">--</option>
 						</select>&nbsp;&nbsp;<span class="admin-main-tab-style1"> 
-					身份证:</span><input name="card" id="card" type="text" style="width: 145px" /> 
-					<span class="admin-main-tab-style1">电话:</span><input name="tel" id="tel" type="text" style="width: 81px" />&nbsp;&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 63px" /></td>
+					身份证:</span><input name="card" id="card" type="text" style="width: 130px" /> 
+					<span class="admin-main-tab-style1">电话:</span><input name="tel" id="tel" type="text" style="width: 81px" />&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 50px" /></td>
 				</tr>
 				<tr>
 					<td align="left" valign="top">&nbsp;&nbsp;&nbsp; &nbsp;<img alt="" height="18" src="image/addperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">添加人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 

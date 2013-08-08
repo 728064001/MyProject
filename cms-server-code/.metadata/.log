@@ -2239,3 +2239,553 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+!SESSION 2013-08-08 20:22:07.949 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-08-08 20:22:41.453
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-08 20:22:41.735
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-08 20:22:41.745
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-08-08 20:22:41.847
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2013-08-08 20:24:06.134
+!MESSAGE Resource is out of sync with the file system: '/CMS/WebRoot/WEB-INF/web.xml'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/CMS/WebRoot/WEB-INF/web.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:613)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:287)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:276)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:685)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:877)
+	at org.eclipse.jst.jsp.core.internal.contentmodel.tld.TLDCMDocumentManager.handlePreludes(TLDCMDocumentManager.java:987)
+	at org.eclipse.jst.jsp.core.internal.contentmodel.tld.TLDCMDocumentManager$DirectiveStructuredDocumentRegionHandler.nodeParsed(TLDCMDocumentManager.java:151)
+	at org.eclipse.wst.xml.core.internal.parser.XMLSourceParser.fireNodeParsed(XMLSourceParser.java:125)
+	at org.eclipse.jst.jsp.core.internal.parser.JSPSourceParser.parseNodes(JSPSourceParser.java:296)
+	at org.eclipse.wst.xml.core.internal.parser.XMLSourceParser.getDocumentRegions(XMLSourceParser.java:162)
+	at org.eclipse.wst.sse.core.internal.text.StructuredDocumentReParser._core_reparse_text(StructuredDocumentReParser.java:309)
+	at org.eclipse.wst.sse.core.internal.text.StructuredDocumentReParser.core_reparse(StructuredDocumentReParser.java:708)
+	at org.eclipse.jst.jsp.core.internal.parser.JSPReParser.reparse(JSPReParser.java:143)
+	at org.eclipse.wst.sse.core.internal.text.StructuredDocumentReParser.reparse(StructuredDocumentReParser.java:1284)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.updateModel(BasicStructuredDocument.java:2686)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(BasicStructuredDocument.java:1919)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2395)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$0(JobSafeStructuredDocument.java:1)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$1.run(JobSafeStructuredDocument.java:98)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(EditorExecutionContext.java:42)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(JobSafeStructuredDocument.java:109)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.set(BasicStructuredDocument.java:2912)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.handleFileContentChanged(ResourceTextFileBuffer.java:479)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer$2.execute(ResourceFileBuffer.java:151)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer$SafeFileChange.run(ResourceFileBuffer.java:86)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:129)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3659)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3296)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2013-08-08 20:24:06.134
+!MESSAGE Resource is out of sync with the file system: '/CMS/WebRoot/WEB-INF/web.xml'.
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-08-08 20:24:21.760
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2013-08-08 20:24:22.322
+!MESSAGE WARNING: Prevented recursive attempt to activate part org.eclipse.ui.console.ConsoleView while still in the middle of activating part com.spket.js.jseditor
+!STACK 0
+java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate part org.eclipse.ui.console.ConsoleView while still in the middle of activating part com.spket.js.jseditor
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3352)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2946)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:265)
+	at org.eclipse.ui.internal.PartPane.setFocus(PartPane.java:311)
+	at org.eclipse.ui.internal.FastViewPane.showView(FastViewPane.java:495)
+	at org.eclipse.ui.internal.Perspective.showFastView(Perspective.java:2034)
+	at org.eclipse.ui.internal.Perspective.setActiveFastView(Perspective.java:1794)
+	at org.eclipse.ui.internal.Perspective.setActiveFastView(Perspective.java:1807)
+	at org.eclipse.ui.internal.Perspective.bringToTop(Perspective.java:213)
+	at org.eclipse.ui.internal.WorkbenchPage.internalBringToTop(WorkbenchPage.java:793)
+	at org.eclipse.ui.internal.WorkbenchPage.bringToTop(WorkbenchPage.java:853)
+	at org.eclipse.ui.internal.console.ConsoleManager$ShowConsoleViewJob.runInUIThread(ConsoleManager.java:307)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:94)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:129)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3659)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3296)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.runEventLoop(EventLoopProgressMonitor.java:123)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.isCanceled(EventLoopProgressMonitor.java:97)
+	at org.eclipse.core.internal.jobs.ThreadJob.isCanceled(ThreadJob.java:132)
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:167)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:87)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:225)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:117)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:1744)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1792)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:113)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:73)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:63)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:450)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1153)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:4450)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:220)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:4574)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:210)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:4552)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:923)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.partActivated(AbstractTextEditor.java:881)
+	at org.eclipse.ui.internal.PartListenerList$1.run(PartListenerList.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList.fireEvent(PartListenerList.java:57)
+	at org.eclipse.ui.internal.PartListenerList.firePartActivated(PartListenerList.java:70)
+	at org.eclipse.ui.internal.PartService.firePartActivated(PartService.java:73)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:171)
+	at org.eclipse.ui.internal.WWinPartService.updateActivePart(WWinPartService.java:124)
+	at org.eclipse.ui.internal.WWinPartService.access$0(WWinPartService.java:115)
+	at org.eclipse.ui.internal.WWinPartService$1.partDeactivated(WWinPartService.java:48)
+	at org.eclipse.ui.internal.PartListenerList2$4.run(PartListenerList2.java:113)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:53)
+	at org.eclipse.ui.internal.PartListenerList2.firePartDeactivated(PartListenerList2.java:111)
+	at org.eclipse.ui.internal.PartService.firePartDeactivated(PartService.java:116)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:165)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActivePartChanged(WorkbenchPagePartList.java:56)
+	at org.eclipse.ui.internal.PartList.setActivePart(PartList.java:126)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3402)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2946)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:265)
+	at org.eclipse.ui.internal.EditorPane.requestActivation(EditorPane.java:98)
+	at org.eclipse.ui.internal.PartPane.setFocus(PartPane.java:311)
+	at org.eclipse.ui.internal.EditorPane.setFocus(EditorPane.java:127)
+	at org.eclipse.ui.internal.PartStack.presentationSelectionChanged(PartStack.java:846)
+	at org.eclipse.ui.internal.PartStack.access$1(PartStack.java:829)
+	at org.eclipse.ui.internal.PartStack$1.selectPart(PartStack.java:139)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation$1.handleEvent(TabbedStackPresentation.java:131)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:267)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:276)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder.access$1(DefaultTabFolder.java:1)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder$2.handleEvent(DefaultTabFolder.java:84)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:962)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:947)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:706)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3227)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:2005)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:316)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2013-08-08 20:24:24.015
+!MESSAGE WARNING: Prevented recursive attempt to activate part org.eclipse.ui.console.ConsoleView while still in the middle of activating part com.spket.js.jseditor
+!STACK 0
+java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate part org.eclipse.ui.console.ConsoleView while still in the middle of activating part com.spket.js.jseditor
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3352)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2946)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:265)
+	at org.eclipse.ui.internal.PartPane.handleEvent(PartPane.java:229)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:962)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:943)
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1273)
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:2366)
+	at org.eclipse.swt.widgets.Widget.wmSetFocus(Widget.java:2176)
+	at org.eclipse.swt.widgets.Control.WM_SETFOCUS(Control.java:4282)
+	at org.eclipse.swt.widgets.Canvas.WM_SETFOCUS(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3738)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.SetFocus(Native Method)
+	at org.eclipse.swt.widgets.Control.forceFocus(Control.java:963)
+	at org.eclipse.swt.widgets.Control.setSavedFocus(Control.java:2966)
+	at org.eclipse.swt.widgets.Decorations.restoreFocus(Decorations.java:803)
+	at org.eclipse.swt.widgets.Decorations.WM_ACTIVATE(Decorations.java:1595)
+	at org.eclipse.swt.widgets.Shell.WM_ACTIVATE(Shell.java:1833)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3670)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1554)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1753)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DestroyWindow(Native Method)
+	at org.eclipse.swt.widgets.Control.destroyWidget(Control.java:652)
+	at org.eclipse.swt.widgets.Shell.destroyWidget(Shell.java:636)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:750)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:410)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:441)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:653)
+	at org.eclipse.jface.window.Window.close(Window.java:330)
+	at org.eclipse.jface.dialogs.Dialog.close(Dialog.java:973)
+	at org.eclipse.ui.internal.progress.BlockedJobsDialog.close(BlockedJobsDialog.java:443)
+	at org.eclipse.ui.internal.progress.BlockedJobsDialog.close(BlockedJobsDialog.java:431)
+	at org.eclipse.ui.internal.progress.BlockedJobsDialog.clear(BlockedJobsDialog.java:245)
+	at org.eclipse.ui.internal.dialogs.WorkbenchDialogBlockedHandler.clearBlocked(WorkbenchDialogBlockedHandler.java:48)
+	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.clearBlocked(EventLoopProgressMonitor.java:73)
+	at org.eclipse.core.internal.jobs.JobManager.reportUnblocked(JobManager.java:894)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:100)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:225)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:117)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:1744)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1792)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:113)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:73)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:63)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:450)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1153)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:4450)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:220)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:4574)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:210)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:4552)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:923)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.partActivated(AbstractTextEditor.java:881)
+	at org.eclipse.ui.internal.PartListenerList$1.run(PartListenerList.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList.fireEvent(PartListenerList.java:57)
+	at org.eclipse.ui.internal.PartListenerList.firePartActivated(PartListenerList.java:70)
+	at org.eclipse.ui.internal.PartService.firePartActivated(PartService.java:73)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:171)
+	at org.eclipse.ui.internal.WWinPartService.updateActivePart(WWinPartService.java:124)
+	at org.eclipse.ui.internal.WWinPartService.access$0(WWinPartService.java:115)
+	at org.eclipse.ui.internal.WWinPartService$1.partDeactivated(WWinPartService.java:48)
+	at org.eclipse.ui.internal.PartListenerList2$4.run(PartListenerList2.java:113)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:53)
+	at org.eclipse.ui.internal.PartListenerList2.firePartDeactivated(PartListenerList2.java:111)
+	at org.eclipse.ui.internal.PartService.firePartDeactivated(PartService.java:116)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:165)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActivePartChanged(WorkbenchPagePartList.java:56)
+	at org.eclipse.ui.internal.PartList.setActivePart(PartList.java:126)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3402)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2946)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:265)
+	at org.eclipse.ui.internal.EditorPane.requestActivation(EditorPane.java:98)
+	at org.eclipse.ui.internal.PartPane.setFocus(PartPane.java:311)
+	at org.eclipse.ui.internal.EditorPane.setFocus(EditorPane.java:127)
+	at org.eclipse.ui.internal.PartStack.presentationSelectionChanged(PartStack.java:846)
+	at org.eclipse.ui.internal.PartStack.access$1(PartStack.java:829)
+	at org.eclipse.ui.internal.PartStack$1.selectPart(PartStack.java:139)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation$1.handleEvent(TabbedStackPresentation.java:131)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:267)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:276)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder.access$1(DefaultTabFolder.java:1)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder$2.handleEvent(DefaultTabFolder.java:84)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:962)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:947)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:706)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3227)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:2005)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:316)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+
+!ENTRY org.eclipse.core.resources 2 2 2013-08-08 20:26:18.285
+!MESSAGE EASIE CORE: VMInstall named 'jdk1.7.0_17' could not be found.
+
+!ENTRY com.genuitec.eclipse.easie.core 1 0 2013-08-08 20:26:18.305
+!MESSAGE Error starting Tomcat  6.x server
+!STACK 0
+com.genuitec.eclipse.core.GenuitecCoreException: Tomcat JDK name:
+	at com.genuitec.eclipse.easie.tomcat.Tomcat.start(Tomcat.java:52)
+	at com.genuitec.eclipse.easie.core.ui.action.ServerStartAction.Ă(Unknown Source)
+	at com.genuitec.eclipse.easie.core.ui.action.ServerStartAction.basicRun(Unknown Source)
+	at com.genuitec.eclipse.core.ui.action.LicenseValidatingAction.run(Unknown Source)
+	at com.genuitec.eclipse.core.ui.action.LicenseValidatingAction.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+Caused by: com.genuitec.eclipse.core.GenuitecCoreException: Tomcat JDK name:
+	at com.genuitec.eclipse.easie.tomcat.Tomcat.validateConfiguration(Tomcat.java:86)
+	at com.genuitec.eclipse.easie.tomcat.Tomcat.start(Tomcat.java:48)
+	... 32 more
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.325
+!MESSAGE NLS missing message: JavaMetaUtils_warning_default_package in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.325
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_doesnt_exist_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.325
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_doesnt_exist_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.325
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_not_jre_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.325
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_not_jre_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.335
+!MESSAGE NLS missing message: JavaVMUtility_launchconfig_default_server_type_id_attr in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.335
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_browse_jar_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.335
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_invalidfile_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.335
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_invalidfile_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.335
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_add_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.345
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_down_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.345
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_edit_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.345
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_remove_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.345
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_up_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.345
+!MESSAGE NLS missing message: MELibraryWizardPage_description in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.355
+!MESSAGE NLS missing message: MELibraryWizardPage_error_selection_onlyone in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.355
+!MESSAGE NLS missing message: MELibraryWizardPage_error_selection_zero in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.355
+!MESSAGE NLS missing message: MELibraryWizardPage_list_library_selector_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-08-08 20:26:18.355
+!MESSAGE NLS missing message: MELibraryWizardPage_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.core.resources 2 2 2013-08-08 20:26:46.169
+!MESSAGE EASIE CORE: VMInstall named 'jdk1.7.0_17' could not be found.
+
+!ENTRY com.genuitec.eclipse.easie.core 1 0 2013-08-08 20:26:46.199
+!MESSAGE Error starting Tomcat  6.x server
+!STACK 0
+com.genuitec.eclipse.core.GenuitecCoreException: Tomcat JDK name:
+	at com.genuitec.eclipse.easie.tomcat.Tomcat.start(Tomcat.java:52)
+	at com.genuitec.eclipse.easie.core.ui.action.ServerStartAction.Ă(Unknown Source)
+	at com.genuitec.eclipse.easie.core.ui.action.ServerStartAction.basicRun(Unknown Source)
+	at com.genuitec.eclipse.core.ui.action.LicenseValidatingAction.run(Unknown Source)
+	at com.genuitec.eclipse.core.ui.action.LicenseValidatingAction.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+Caused by: com.genuitec.eclipse.core.GenuitecCoreException: Tomcat JDK name:
+	at com.genuitec.eclipse.easie.tomcat.Tomcat.validateConfiguration(Tomcat.java:86)
+	at com.genuitec.eclipse.easie.tomcat.Tomcat.start(Tomcat.java:48)
+	... 32 more
+
+!ENTRY org.eclipse.jdt.core 4 4 2013-08-08 20:32:45.206
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: CMS
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:713)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:111)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:45)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:269)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:285)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2013-08-08 20:32:45.208
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2013-08-08 20:32:45.208
+!MESSAGE Could not delete '/CMS/WebRoot/WEB-INF/classes/com'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:223)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:782)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1659)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:700)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:111)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:45)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:269)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:285)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2013-08-08 20:32:45.209
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2013-08-08 20:32:45.209
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2013-08-08 20:32:45.209
+!MESSAGE Could not delete: F:\git\MyProject\cms-server-code\CMS\WebRoot\WEB-INF\classes\com\haolei\dao\DepNameListDAO.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2013-08-08 20:32:45.209
+!MESSAGE Could not delete: F:\git\MyProject\cms-server-code\CMS\WebRoot\WEB-INF\classes\com\haolei\dao.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2013-08-08 20:32:45.209
+!MESSAGE Could not delete: F:\git\MyProject\cms-server-code\CMS\WebRoot\WEB-INF\classes\com\haolei.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2013-08-08 20:32:45.209
+!MESSAGE Could not delete: F:\git\MyProject\cms-server-code\CMS\WebRoot\WEB-INF\classes\com.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2013-08-08 20:32:45.209
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2013-08-08 20:32:45.209
+!MESSAGE Could not delete: F:\git\MyProject\cms-server-code\CMS\WebRoot\WEB-INF\classes\com\haolei\dao\DepNameListDAO.class.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2013-08-08 20:32:45.209
+!MESSAGE Could not delete: F:\git\MyProject\cms-server-code\CMS\WebRoot\WEB-INF\classes\com\haolei\dao.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2013-08-08 20:32:45.209
+!MESSAGE Could not delete: F:\git\MyProject\cms-server-code\CMS\WebRoot\WEB-INF\classes\com\haolei.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2013-08-08 20:32:45.210
+!MESSAGE Could not delete: F:\git\MyProject\cms-server-code\CMS\WebRoot\WEB-INF\classes\com.
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-08-08 20:32:53.338
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.

@@ -1,19 +1,18 @@
 
-var nowpage = 1;
-var eachpw = 0;
 //载入时
 $(function(){
+	
+
 			$("#mainpa").css("background","#DFDFDF");
 		   $("#uppa").css("background","#DFDFDF");
 		   $("#downpa").css("background","#DFDFDF");
 	//页面打开时不显示窗口；
 	
 	
-	
 	//DOM载入之后调用returnCDP()方法;
 	returnCDP();
 	
-	//人员信息
+	//DOM载入之后调用人员信息查询方法
 	personsearch();
 	
 	$("#personinfo_close_image").click(function(){
@@ -24,13 +23,39 @@ $(function(){
 		
 			$("#search").click(
 				function(){
+					nowpage=1;
 					personsearch();
 				}
 			);		
-	
+	//分页按钮相关的事件
+	$("#mainpa").click(function(){
+		//首页按钮事件
+		nowpage = 1;//设置当前页为第一页
 		
+		personsearch();
+	});
+	$("#uppa").click(function(){
+		//上一页按钮事件
+		nowpage-=1;
+		
+		if(nowpage<1){
+			nowpage = 1;
+		}
+		personsearch();
+	});	
+	$("#downpa").click(function(){
+		//下一页按钮事件
+		nowpage+=1;
+		personsearch();
+	});
+	$("#lastpa").click(function(){
+		nowpage=p;
+		personsearch();
+	});
 });
-
+	var nowpage=1;
+	var eachpw=0;
+	var p = 0;
 //从servlet端获取公司、部门、职位 的一组JSON,然后再调用方法把数据放到对应的地方
 function returnCDP(){
 		$(function(){
@@ -65,13 +90,15 @@ function viwedata(json){
 }
 //从servlet端获取人员信息JSON数据
 function returnPERSONinfo(args){
+//	alert(args);
 		$(function(){
 			$.ajax({
 				url: args,
 				type: "POST",
 				dataType:'json',
 				success:function(json) {
-					alert(json.personinfo.length);
+					alert(json);
+					p = json.vpages;
 					createtable(json);
 				}
 			});
@@ -131,7 +158,7 @@ function createtable(json){
 		   
 		   $(".cl:odd").css("background","#DFDFDF");
 		    //添加分页栏状态
-		   $("#dqpages").html("1");
+		   $("#dqpages").html(nowpage);
 		   $("#zpages").html(json.vpages+"页");
 		   $("#countrow").html("共"+json.courows+"条数据");
 			
@@ -147,8 +174,6 @@ function createtable(json){
 		   $("#uppa").css("background","#DFDFDF");
 		   $("#uppa").mousemove(function(){
 			$("#uppa").css("background","#5F5F5F");
-			alert(nowpage);
-			alert("asdf");
 			});
 			 $("#uppa").mouseout(function(){
 			$("#uppa").css("background","#DFDFDF");
@@ -172,12 +197,23 @@ function createtable(json){
 			
 				//当前页为1时，上一页按钮不可用
 				if(nowpage==1){
-				$("#uppa").hide();
+					$("#uppa").hide();
+				}else{
+					$("#uppa").show();
 				}
 				if(nowpage>1){
 				$("#uppa").show();
+				}else{
+				$("#uppa").hide();
 				}
 				//当前页等于总页数时，下一页按钮不可用
+				if(nowpage==json.vpages){
+					nowpage=json.vpages
+					$("#downpa").hide();
+				}else{
+					$("#downpa").show();
+				}
+				
 	}else{
 		if($("#personinfotable").children()){
 				$("#personinfotable *").remove();
@@ -188,7 +224,20 @@ function createtable(json){
 
 	}	   
 }
-	
+function personsearch(){
+		var form_uuid = $("#uuid").val();
+		var form_username = $("#username").val();
+		var form_sex = $("#sex option:selected").text();
+		var form_comp = $("#comp option:selected").text();
+		var form_dep = $("#dep option:selected").text();
+		var form_post = $("#post option:selected").text();
+		var form_card = $("#card").val();
+		var form_tel = $("#tel").val();
+		var form_eachpr = $("#eachpr option:selected").text();
+		var args = "/CMS/PersonInfoServlet?"+"&uuid="+form_uuid+"&username="+form_username+"&sex="+form_sex+"&comp="+form_comp+"&dep="+form_dep+"&post="+form_post+"&card="+form_card+"&tel="+form_tel+"&nopage="+nowpage+"&pagetop="+form_eachpr;
+//		alert(args);
+		returnPERSONinfo(args);
+		}	
 //tree 的数据结构-------------------------------------------------------------
 var setting = {
 			view:{
@@ -299,17 +348,4 @@ var zNodes =[
 		});
 //tree 初始化-------------------------------------^^^^^^^^^^^^^^^^^----------------
 
-function personsearch(){
-		var form_uuid = $("#uuid").val();
-		var form_username = $("#username").val();
-		var form_sex = $("#sex option:selected").text();
-		var form_comp = $("#comp option:selected").text();
-		var form_dep = $("#dep option:selected").text();
-		var form_post = $("#post option:selected").text();
-		var form_card = $("#card").val();
-		var form_tel = $("#tel").val();
-		var form_eachpr = $("#eachpr option:selected").text();
-		var args = "/CMS/PersonInfoServlet?"+"&uuid="+form_uuid+"&username="+form_username+"&sex="+form_sex+"&comp="+form_comp+"&dep="+form_dep+"&post="+form_post+"&card="+form_card+"&tel="+form_tel+"&nopage="+1+"&pagetop="+form_eachpr;
-//		alert(args);
-		returnPERSONinfo(args);
-		}
+

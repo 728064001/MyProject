@@ -31,7 +31,7 @@ public class PersonInfoServlet extends HttpServlet {
 //		
 //		int st = nowpage*pagetop;
 //		int et = pagetop;
-		
+		System.out.println("当前页："+nowpage);
 		String uuid = request.getParameter("uuid");
 		String username = request.getParameter("username");
 		String sex = request.getParameter("sex");
