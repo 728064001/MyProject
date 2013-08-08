@@ -3,7 +3,7 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
+<%request.setCharacterEncoding("utf-8");%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
@@ -141,14 +141,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<tr>
 					<td align="left" valign="top">&nbsp;&nbsp;&nbsp; &nbsp;<img alt="" height="18" src="image/addperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">添加人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					</span>
-					<img alt="" class="admin-main-tab-admin-main-tab-td-admins-style" height="19" src="image/delperson.png" width="16" /><span class="admin-main-tab-admin-main-tab-td-admins-style">删除人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-					</span>
-					<img alt="" class="admin-main-tab-admin-main-tab-td-admins-style" height="17" src="image/modifiyperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">修改人员信息</span><hr style="height: -12px"/>
+					<hr style="height: -12px"/>
 					<!--根据ajax 返回的数据动态创建表格 -->
 					<div id="personinfotable"></div>
-						<span id="f" ><a id='mainpa'>首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id='uppa'>上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id='downpa'>下一页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<span id="f" ><a class="fto" id='mainpa'>首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="fto" id='uppa'>上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="fto" id='downpa'>下一页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="fto" id='lastpa'>最后一页</a>&nbsp;&nbsp;&nbsp;&nbsp;
 						跳转到<input type="text" width="80px" />页&nbsp;<input type="button" value="转到>"/>
-						</span><hr/>
+						</span><span id="dqpages"></span>&nbsp;&nbsp;/&nbsp;&nbsp;<span id="zpages"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="countrow"></span>&nbsp;&nbsp;&nbsp;每页显示<select id="eachpr"><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>条数据<hr/>
 					<!--根据ajax 返回的数据动态创建表格 ----------------------------------->
 					</td>
 				</tr>

@@ -16,8 +16,11 @@ import com.haolei.tools.queryRecordCount;
 public class ManagerPersonInfoDAO {
 	/*
 	 * ajax 查询人员信息
+	 * 
+	 * int nowpagenum 当前页码
+	 * int eachpagevrow 每页显示多少行
 	 */
-	public JSONObject returnPersonInfo(Person person, Company com, Dep de, Post pos){
+	public JSONObject returnPersonInfo(Person person, Company com, Dep de, Post pos, int nowpagenum, int eachpagevrow){
 		Connection conn = Dbconn.getconn();
 		PreparedStatement pstm = null;
 		ResultSet res = null;
@@ -39,7 +42,7 @@ public class ManagerPersonInfoDAO {
 		int post_args = iq.valueQueryId("post", pos.getPost());
 		//拼装查询语句
 		if(!uuid_args.equals("") && uuid_args!="" && uuid_args!=null){
-			querypersonStr = " and uuid like '%"+uuid_args+"%'";
+			querypersonStr += " and uuid like '%"+uuid_args+"%'";
 			countStr +=  " and uuid like '%"+uuid_args+"%'";
 		}
 		if(!username_args.equals("") && username_args!="" && username_args!=null){
@@ -63,21 +66,31 @@ public class ManagerPersonInfoDAO {
 			countStr += " and companyid ="+"'"+comp_args+"'";
 		}
 		if(dep_args!=0){
-			querypersonStr += "and depid ="+"'"+dep_args+"'";
-			countStr += "and depid ="+"'"+dep_args+"'";
+			querypersonStr += " and depid ="+"'"+dep_args+"'";
+			countStr += " and depid ="+"'"+dep_args+"'";
 		}
 		if(post_args!=0){
-			querypersonStr += "and postid ="+"'"+post_args+"'";
-			countStr +=  "and postid ="+"'"+post_args+"'";
+			querypersonStr += " and postid ="+"'"+post_args+"'";
+			countStr +=  " and postid ="+"'"+post_args+"'";
 		}
 		
 		int recordcount = queryRecordCount.returnCount(countStr);
 		System.out.println("sql:"+countStr);
-	
+		System.out.println("sql:"+querypersonStr);
+		//计数
+		int nums = 1;
+		//根据数据总行数和每页显示行数计算页数
+		int vpages = recordcount/eachpagevrow;
+		if((recordcount%eachpagevrow)>0){vpages++;}
+		//起始行和结束行
+		int strow = nowpagenum*eachpagevrow-(eachpagevrow-1);
+		int enrow = nowpagenum*eachpagevrow;
 		try{
 			pstm = conn.prepareStatement(querypersonStr);
 			res = pstm.executeQuery();
+			
 			while(res.next()){
+				if(nums>=strow&&nums<=enrow){
 				percell = new JSONObject();
 //				System.out.println(res.getString("uuid"));
 				percell.put("uuid", res.getString("uuid"));
@@ -93,16 +106,21 @@ public class ManagerPersonInfoDAO {
 				percell.put("post", iq.IdQueryValue("post", res.getInt("postid")));
 				
 				perary.add(percell);
+				
+				}
+				nums++;
 			}
-
-			perjson.put("countnum", recordcount);
+			System.out.println(nums);
+			perjson.put("vpages",vpages);//总页数
+			perjson.put("courows",recordcount);//符合查询条件的总数据行数
+//			perjson.put("countnum", eachpagevrow);//一页显示多少行
 			perjson.put("personinfo", perary);
-		}catch(Exception e){
+		}catch(Exception e){   
 			e.printStackTrace();
 		}finally{
 			Dbconn.closeALL(conn, pstm, res);
 		}
-		
+		System.out.println("json:"+perjson);
 		return perjson;
 	}
 	/*
@@ -112,8 +130,8 @@ public class ManagerPersonInfoDAO {
 		ManagerPersonInfoDAO mif = new ManagerPersonInfoDAO();
 		Person p = new Person();
 		p.setUuid("");
-		p.setUsername("d");
-		p.setSex("女");
+		p.setUsername("");
+		p.setSex("男");
 		p.setTel("");
 		p.setCard("");
 		Company c = new Company();
@@ -122,7 +140,7 @@ public class ManagerPersonInfoDAO {
 		d.setDep("");
 		Post ps = new Post();
 		ps.setPost("");
-		JSONObject j = mif.returnPersonInfo(p, c, d, ps);
+		JSONObject j = mif.returnPersonInfo(p, c, d, ps,2,3);
 		System.out.println(j);
 	}
 }

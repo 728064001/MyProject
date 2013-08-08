@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 import com.haolei.dao.ManagerPersonInfoDAO;
@@ -24,12 +25,12 @@ public class PersonInfoServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
 		PrintWriter pr = response.getWriter();
-		//计数
+//		//计数
 		int nowpage = Integer.parseInt(request.getParameter("nopage"));//当前页
 		int pagetop = Integer.parseInt(request.getParameter("pagetop"));//每页显示多少行
-		
-		int st = nowpage*pagetop;
-		int et = pagetop;
+//		
+//		int st = nowpage*pagetop;
+//		int et = pagetop;
 		
 		String uuid = request.getParameter("uuid");
 		String username = request.getParameter("username");
@@ -57,7 +58,7 @@ public class PersonInfoServlet extends HttpServlet {
 		pos.setPost(post);
 		
 		ManagerPersonInfoDAO managerpersoninfodao = new ManagerPersonInfoDAO();
-		JSONObject personjson = managerpersoninfodao.returnPersonInfo(person, com, de, pos);
+		JSONObject personjson = managerpersoninfodao.returnPersonInfo(person, com, de, pos, nowpage, pagetop);
 		pr.print(personjson);
 	}
 }
