@@ -121,6 +121,20 @@ public class ManagerPersonInfoDAO {
 		System.out.println("json:"+perjson);
 		return perjson;
 	}
+	
+	
+	/*
+	 * uuidQueryPersoninfo()
+	 * 用于在修改人员信息之前用uuid来查数据库，测试该人员是否还存在于数据库中
+	 */
+	public JSONObject uuidQueryPersoninfo(String uuid){
+		Connection conn = Dbconn.getconn();
+		PreparedStatement pstm = null;
+		ResultSet res = null;
+		String uuidQueryStr = "select ";
+		return null;
+	}
+	
 	/*
 	 * 
 	 */

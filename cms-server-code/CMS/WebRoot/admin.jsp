@@ -21,6 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 	<link rel="stylesheet" href="css/zTreeStyle/zTreeStyle.css" />
 	<link rel="stylesheet" href="css/admin.css" />
+	<link rel="stylesheet" href="css/admin_modifiypersoninfodiv.css" />
 	<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
 	<script type="text/javascript" src="js/jquery.ztree.core-3.5.js"></script>
 	<script type="text/javascript" src="js/jquery.ztree.excheck-3.5.js"></script>
@@ -108,7 +109,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</td>
 		<td style="height: 808px" bgcolor="#FAFAFA" align="left" valign="top">
 		<!--业务工作区-->
-		<!--人员信息-->
+		<!--人员信息DIV-->
 		<div id="personinfo" style="position: absolute; width: 1080px; height: 808px; z-index: 1">
 			<table cellspacing="1" class="admin-main-tab-admin-child-tab-td-null-style" style="width: 100%; height: 100%">
 				<tr>
@@ -123,20 +124,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</td>
 				</tr>
 				<tr>
-					<td style="height: 33px"><span class="admin-main-tab-style1">UUID</span>:<input name="uuid" id="uuid" type="text" style="width: 81px" /> 
-					<span class="admin-main-tab-style1">姓名</span>:<input name="username" id="username" type="text" style="width: 59px" />&nbsp;<span class="admin-main-tab-style1">性别</span>:<select name="sex" id="sex">
+					<td style="height: 33px"><span class="admin-main-tab-style1">UUID</span>:<input name="quuid" id="quuid" type="text" style="width: 81px" /> 
+					<span class="admin-main-tab-style1">姓名</span>:<input name="qusername" id="qusername" type="text" style="width: 59px" />&nbsp;<span class="admin-main-tab-style1">性别</span>:<select name="qsex" id="qsex">
 						<option value="--">--</option>
 						<option value="女">女</option>
 						<option value="男">男</option>
-						</select>&nbsp;<span class="admin-main-tab-style1">公司</span>:<select name="comp" id="comp" style="width: 65px">
+						</select>&nbsp;<span class="admin-main-tab-style1">公司</span>:<select name="qcomp" id="qcomp" style="width: 65px">
 						<option value="--">--</option>
-						</select>&nbsp;<span class="admin-main-tab-style1">部门:</span><select name="dep" id="dep" style="width: 85px">
+						</select>&nbsp;<span class="admin-main-tab-style1">部门:</span><select name="qdep" id="qdep" style="width: 85px">
 						<option value="--">--</option>
-						</select>&nbsp;<span class="admin-main-tab-style1">职位</span>:<select name="post" id="post" style="width: 95px">
+						</select>&nbsp;<span class="admin-main-tab-style1">职位</span>:<select name="qpost" id="qpost" style="width: 95px">
 						<option value="--">--</option>
 						</select>&nbsp;&nbsp;<span class="admin-main-tab-style1"> 
-					身份证:</span><input name="card" id="card" type="text" style="width: 130px" /> 
-					<span class="admin-main-tab-style1">电话:</span><input name="tel" id="tel" type="text" style="width: 81px" />&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 50px" /></td>
+					身份证:</span><input name="qcard" id="qcard" type="text" style="width: 130px" /> 
+					<span class="admin-main-tab-style1">电话:</span><input name="qtel" id="qtel" type="text" style="width: 81px" />&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 50px" /></td>
 				</tr>
 				<tr>
 					<td align="left" valign="top">&nbsp;&nbsp;&nbsp; &nbsp;<img alt="" height="18" src="image/addperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">添加人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -146,13 +147,98 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div id="personinfotable"></div>
 						<span id="f" ><a class="fto" id='mainpa'>首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="fto" id='uppa'>上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="fto" id='downpa'>下一页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="fto" id='lastpa'>最后一页</a>&nbsp;&nbsp;&nbsp;&nbsp;
 						跳转到<input type="text" width="80px" />页&nbsp;<input type="button" value="转到>"/>
-						</span><span id="dqpages"></span>&nbsp;&nbsp;/&nbsp;&nbsp;<span id="zpages"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="countrow"></span>&nbsp;&nbsp;&nbsp;每页显示<select id="eachpr"><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>条数据<hr/>
+						</span><span id="dqpages"></span>&nbsp;&nbsp;/&nbsp;&nbsp;<span id="zpages"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="countrow"></span>&nbsp;&nbsp;&nbsp;每页显示<select id="qeachpr"><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>条数据<hr/>
 					<!--根据ajax 返回的数据动态创建表格 ----------------------------------->
 					</td>
 				</tr>
 			</table>
 		</div>
-		<!---->	
+		<!--人员信息DIV-->	
+		<!-- 修改人员信息DIV -->
+		<div id="modifiypersoninfo" style="position: absolute;background-color:#FFFFFF; width: 1014px; height: 483px; z-index: 1;">
+	<table cellspacing="0" class="admin-modifiypersoninfo-main-tablel-style" style="width: 100%; height: 100%">
+		<tr>
+			<td style="height: 21px">
+			<table cellspacing="0" class="admin-modifiypersoninfo-tableltitle-style" style="width: 100%; height: 100%">
+				<tr bgcolor="#808080">
+					<td class="admin-modifiypersoninfo-tablellogo-style"><strong>修改人员信息</strong></td>
+					<td class="admin-modifiypersoninfo-divhidebutton-style">
+					<img alt="关闭" id="closeModifiyPersonInfo"  height="20" src="image/personinfo_close.png" width="21" /></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="left" valign="top">
+			<table cellpadding="0" cellspacing="0" class="admin-modifiypersoninfo-childrentable-style" style="width: 100%; height: 100%; color: #C0C0C0;">
+				<tr>
+					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>姓名</strong></span>:<input name="updatausername" id="updatausername" type="text" style="height: 25px" /></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					&nbsp;</td>
+					<td style="width: 270px"><span class="admin-modifiypersoninfo-formtag-style"><strong>年龄</strong></span>:<input name="updataage" id="updataage" type="text" style="width: 82px; height: 25px;" /></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					&nbsp; </td>
+				</tr>
+				<tr>
+					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>性别:</strong></span>
+						<input name="updatasex" type="radio" value="男" /><span class="admin-modifiypersoninfo-sexfont-style">男&nbsp;&nbsp;&nbsp;&nbsp; 
+					</span> 
+					<input name="updatasex" type="radio" value="女" class="admin-modifiypersoninfo-tablellogo-style"  /><span class="admin-modifiypersoninfo-sexfont-style">女
+					 
+					</span>
+					</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					&nbsp; </td>
+					<td style="width: 270px"><span class="admin-modifiypersoninfo-formtag-style"><strong>电话:</strong></span><input name="updatatel" id="updatatel" type="text" style="height: 25px" /></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					&nbsp; </td>
+				</tr>
+				<tr>
+					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>QQ:</strong></span><input name="updataqq" id="updataqq" type="text" style="height: 25px" /></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					&nbsp; </td>
+					<td style="width: 270px"><span class="admin-modifiypersoninfo-formtag-style"><strong>生日:</strong></span><input name="updatabrithday" id="updatabrithday" type="text" style="width: 82px; height: 25px;" /></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					&nbsp; </td>
+				</tr>
+				<tr>
+					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>身份证:</strong></span><input name="updatacard" id="updatacard" type="text" style="width: 216px; height: 25px;" /></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					&nbsp; </td>
+					<td style="width: 270px"><span class="admin-modifiypersoninfo-formtag-style"><strong>公司:</strong></span>
+						<select name="updatacomp" id="updatacomp" style="width: 81px; height: 22px;">
+						</select>
+					</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					&nbsp; </td>
+				</tr>
+				<tr>
+					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>部门:</strong></span><select name="updatadep" id="updatadep" style="width: 81px; height: 22px;">
+						</select></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					&nbsp; </td>
+					<td style="width: 270px"><span class="admin-modifiypersoninfo-formtag-style"><strong>职位:</strong></span><select name="updatapost" id="updatapost" style="width: 121px">
+						</select></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					&nbsp; </td>
+				</tr>
+				<tr>
+					<td class="admin-modifiypersoninfo-deletetable-style">
+						&nbsp;<span class="admin-modifiypersoninfo-deletetablequeren-style">确认？</span><input name="yesdel" id="yesdel" type="checkbox" />
+&nbsp;
+						<input name="deletepersoninfo" id="deletepersoninfo" style="background-color:#E84940;width: 141px; height: 69px" type="button" value="删除当前人员" />
+					</td>
+					<td>&nbsp;</td>
+					<td style="width: 270px">
+						<input name="updatapersoninfo" id="updatapersoninfo" style="background-color:#A5E373; width: 179px; height: 84px;" type="button" value="确 认 修 改"/></td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>
+		<!-- 修改人员信息DIV -->
 		</td>
 	</tr>
 	<tr bgcolor="#C0C0C0">

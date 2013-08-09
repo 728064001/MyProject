@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+#modifiypersoninfo{
+	margin-top:26px;
+	margin-left:2px
+}
+.admin-modifiypersoninfo-main-tablel-style {
+border: 1px solid #000000;
+}
+.admin-modifiypersoninfo-tableltitle-style {
+	border-style: solid;
+	border-width: 0px;
+}
+.admin-modifiypersoninfo-tablellogo-style {
+	font-size: small;
+}
+.admin-modifiypersoninfo-divhidebutton-style {
+	text-align: right;
+}
+.admin-modifiypersoninfo-childrentable-style {
+	border-style: solid;
+	border-width: 0px;
+}
+.admin-modifiypersoninfo-deletetablequeren-style {
+	font-size: small;
+	font-family: Aharoni;
+	color: #000000;
+}
+.admin-modifiypersoninfo-formtag-style {
+	color: #808080;
+}
+.admin-modifiypersoninfo-sexfont-style {
+	color: #000000;
+	font-size: small;
+}
+.admin-modifiypersoninfo-deletetable-style {
+	text-align: center;
+}
