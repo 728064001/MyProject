@@ -1,0 +1,8 @@
+package com.haolei.dao.ajaxdao;
+
+public class UpdataPersonInfoQueryTelDAO {
+	public boolean queryTel(Person person){
+		
+		return true;
+	}
+}

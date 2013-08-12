@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="javax.servlet.Filter"/>
 <fullyQualifiedTypeName name="com.haolei.dao.CompanyNameListDAO"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-<fullyQualifiedTypeName name="com.haolei.dao.Dbconn"/>
 <fullyQualifiedTypeName name="com.haolei.dao.ajaxdao.queryTelDAO"/>
 <fullyQualifiedTypeName name="com.haolei.dao.ajaxdao.queryqqDAO"/>
 <fullyQualifiedTypeName name="com.haolei.dao.ajaxdao.queryCardDAO"/>
@@ -14,9 +13,10 @@
 <fullyQualifiedTypeName name="com.haolei.tools.IdValueTwoQuery"/>
 <fullyQualifiedTypeName name="com.haolei.tools.queryRecordCount"/>
 <fullyQualifiedTypeName name="com.haolei.entity.Company"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="com.haolei.dao.ManagerPersonInfoDAO"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="com.haolei.dao.Dbconn"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 </qualifiedTypeNameHistroy>

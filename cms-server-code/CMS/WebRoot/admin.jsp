@@ -27,6 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script type="text/javascript" src="js/jquery.ztree.excheck-3.5.js"></script>
 	<script type="text/javascript" src="js/jquery.ztree.exedit-3.5.js"></script>
 	<script type="text/javascript" src="js/admin.js"></script>
+	<script type="text/javascript" src="js/updatapersoninfovalidata.js"></script>
 </head>
 
 <body>
@@ -172,54 +173,54 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<td align="left" valign="top">
 			<table cellpadding="0" cellspacing="0" class="admin-modifiypersoninfo-childrentable-style" style="width: 100%; height: 100%; color: #C0C0C0;">
 				<tr>
-					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>姓名</strong></span>:<input name="updatausername" id="updatausername" type="text" style="height: 25px" /></td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>姓名</strong></span>:<input name="updatausername" id="updatausername" type="text" style="height: 25px;width:50px" /></td>
+					<td id="updatausernametip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					&nbsp;</td>
 					<td style="width: 270px"><span class="admin-modifiypersoninfo-formtag-style"><strong>年龄</strong></span>:<input name="updataage" id="updataage" type="text" style="width: 82px; height: 25px;" /></td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td id="updataagetip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					&nbsp; </td>
 				</tr>
 				<tr>
 					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>性别:</strong></span>
-						<input name="updatasex" type="radio" value="男" /><span class="admin-modifiypersoninfo-sexfont-style">男&nbsp;&nbsp;&nbsp;&nbsp; 
+						<input name="updatasex" id="male" type="radio" value="男" /><span class="admin-modifiypersoninfo-sexfont-style">男&nbsp;&nbsp;&nbsp;&nbsp; 
 					</span> 
-					<input name="updatasex" type="radio" value="女" class="admin-modifiypersoninfo-tablellogo-style"  /><span class="admin-modifiypersoninfo-sexfont-style">女
+					<input name="updatasex" id="female" type="radio" value="女" class="admin-modifiypersoninfo-tablellogo-style"  /><span class="admin-modifiypersoninfo-sexfont-style">女
 					 
 					</span>
 					</td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td id="updatasextip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					&nbsp; </td>
 					<td style="width: 270px"><span class="admin-modifiypersoninfo-formtag-style"><strong>电话:</strong></span><input name="updatatel" id="updatatel" type="text" style="height: 25px" /></td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td id="updatateltip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					&nbsp; </td>
 				</tr>
 				<tr>
 					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>QQ:</strong></span><input name="updataqq" id="updataqq" type="text" style="height: 25px" /></td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td id="updataqqtip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					&nbsp; </td>
 					<td style="width: 270px"><span class="admin-modifiypersoninfo-formtag-style"><strong>生日:</strong></span><input name="updatabrithday" id="updatabrithday" type="text" style="width: 82px; height: 25px;" /></td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td id="updatabrithdaytip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					&nbsp; </td>
 				</tr>
 				<tr>
 					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>身份证:</strong></span><input name="updatacard" id="updatacard" type="text" style="width: 216px; height: 25px;" /></td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td id="updatacardtip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					&nbsp; </td>
 					<td style="width: 270px"><span class="admin-modifiypersoninfo-formtag-style"><strong>公司:</strong></span>
 						<select name="updatacomp" id="updatacomp" style="width: 81px; height: 22px;">
 						</select>
 					</td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td id="updatacomptip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					&nbsp; </td>
 				</tr>
 				<tr>
 					<td class="admin-modifiypersoninfo-divhidebutton-style"><span class="admin-modifiypersoninfo-formtag-style"><strong>部门:</strong></span><select name="updatadep" id="updatadep" style="width: 81px; height: 22px;">
 						</select></td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td id="updatadeptip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					&nbsp; </td>
 					<td style="width: 270px"><span class="admin-modifiypersoninfo-formtag-style"><strong>职位:</strong></span><select name="updatapost" id="updatapost" style="width: 121px">
 						</select></td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td id="updataposttip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					&nbsp; </td>
 				</tr>
 				<tr>
