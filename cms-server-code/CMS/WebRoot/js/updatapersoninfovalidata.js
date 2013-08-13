@@ -380,6 +380,8 @@ function updataajaxreturn(urlstr,obj,objtip){
 			if(mpsubmitvalidata!=null&&mpsubmitvalidata!=false){
 				if(valueyesnomodifiy()){
 					alert("数据提交");
+					var args = "/CMS/UpdataPersonInfoServlet?"+"&uuid="+personId+"&username="+$.trim($("#updatausername").val())+"&sex="+$("input:radio[name='updatasex']").filter(':checked').val()+"&age="+$.trim($("#updataage").val())+"&tel="+$.trim($("#updatatel").val())+"&qq="+$.trim($("#updataqq").val())+"&brithday="+$.trim($("#updatabrithday").val())+"&card="+$.trim($("#updatacard").val())+"&company="+$("#updatacomp option:selected").text()+"&dep="+$("#updatadep option:selected").text()+"&post="+$("#updatapost option:selected").text();
+					updatapersoninfo(args);
 				}else{
 					alert("数据末修改，提交无效！");
 				}
@@ -390,26 +392,29 @@ function updataajaxreturn(urlstr,obj,objtip){
 		//提交修改之前判断信息是否修改过
 		function valueyesnomodifiy(){
 			alert($("input:radio[name='updatasex']").filter(':checked').val());
-			if($.trim($("#updatausername").val())!=personUsername || $.trim($("#updataage").val())!=personAge || $("input:radio[name='updatasex']").filter(':checked').val()!=personSex|$.trim($("#updatatel").val())!=personTel||$.trim($("#updataqq").val())!=personQq||$.trim($("#updatabrithday").val())!=personBri||$.trim($("#updatacard").val())!=personCard||$("#updatacomp option:selected").text()!=personComp||$("#updatadep option:selected").text()!=personDep||$("#updatapost option:selected").text()!=personPost){
+			if($.trim($("#updatausername").val())!=personUsername || $.trim($("#updataage").val())!=personAge || $("input:radio[name='updatasex']").filter(':checked').val()!=personSex||$.trim($("#updatatel").val())!=personTel||$.trim($("#updataqq").val())!=personQq||$.trim($("#updatabrithday").val())!=personBri||$.trim($("#updatacard").val())!=personCard||$("#updatacomp option:selected").text()!=personComp||$("#updatadep option:selected").text()!=personDep||$("#updatapost option:selected").text()!=personPost){
 			return true;
 			}else{
 			return false;
 			}
 		}
-		//根据双击人员信息表得到的UUID查询人员信息,这样做的目地是为了防止操作时该UUID对应的人员已经不存在，所以
-		//要再通过一次查询数据库来确认。
-//		function uuidqueryinfo(uuid){
-//			$(function(){
-//				$.ajax({
-//					url: args,
-//					type: "POST",
-//					dataType:'json',
-//					success:function(pinfo) {
-//						alert();
-//					}
-//				});
-//			});
-//		}
+	
+		function updatapersoninfo(args){
+			$(function(){
+				$.ajax({
+					url: args,
+					type: "POST",
+					dataType:'json',
+					success:function(pinfo) {
+//						alert(pinfo.status);
+						if(pinfo.status=="yes"){
+							personsearch();
+							$("#modifiypersoninfo").hide();
+						}
+					}
+				});
+			});
+		}
 		
 
 /////////////////////////////////////////////////修改人员信息/////////////////////////////////////////////////////////////////////////				

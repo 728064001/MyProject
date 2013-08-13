@@ -17,7 +17,7 @@ public class UpdataPersonInfoDAO {
 		Connection conn = Dbconn.getconn();
 		PreparedStatement pstm = null;
 		ResultSet res = null;
-		String updatapersoninfoStr = "updata person_tab set username = ?, sex=?, tel=?, icq=?, brithday=?, age=?, card=?, companyid=?, depid=?, postid=? where uuid=? ";
+		String updatapersoninfoStr = "update person_tab set username = ?, sex=?, tel=?, icq=?, brithday=?, age=?, card=?, companyid=?, depid=?, postid=? where uuid=? ";
 		int num = 0;
 		try{
 			pstm = conn.prepareStatement(updatapersoninfoStr);
@@ -29,15 +29,15 @@ public class UpdataPersonInfoDAO {
 			pstm.setInt(6, person.getAge());
 			pstm.setString(7, person.getCard());
 			pstm.setInt(8, idvaluetwoquery.valueQueryId("company",company.getCompanyName()));
-			res = pstm.executeQuery();
-			while(res.next()){
-				num = res.getInt(1);
-			}
+			pstm.setInt(9, idvaluetwoquery.valueQueryId("dep",dep.getDep()));
+			pstm.setInt(10, idvaluetwoquery.valueQueryId("post",post.getPost()));
+			pstm.setString(11, person.getUuid());
+			num = pstm.executeUpdate();
 		}catch(Exception e){
 			e.printStackTrace();
 		}finally{
 			Dbconn.closeALL(conn, pstm, res);
 		}
-		return 0;
+		return num;
 	}
 }

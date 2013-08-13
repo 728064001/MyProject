@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+ <!-- 
+    <servlet>  
+    <servlet-name>returnCompanyNameServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ReturnCompanyJsonDataServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>returnCompanyNameServlet</servlet-name>  
+    <url-pattern>/returnCompanyNameServlet</url-pattern>  
+  </servlet-mapping>  
+ 
+  --> 
+     <servlet>  
+    <servlet-name>LoginServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.LoginServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>LoginServlet</servlet-name>  
+    <url-pattern>/LoginServlet</url-pattern>  
+  </servlet-mapping>  
+  
+  
+    <servlet>  
+    <servlet-name>RegisterServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.RegisterServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>RegisterServlet</servlet-name>  
+    <url-pattern>/RegisterServlet</url-pattern>  
+  </servlet-mapping>  
+
+ <!-- ajax -->
+ <servlet>  
+    <servlet-name>registerQueryTelServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ajaxservlet.registerQueryTelServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>registerQueryTelServlet</servlet-name>  
+    <url-pattern>/registerQueryTelServlet</url-pattern>  
+  </servlet-mapping>  
+  
+  
+  
+  <servlet>  
+    <servlet-name>registerQueryQqServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ajaxservlet.registerQueryQqServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>registerQueryQqServlet</servlet-name>  
+    <url-pattern>/registerQueryQqServlet</url-pattern>  
+  </servlet-mapping>  
+ 
+ 
+   <servlet>  
+    <servlet-name>registerQueryCardServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ajaxservlet.registerQueryCardServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>registerQueryCardServlet</servlet-name>  
+    <url-pattern>/registerQueryCardServlet</url-pattern>  
+  </servlet-mapping>  
+  
+     <servlet>  
+    <servlet-name>returnCDPServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ajaxservlet.returnCDPServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>returnCDPServlet</servlet-name>  
+    <url-pattern>/returnCDPServlet</url-pattern>  
+  </servlet-mapping>  
+ 
+  <servlet>  
+    <servlet-name>PersonInfoServlet</servlet-name>  
+    <servlet-class> com.haolei.servlet.PersonInfoServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>PersonInfoServlet</servlet-name>  
+    <url-pattern>/PersonInfoServlet</url-pattern>  
+</servlet-mapping>  
+ <!-- ajax -->
+ <!-- 修改人员信息之前确认是否可以用该号码 -->
+   <servlet>  
+    <servlet-name>UpdataPersonInfoQueryTelServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ajaxservlet.UpdataPersonInfoQueryTelServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>UpdataPersonInfoQueryTelServlet</servlet-name>  
+    <url-pattern>/UpdataPersonInfoQueryTelServlet</url-pattern>  
+</servlet-mapping>  
+
+  <servlet>  
+    <servlet-name>UpdataPersonInfoQueryQqServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ajaxservlet.UpdataPersonInfoQueryQqServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>UpdataPersonInfoQueryQqServlet</servlet-name>  
+    <url-pattern>/UpdataPersonInfoQueryQqServlet</url-pattern>  
+</servlet-mapping>  
+
+ <servlet>  
+    <servlet-name>UpdataPersonInfoQueryCardServlet</servlet-name>  
+    <servlet-class>com.haolei.servlet.ajaxservlet.UpdataPersonInfoQueryCardServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+  </servlet>   
+<servlet-mapping>  
+    <servlet-name>UpdataPersonInfoQueryCardServlet</servlet-name>  
+    <url-pattern>/UpdataPersonInfoQueryCardServlet</url-pattern>  
+</servlet-mapping>  
+
+<!--修改用户信息 -->
+</web-app>
