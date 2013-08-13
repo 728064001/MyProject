@@ -11,18 +11,18 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="updataage"/>
+		<item key="selection" value="flag"/>
 		<item key="wrap" value="false"/>
 		<item key="casesensitive" value="false"/>
 		<list key="findhistory">
+			<item value="flag"/>
+			<item value="qcomp"/>
 			<item value="age"/>
 			<item value="attr"/>
 			<item value="db"/>
 			<item value="username"/>
 			<item value="mpopenjsoncdp"/>
 			<item value="#f"/>
-			<item value="on"/>
-			<item value="admin-main-tab-style1"/>
 		</list>
 		<list key="replacehistory">
 			<item value="updataage"/>

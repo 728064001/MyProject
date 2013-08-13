@@ -23,17 +23,9 @@ public class UpdataPersonInfoQueryTelServlet extends HttpServlet {
 		PrintWriter pr = response.getWriter();
 		Person person = new Person();
 		UpdataPersonInfoQueryTelDAO updatapersoninfoqueryteldao = new UpdataPersonInfoQueryTelDAO();
-		
-		//接收 tel ajax
-		StringBuffer jsonBuf = new StringBuffer();
-		char[] buf = new char[1];
-		int len = 1;
-		BufferedReader reader = request.getReader();
-		while((len=reader.read(buf))!=-1){
-			jsonBuf.append(buf);
-		}
-		String Str = jsonBuf.toString();
-		person.setTel(Str);
+		person.setUuid(request.getParameter("uuid"));
+		person.setTel(request.getParameter("tel"));
+	
 		boolean o = updatapersoninfoqueryteldao.queryTel(person);
 		if(o){
 			JSONObject js = new JSONObject();
@@ -47,7 +39,4 @@ public class UpdataPersonInfoQueryTelServlet extends HttpServlet {
 		pr.flush();
 		pr.close();
 	}			
-
-		
-	
 }

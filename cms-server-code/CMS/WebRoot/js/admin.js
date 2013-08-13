@@ -74,20 +74,20 @@ function returnCDP(){
 }
 //Obtained from the servlet client company, department, position of a group of JSON, and then call the method places the data into the corresponding-------------------------end-----------------------------
 function viwedata(json){
-	var compnamelen = json.company.length;
-	var depnamelen = json.dep.length;
-	var postnamelen = json.post.length;
-	var compobj = $("#comp");
-	var depobj = $("#dep");
-	var postobj = $("#post");
-	for(var i=0;i<compnamelen;i++){
-		compobj.append("<option value="+"'"+json.company[i].name+"'"+">"+json.company[i].name+"</option>");
+	var qcompnamelen = json.company.length;
+	var qdepnamelen = json.dep.length;
+	var qpostnamelen = json.post.length;
+	var qcompobj = $("#qcomp");
+	var qdepobj = $("#qdep");
+	var qpostobj = $("#qpost");
+	for(var i=0;i<qcompnamelen;i++){
+		qcompobj.append("<option value="+"'"+json.company[i].name+"'"+">"+json.company[i].name+"</option>");
 	}
-	for(var i=0;i<depnamelen;i++){
-		depobj.append("<option value="+"'"+json.dep[i].name+"'"+">"+json.dep[i].name+"</option>");
+	for(var i=0;i<qdepnamelen;i++){
+		qdepobj.append("<option value="+"'"+json.dep[i].name+"'"+">"+json.dep[i].name+"</option>");
 	}
-	for(var i=0;i<postnamelen;i++){
-		postobj.append("<option value="+"'"+json.post[i].name+"'"+">"+json.post[i].name+"</option>");
+	for(var i=0;i<qpostnamelen;i++){
+		qpostobj.append("<option value="+"'"+json.post[i].name+"'"+">"+json.post[i].name+"</option>");
 	}
 }
 //从servlet端获取人员信息JSON数据
@@ -170,6 +170,19 @@ function createtable(json){
 				$("#modifiypersoninfo").show();
 				// 修改人员信息窗口打开之后调用方法用于加载数据
 				mpopenjsoncdp();
+				//打开 修改人员信息窗口前 先清除修改人员信息窗口中的各种提示信息
+				$("#updatausername").css("border-color","#ABADB3","border-width","0px","border-style","solid");
+				$("#updatausernametip").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+				$("#updataage").css("border-color","#ABADB3","border-width","0px","border-style","solid");
+				$("#updataagetip").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+				$("#updatatel").css("border-color","#ABADB3","border-width","0px","border-style","solid");
+				$("#updatateltip").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");				
+				$("#updataqq").css("border-color","#ABADB3","border-width","0px","border-style","solid");
+				$("#updataqqtip").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");				
+				$("#updatabrithday").css("border-color","#ABADB3","border-width","0px","border-style","solid");
+				$("#updatabrithdaytip").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");				
+				$("#updatacard").css("border-color","#ABADB3","border-width","0px","border-style","solid");
+				$("#updatacardtip").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");							
 			});
 		   //为行添加鼠标移动上去的样式
 			$(".cl").mousemove(function(){

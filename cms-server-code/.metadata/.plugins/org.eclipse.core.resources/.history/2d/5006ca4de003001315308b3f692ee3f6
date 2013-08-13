@@ -1,0 +1,10 @@
+package com.haolei.dao.ajaxdao;
+
+import com.haolei.entity.Person;
+
+public class UpdataPersonInfoQueryQqDAO {
+	public boolean queryQq(Person person){
+		
+		return true;
+	}
+}

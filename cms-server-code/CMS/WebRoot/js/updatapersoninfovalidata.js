@@ -1,5 +1,6 @@
 /////////////////////////////////////////////////修改人员信息/////////////////////////////////////////////////////////////////////////		
-	$(function(){
+var fla = null;
+$(function(){
 			//DOM Loading hidden DIV---------------start----------------------
 			//1.dom载入后隐藏"修改人员信息div"
 			$("#modifiypersoninfo").hide();
@@ -25,7 +26,6 @@
 		// 用户名验证 -->
 		$("#updatausername").blur(function(){
 			var updatausernameStr = $.trim($("#updatausername").val());
-			alert("ok");
 			var updatausernamelen = updatausernameStr.length;
 			var updatausernametipobj = $("#updatausernametip");
 			var reg = /[\u4e00-\u9fa5],{0,}$/;
@@ -72,25 +72,121 @@
 			var updatatellen = updatatelStr.length;
 			var updatateltipobj = $("#updatateltip");
 			var telReg=/^\d*$/;
+			var servlettelStr = "/CMS/UpdataPersonInfoQueryTelServlet?"+"&uuid="+personId+"&tel="+updatatelStr;
 			if(updatatellen>=7&&updatatellen<=12){
 				if(telReg.test(updatatelStr)){
-					ajaxreturn("/CMS/registerQueryTelServlet",$("#tel"),teltipobj);
-					$("#tel").css("border-color","#0000FF","border-width","2px","border-style","solid");
-					teltipobj.html("OK");
-					teltipobj.css("color","#0000FF");				
+					updataajaxreturn(servlettelStr,$("#updatatel"),updatateltipobj);
+					$("#updatatel").css("border-color","#0000FF","border-width","2px","border-style","solid");
+					updatateltipobj.html("OK");
+					updatateltipobj.css("color","#0000FF");				
 				}else{
-					$("#tel").css("border-color","red","border-width","2px","border-style","solid");
-					teltipobj.html("电话号码格式错误!(请输入合法的号码)!");
-					teltipobj.css("color","red");			
+					$("#updatatel").css("border-color","red","border-width","2px","border-style","solid");
+					updatateltipobj.html("电话号码格式错误!(请输入合法的号码)!");
+					updatateltipobj.css("color","red");			
 				}
 			}else{
-				$("#tel").css("border-color","red","border-width","2px","border-style","solid");
-				teltipobj.html("电话号码长度错误!(7-12位)!");
-				teltipobj.css("color","red");				
+				$("#updatatel").css("border-color","red","border-width","2px","border-style","solid");
+				updatateltipobj.html("电话号码长度错误!(7-12位)!");
+				updatateltipobj.css("color","red");				
 			}
 		});
-	});
+		// 验证QQ -->
+		$("#updataqq").blur(function(){
+			var updataqqStr = $.trim($("#updataqq").val());
+			var updataqqlen = updataqqStr.length;
+			var updataqqtipobj = $("#updataqqtip");
+			var qqReg=/^\d*$/;
+			var servlstqueryQqStr = "UpdataPersonInfoQueryQqServlet?"+"&uuid="+personId+"&qq="+updataqqStr;
+			if(updataqqlen>=4&&updataqqlen<=15){
+				updataajaxreturn(servlstqueryQqStr,$("#updataqq"),updataqqtipobj);
+				$("#updataqq").css("border-color","#0000FF","border-width","2px","border-style","solid");
+				updataqqtipobj.html("OK");
+				updataqqtipobj.css("color","#0000FF");
+			}else{
+				$("#updataqq").css("border-color","red","border-width","2px","border-style","solid");
+				updataqqtipobj.html("QQ号码长度不正确!");
+				updataqqtipobj.css("color","red");
+			}
+		});
+		//农历生日 -->
+		$("#updatabrithday").blur(function(){
+			var updatabrithdayStr = $.trim($("#updatabrithday").val());
+			var updatabrithdaylen = updatabrithdayStr.length;
+			var updatabrithdaytipobj = $("#updatabrithdaytip");
+			var brithdayReg=/^\d*$/;
+			if(brithdayReg.test(updatabrithdayStr)){
+				if(updatabrithdaylen==4){
+					if(((updatabrithdayStr.substring(0,2)>0)&&(updatabrithdayStr.substring(0,2)<=12))&&((updatabrithdayStr.substring(2,4)>0)&&(updatabrithdayStr.substring(2,4)<=29))){
+						$("#updatabrithday").css("border-color","#0000FF","border-width","2px","border-style","solid");
+						updatabrithdaytipobj.html("OK");
+						updatabrithdaytipobj.css("color","#0000FF");			
+					}else{
+						$("#updatabrithday").css("border-color","red","border-width","2px","border-style","solid");
+						updatabrithdaytipobj.html("农历日期范围错误，如:0609");
+						updatabrithdaytipobj.css("color","red");	
+					}
+				}else{
+					$("#updatabrithday").css("border-color","red","border-width","2px","border-style","solid");
+					updatabrithdaytipobj.html("农历日期长度错误，如:0609");
+					updatabrithdaytipobj.css("color","red");				
+				}
+			}else{
+				$("#updatabrithday").css("border-color","red","border-width","2px","border-style","solid");
+				updatabrithdaytipobj.html("农历日期错误，如:0609");
+				updatabrithdaytipobj.css("color","red");			
+			}
+		});
 		
+			//身份证验证  -->
+		$("#updatacard").blur(function(){
+			 var updatacardStr = $.trim($("#updatacard").val());
+			 var updatacardlen = updatacardStr.length;
+			 var updatacardtipobj = $("#updatacardtip");
+			 var cardReg=/^(\d{14}|\d{17})(\d|[xX])$/;
+			 var servletcardstr = "UpdataPersonInfoQueryCardServlet?"+"&uuid="+personId+"&card="+updatacardStr;
+			 if(cardReg.test(updatacardStr)){
+			    updataajaxreturn(servletcardstr,$("#updatacard"),updatacardtipobj);
+				$("#updatacard").css("border-color","#0000FF","border-width","2px","border-style","solid");
+				updatacardtipobj.html("OK");
+				updatacardtipobj.css("color","#0000FF");	 	
+			 }else{
+				$("#updatacard").css("border-color","red","border-width","2px","border-style","solid");
+				updatacardtipobj.html("身份证号码错误，请输入合法身份证!");
+				updatacardtipobj.css("color","red");		 
+			 }
+		});
+		
+		//点击确认修改时 调用mpsubmitvalidata方法
+		$("#updatapersoninfo").click(function(){mpsubmitvalidata();});
+		
+	});
+	
+	
+	//ajax return 
+function updataajaxreturn(urlstr,obj,objtip){
+		$(function(){
+			$.ajax({
+				url: urlstr,
+				type: "POST",
+				dataType:'json',
+				data: $.trim(obj.val()),
+				success:function(json) {
+					if(json.status=="yes"){
+						//set style 
+						obj.css("border-color","#0000FF","border-width","2px","border-style","solid");
+						objtip.html("OK");
+						objtip.css("color","#0000FF");
+						fla = true;
+					}else{
+						obj.css("border-color","red","border-width","2px","border-style","solid");
+						objtip.html("该号码已经被注册!");
+						objtip.css("color","red");
+						fla = false;
+					}
+				}
+			});
+		});
+}
 		//修改人员信息窗口打开时，通过ajax返回公司部门职位json信息
 		function mpopenjsoncdp(){
 			$(function(){
@@ -147,8 +243,159 @@
 			}
 			
 		}
-
 		
+		//提交时验证
+
+		function mpsubmitvalidata(){
+			var updatausernameStr = $.trim($("#updatausername").val());
+			var updatausernamelen = updatausernameStr.length;
+			var updatausernametipobj = $("#updatausernametip");
+			var reg = /[\u4e00-\u9fa5],{0,}$/;
+			if(updatausernamelen<1||updatausernamelen>5){
+				$("#updatausername").css("border-color","red","border-width","2px","border-style","solid");
+				updatausernametipobj.html("2-4个中文字符");
+				updatausernametipobj.css("color","red");
+				return false;
+					
+			}else{
+				if(!reg.test(updatausernameStr)){
+					$("#updatausername").css("border-color","red","border-width","2px","border-style","solid");
+					updatausernametipobj.html("请输入中文字符");
+					updatausernametipobj.css("color","red");
+					return false;
+				}else{
+					$("#updatausername").css("border-color","#0000FF","border-width","2px","border-style","solid");
+					updatausernametipobj.html("OK");
+					updatausernametipobj.css("color","#0000FF");
+				}
+			}
+		
+			var updataageStr = $.trim($("#updataage").val());
+			var updataagetipobj = $("#updataagetip");
+			var ageReg=/^\d*$/;
+			if(!ageReg.test(updataageStr)||updataageStr==""){
+				$("#updataage").css("border-color","red","border-width","2px","border-style","solid");
+				updataagetipobj.html("请输入正确的年龄(数字)！");
+				updataagetipobj.css("color","red");	
+				return false;
+			}else{
+				if(((parseInt(updataageStr))<17)||((parseInt(updataageStr))>100)){
+					$("#updataage").css("border-color","red","border-width","2px","border-style","solid");
+					updataagetipobj.html("年龄范围错误！");
+					updataagetipobj.css("color","red");	
+					return false;
+				}else{
+					$("#updataage").css("border-color","#0000FF","border-width","2px","border-style","solid");
+					updataagetipobj.html("OK");
+					updataagetipobj.css("color","#0000FF");		
+				}
+			}
+			
+			
+			var updatatelStr = $.trim($("#updatatel").val());
+			var updatatellen = updatatelStr.length;
+			var updatateltipobj = $("#updatateltip");
+			var telReg=/^\d*$/;
+			var servlettelStr = "/CMS/UpdataPersonInfoQueryTelServlet?"+"&uuid="+personId+"&tel="+updatatelStr;
+			if(updatatellen<7||updatatellen>12){
+				$("#updatatel").css("border-color","red","border-width","2px","border-style","solid");
+				updatateltipobj.html("电话号码长度错误!(7-12位)!");
+				updatateltipobj.css("color","red");		
+				return false;
+
+			}else{
+				if(!telReg.test(updatatelStr)){
+					$("#updatatel").css("border-color","red","border-width","2px","border-style","solid");
+					updatateltipobj.html("电话号码格式错误!(请输入合法的号码)!");
+					updatateltipobj.css("color","red");		
+					return false;
+				}else{
+					updataajaxreturn(servlettelStr,$("#updatatel"),updatateltipobj);
+					if(fla==false){return false;}
+				}		
+			}
+			
+			var updataqqStr = $.trim($("#updataqq").val());
+			var updataqqlen = updataqqStr.length;
+			var updataqqtipobj = $("#updataqqtip");
+			var qqReg=/^\d*$/;
+			var servlstqueryQqStr = "UpdataPersonInfoQueryQqServlet?"+"&uuid="+personId+"&qq="+updataqqStr;
+			if(updataqqlen<4||updataqqlen>15){
+				$("#updataqq").css("border-color","red","border-width","2px","border-style","solid");
+				updataqqtipobj.html("QQ号码长度不正确!");
+				updataqqtipobj.css("color","red");
+				return false;
+			}else{
+				updataajaxreturn(servlstqueryQqStr,$("#updataqq"),updataqqtipobj);
+				if(fla==false){return false;}
+			}	
+		
+			var updatabrithdayStr = $.trim($("#updatabrithday").val());
+			var updatabrithdaylen = updatabrithdayStr.length;
+			var updatabrithdaytipobj = $("#updatabrithdaytip");
+			var brithdayReg=/^\d*$/;
+			if(!brithdayReg.test(updatabrithdayStr)){
+				$("#updatabrithday").css("border-color","red","border-width","2px","border-style","solid");
+				updatabrithdaytipobj.html("农历日期错误，如:0609");
+				updatabrithdaytipobj.css("color","red");		
+				return false;
+			}else{
+				if(updatabrithdaylen!=4){
+					$("#updatabrithday").css("border-color","red","border-width","2px","border-style","solid");
+					updatabrithdaytipobj.html("农历日期长度错误，如:0609");
+					updatabrithdaytipobj.css("color","red");	
+					return false;
+				}else{
+					if(((updatabrithdayStr.substring(0,2)<0)||(updatabrithdayStr.substring(0,2)>12))||((updatabrithdayStr.substring(2,4)<0)&&(updatabrithdayStr.substring(2,4)>29))){
+						$("#updatabrithday").css("border-color","red","border-width","2px","border-style","solid");
+						updatabrithdaytipobj.html("农历日期范围错误，如:0609");
+						updatabrithdaytipobj.css("color","red");	
+						return false;
+					}else{
+						$("#updatabrithday").css("border-color","#0000FF","border-width","2px","border-style","solid");
+						updatabrithdaytipobj.html("OK");
+						updatabrithdaytipobj.css("color","#0000FF");	
+					}			
+				}	
+			}
+			
+			var updatacardStr = $.trim($("#updatacard").val());
+			 var updatacardlen = updatacardStr.length;
+			 var updatacardtipobj = $("#updatacardtip");
+			 var cardReg=/^(\d{14}|\d{17})(\d|[xX])$/;
+			 var servletcardstr = "UpdataPersonInfoQueryCardServlet?"+"&uuid="+personId+"&card="+updatacardStr;
+			 if(!cardReg.test(updatacardStr)){
+			 	$("#updatacard").css("border-color","red","border-width","2px","border-style","solid");
+				updatacardtipobj.html("身份证号码错误，请输入合法身份证!");
+				updatacardtipobj.css("color","red");	
+				return false;
+			 }else{
+				updataajaxreturn(servletcardstr,$("#updatacard"),updatacardtipobj);
+				if(fla==false){return false;}
+			 }	
+			infoupdata();
+		}
+		//判断fla的值确定是否ajax提交修改信息
+		function infoupdata(){
+			if(mpsubmitvalidata!=null&&mpsubmitvalidata!=false){
+				if(valueyesnomodifiy()){
+					alert("数据提交");
+				}else{
+					alert("数据末修改，提交无效！");
+				}
+			}else{
+				alert("no");
+			}
+		}
+		//提交修改之前判断信息是否修改过
+		function valueyesnomodifiy(){
+			alert($("input:radio[name='updatasex']").filter(':checked').val());
+			if($.trim($("#updatausername").val())!=personUsername || $.trim($("#updataage").val())!=personAge || $("input:radio[name='updatasex']").filter(':checked').val()!=personSex|$.trim($("#updatatel").val())!=personTel||$.trim($("#updataqq").val())!=personQq||$.trim($("#updatabrithday").val())!=personBri||$.trim($("#updatacard").val())!=personCard||$("#updatacomp option:selected").text()!=personComp||$("#updatadep option:selected").text()!=personDep||$("#updatapost option:selected").text()!=personPost){
+			return true;
+			}else{
+			return false;
+			}
+		}
 		//根据双击人员信息表得到的UUID查询人员信息,这样做的目地是为了防止操作时该UUID对应的人员已经不存在，所以
 		//要再通过一次查询数据库来确认。
 //		function uuidqueryinfo(uuid){

@@ -1,0 +1,11 @@
+package com.haolei.dao.ajaxdao;
+
+import com.haolei.entity.Person;
+
+public class UpdataPersonInfoDAO {
+	public int updataperson(Person person){
+	
+		
+		return 0;
+	}
+}

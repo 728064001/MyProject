@@ -1,0 +1,5 @@
+package com.haolei.dao.ajaxdao;
+
+public class UpdataPersonInfoQueryQqDAO {
+
+}

@@ -1,0 +1,30 @@
+package com.haolei.dao.ajaxdao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.haolei.dao.Dbconn;
+import com.haolei.entity.Person;
+
+public class UpdataPersonInfoDAO {
+	public int updataperson(Person person){
+		Connection conn = Dbconn.getconn();
+		PreparedStatement pstm = null;
+		ResultSet res = null;
+		String updatapersoninfoStr = "updata person_tab set username = ?, sex=?, tel=?, icq=?, brithday=?, age=?, card=?, companyid=?, depid=?, postid=? where uuid=? ";
+		int num = 0;
+		try{
+			pstm = conn.prepareStatement(updatapersoninfoStr);
+			res = pstm.executeQuery();
+			while(res.next()){
+				
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			Dbconn.closeALL(conn, pstm, res);
+		}
+		return 0;
+	}
+}

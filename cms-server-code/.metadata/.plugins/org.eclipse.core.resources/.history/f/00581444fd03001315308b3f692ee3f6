@@ -1,0 +1,14 @@
+package com.haolei.dao.ajaxdao;
+
+import java.sql.Connection;
+
+import com.haolei.dao.Dbconn;
+import com.haolei.entity.Person;
+
+public class UpdataPersonInfoDAO {
+	public int updataperson(Person person){
+		Connection conn = Dbconn.getconn();
+		
+		return 0;
+	}
+}
