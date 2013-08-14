@@ -143,7 +143,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<span class="admin-main-tab-style1">电话:</span><input name="qtel" id="qtel" type="text" style="width: 81px" />&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 50px" /></td>
 				</tr>
 				<tr>
-					<td align="left" valign="top">&nbsp;&nbsp;&nbsp; &nbsp;<img alt="" height="18" src="image/addperson.png" width="18" /><span id="aperson" class="admin-main-tab-admin-main-tab-td-admins-style">添加人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td align="left" valign="top">&nbsp;&nbsp;&nbsp; &nbsp;<img alt="" height="18" src="image/addperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">添加人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					</span>
 					<hr style="height: -12px"/>
 					<!--根据ajax 返回的数据动态创建表格 -->
@@ -251,7 +251,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<tr bgcolor="#808080">
 					<td><span class="admin-addperson-titletext-style"><strong>添加人员</strong></span></td>
 					<td class="admin-addperson-titleimg-style">
-					<img alt="关闭窗口" id="closeaddpersonwindowimg" height="22" src="image/personinfo_close.png" width="25" /></td>
+					<img alt="关闭窗口" height="22" src="image/personinfo_close.png" width="25" /></td>
 				</tr>
 			</table>
 			</td>

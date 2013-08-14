@@ -1,0 +1,7 @@
+$(function(){
+	$("#addperson").hide();
+	$("#closeaddpersonwindowimg").click(function(){
+		$("#addperson").hide();	
+	});
+});
+

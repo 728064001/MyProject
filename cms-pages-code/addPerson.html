@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="zh-cn" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<style type="text/css">
+.admin-addperson-maintable-style {
+	border: 1px solid #808080;
+}
+.admin-addperson-title-style {
+	border-style: solid;
+	border-width: 1px;
+}
+.admin-addperson-titletext-style {
+	font-family: 宋体;
+	font-size: small;
+}
+.admin-addperson-titleimg-style {
+	text-align: right;
+}
+.admin-addperson-tag-style {
+	text-align: center;
+	font-size: large;
+	font-family: 华文细黑;
+	color: #C0C0C0;
+}
+.admin-addperson-sextxt-style {
+	font-size: small;
+}
+.admin-addperson-tip3-style {
+	font-size: small;
+	color: #FF3300;
+}
+.admin-addperson-tip-style {
+	font-size: medium;
+	color: #0000FF;
+}
+.admin-addperson-tip2-style {
+	color: #0000FF;
+}
+.admin-addperson-maintable-style0 {
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div id="addperson" style="position: absolute; width: 1080px; background-color:white; height: 800px; z-index: 1">
+	<table cellpadding="0" cellspacing="0" class="admin-addperson-maintable-style" style="width: 100%; height: 100%">
+		<tr>
+			<td style="height: 18px">
+			<table cellpadding="0" cellspacing="0" class="admin-addperson-title-style" style="width: 100%; height: 100%">
+				<tr bgcolor="#808080">
+					<td><span class="admin-addperson-titletext-style"><strong>添加人员</strong></span></td>
+					<td class="admin-addperson-titleimg-style">
+					<img alt="关闭窗口" height="22" src="image/personinfo_close.png" width="25" /></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="left" valign="top">
+			<table cellpadding="0" cellspacing="0" class="admin-addperson-maintable-style" style="width: 100%; height: 100%">
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>用户名:</strong></td>
+					<td style="width: 418px">
+						<input name="ausername" id="ausername" type="text" style="width: 170px; height: 27px" />
+					</td>
+					<td class="admin-addperson-tip-style" id="ausernametip">用户真实姓名(中文)</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>邮&nbsp; 箱:</strong></td>
+					<td style="width: 418px">
+						<input name="amail" id="amail" type="text" style="width: 213px; height: 27px" /><span class="admin-addperson-tip3-style">该邮箱为系统发送客户注册密码用.请预留注册用户本人的邮箱，确保能收到系统邮件！</span></td>
+					<td class="admin-addperson-tip2-style" id="amailtip">填写注册用户本人真实有效邮箱</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>性&nbsp; 别:</strong></td>
+					<td style="width: 418px"><span class="admin-addperson-sextxt-style">男
+						</span>
+						<input name="asex" type="radio" value="男" class="admin-addperson-sextxt-style" /><span class="admin-addperson-sextxt-style">&nbsp;&nbsp;&nbsp;&nbsp; 
+					女</span><input name="asex" type="radio" value="女" /></td>
+					<td id="asextip" class="admin-addperson-tip2-style">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>QQ:</strong></td>
+					<td style="width: 418px">
+						<input name="aqq" id="aqq" type="text" style="width: 170px; height: 27px" /></td>
+					<td id="aqqtip" class="admin-addperson-tip2-style">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>联系电话:</strong></td>
+					<td style="width: 418px">
+						<input name="atel" id="atel" type="text" style="width: 170px; height: 27px" /></td>
+					<td id="ateltip" class="admin-addperson-tip2-style">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>生日日期:</strong></td>
+					<td style="width: 418px">
+						<input name="abrithday" id="abrithday" type="text" style="width: 99px; height: 27px" /></td>
+					<td id="abrithdaytip" class="admin-addperson-tip2-style">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>年&nbsp; 龄:</strong></td>
+					<td style="width: 418px">
+						<input name="aage" id="aage" type="text" style="width: 99px; height: 27px" /></td>
+					<td id="aagetip" class="admin-addperson-tip2-style">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>身份证号:</strong></td>
+					<td style="width: 418px">
+						<input name="acard" id="acard" type="text" style="width: 190px; height: 27px" /></td>
+					<td id="acardtip" class="admin-addperson-tip2-style">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>所属公司:</strong></td>
+					<td style="width: 418px">
+						<select name="acompany" id="acompany">
+						<option value="=请选择=">=请选择=</option>
+						</select>
+					</td>
+					<td id="acompanytip" class="admin-addperson-tip2-style">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>部&nbsp; 门:</strong></td>
+					<td style="width: 418px">
+						<select name="adep" id="adep" style="width: 113px">
+						<option value="=请选择=">=请选择=</option>
+						</select></td>
+					<td id="adeptip" class="admin-addperson-tip2-style">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px"><strong>职&nbsp; 位:</strong></td>
+					<td style="width: 418px">
+						<select name="apost" id="apost" style="width: 141px">
+						<option value="=请选择=">=请选择=</option>
+						</select></td>
+					<td id="aposttip" class="admin-addperson-tip2-style">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="admin-addperson-tag-style" style="width: 304px">&nbsp;</td>
+					<td style="width: 418px" class="admin-addperson-maintable-style0">
+		
+						<input name="addpersonbut" id="addpersonbut" type="button" value="确认添加人员" style="height: 55px; width: 155px" />
+					</td>
+					<td class="admin-addperson-tip2-style">&nbsp;</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+
+</html>

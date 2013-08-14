@@ -6,6 +6,7 @@ $(function(){
 		$("#downpa").css("background","#DFDFDF");
 		//Personnel information Paging button style---------end-------------
 	
+		$("#aperson").css("background","#DFDFDF");
 	//DOM载入之后调用returnCDP()方法;
 	returnCDP();
 	
@@ -52,6 +53,10 @@ $(function(){
 		personsearch();
 	});
 //人员信息分页按钮相关的事件-------------end-------------------------
+	//打开 添加人员窗口的按钮事件
+	$("#aperson").click(function(){
+		$("#addperson").show();
+	});
 });
 //Loading--------------end---------------------------------------------
 //Related variables-----------------------start------------------------ 
@@ -232,6 +237,12 @@ function createtable(json){
 			$("#lastpa").css("background","#DFDFDF");
 			});		
 			
+			 $("#aperson").mousemove(function(){
+			$("#aperson").css("background","#5F5F5F");
+			});
+			 $("#aperson").mouseout(function(){
+			$("#aperson").css("background","#DFDFDF");
+			});
 				//当前页为1时，上一页按钮不可用
 				if(nowpage==1){
 					$("#uppa").hide();

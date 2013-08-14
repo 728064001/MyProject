@@ -4,6 +4,6 @@
 include 'E:\\Development\\Frame\\EXTjs\\ext-4.2\\ext-all-dev.js';
 </profile>
 <profile id="Jquery" name="Jquery">use namespace jQuery;
-include 'F:\\git\\MyProject\\cms-server-code\\CMS\\WebRoot\\js\\jquery-1.10.1.js';
+include 'E:\\Development\\package\\js\\jquery-1.10.1.js';
 </profile>
 </profiles>

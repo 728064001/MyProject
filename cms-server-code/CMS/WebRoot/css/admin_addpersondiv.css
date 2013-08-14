@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+.admin-addperson-maintable-style {
+	border: 1px solid #808080;
+}
+.admin-addperson-title-style {
+	border-style: solid;
+	border-width: 1px;
+}
+.admin-addperson-titletext-style {
+	font-family: 宋体;
+	font-size: small;
+}
+.admin-addperson-titleimg-style {
+	text-align: right;
+}
+.admin-addperson-tag-style {
+	text-align: center;
+	font-size: large;
+	font-family: 华文细黑;
+	color: #C0C0C0;
+}
+.admin-addperson-sextxt-style {
+	font-size: small;
+}
+.admin-addperson-tip3-style {
+	font-size: small;
+	color: #FF3300;
+}
+.admin-addperson-tip-style {
+	font-size: medium;
+	color: #0000FF;
+}
+.admin-addperson-tip2-style {
+	color: #0000FF;
+}
+.admin-addperson-maintable-style0 {
+	text-align: center;
+}

@@ -22,14 +22,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" href="css/zTreeStyle/zTreeStyle.css" />
 	<link rel="stylesheet" href="css/admin.css" />
 	<link rel="stylesheet" href="css/admin_modifiypersoninfodiv.css" />
-	<link rel="stylesheet" href="css/admin_addpersondiv.css" />
 	<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
 	<script type="text/javascript" src="js/jquery.ztree.core-3.5.js"></script>
 	<script type="text/javascript" src="js/jquery.ztree.excheck-3.5.js"></script>
 	<script type="text/javascript" src="js/jquery.ztree.exedit-3.5.js"></script>
 	<script type="text/javascript" src="js/admin.js"></script>
 	<script type="text/javascript" src="js/updatapersoninfovalidata.js"></script>
-	<script type="text/javascript" src="js/admin_addperson.js"></script>
 </head>
 
 <body>
@@ -143,7 +141,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<span class="admin-main-tab-style1">电话:</span><input name="qtel" id="qtel" type="text" style="width: 81px" />&nbsp;&nbsp;<input name="search" id="search" type="button" value="查找" style="width: 50px" /></td>
 				</tr>
 				<tr>
-					<td align="left" valign="top">&nbsp;&nbsp;&nbsp; &nbsp;<img alt="" height="18" src="image/addperson.png" width="18" /><span id="aperson" class="admin-main-tab-admin-main-tab-td-admins-style">添加人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<td align="left" valign="top">&nbsp;&nbsp;&nbsp; &nbsp;<img alt="" height="18" src="image/addperson.png" width="18" /><span class="admin-main-tab-admin-main-tab-td-admins-style">添加人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 					</span>
 					<hr style="height: -12px"/>
 					<!--根据ajax 返回的数据动态创建表格 -->
@@ -242,114 +240,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</table>
 </div>
 		<!-- 修改人员信息DIV -->
-		<!-- 添加人员DIV -->
-	<div id="addperson" style="position: absolute; background-color:white; width: 1080px; height: 800px; z-index: 1">
-	<table cellpadding="0" cellspacing="0" class="admin-addperson-maintable-style" style="width: 100%; height: 100%">
-		<tr>
-			<td style="height: 18px">
-			<table cellpadding="0" cellspacing="0" class="admin-addperson-title-style" style="width: 100%; height: 100%">
-				<tr bgcolor="#808080">
-					<td><span class="admin-addperson-titletext-style"><strong>添加人员</strong></span></td>
-					<td class="admin-addperson-titleimg-style">
-					<img alt="关闭窗口" id="closeaddpersonwindowimg" height="22" src="image/personinfo_close.png" width="25" /></td>
-				</tr>
-			</table>
-			</td>
-		</tr>
-		<tr>
-			<td align="left" valign="top">
-			<table cellpadding="0" cellspacing="0" class="admin-addperson-maintable-style" style="width: 100%; height: 100%">
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>用户名:</strong></td>
-					<td style="width: 418px">
-						<input name="ausername" id="ausername" type="text" style="width: 170px; height: 27px" />
-					</td>
-					<td class="admin-addperson-tip-style" id="ausernametip">用户真实姓名(中文)</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>邮&nbsp; 箱:</strong></td>
-					<td style="width: 418px">
-						<input name="amail" id="amail" type="text" style="width: 213px; height: 27px" /><span class="admin-addperson-tip3-style">该邮箱为系统发送客户注册密码用.请预留注册用户本人的邮箱，确保能收到系统邮件！</span></td>
-					<td class="admin-addperson-tip2-style" id="amailtip">填写注册用户本人真实有效邮箱</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>性&nbsp; 别:</strong></td>
-					<td style="width: 418px"><span class="admin-addperson-sextxt-style">男
-						</span>
-						<input name="asex" type="radio" value="男" class="admin-addperson-sextxt-style" /><span class="admin-addperson-sextxt-style">&nbsp;&nbsp;&nbsp;&nbsp; 
-					女</span><input name="asex" type="radio" value="女" /></td>
-					<td id="asextip" class="admin-addperson-tip2-style">&nbsp;</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>QQ:</strong></td>
-					<td style="width: 418px">
-						<input name="aqq" id="aqq" type="text" style="width: 170px; height: 27px" /></td>
-					<td id="aqqtip" class="admin-addperson-tip2-style">&nbsp;</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>联系电话:</strong></td>
-					<td style="width: 418px">
-						<input name="atel" id="atel" type="text" style="width: 170px; height: 27px" /></td>
-					<td id="ateltip" class="admin-addperson-tip2-style">&nbsp;</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>生日日期:</strong></td>
-					<td style="width: 418px">
-						<input name="abrithday" id="abrithday" type="text" style="width: 99px; height: 27px" /></td>
-					<td id="abrithdaytip" class="admin-addperson-tip2-style">&nbsp;</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>年&nbsp; 龄:</strong></td>
-					<td style="width: 418px">
-						<input name="aage" id="aage" type="text" style="width: 99px; height: 27px" /></td>
-					<td id="aagetip" class="admin-addperson-tip2-style">&nbsp;</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>身份证号:</strong></td>
-					<td style="width: 418px">
-						<input name="acard" id="acard" type="text" style="width: 190px; height: 27px" /></td>
-					<td id="acardtip" class="admin-addperson-tip2-style">&nbsp;</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>所属公司:</strong></td>
-					<td style="width: 418px">
-						<select name="acompany" id="acompany">
-						<option value="=请选择=">=请选择=</option>
-						</select>
-					</td>
-					<td id="acompanytip" class="admin-addperson-tip2-style">&nbsp;</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>部&nbsp; 门:</strong></td>
-					<td style="width: 418px">
-						<select name="adep" id="adep" style="width: 113px">
-						<option value="=请选择=">=请选择=</option>
-						</select></td>
-					<td id="adeptip" class="admin-addperson-tip2-style">&nbsp;</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px"><strong>职&nbsp; 位:</strong></td>
-					<td style="width: 418px">
-						<select name="apost" id="apost" style="width: 141px">
-						<option value="=请选择=">=请选择=</option>
-						</select></td>
-					<td id="aposttip" class="admin-addperson-tip2-style">&nbsp;</td>
-				</tr>
-				<tr>
-					<td class="admin-addperson-tag-style" style="width: 304px">&nbsp;</td>
-					<td style="width: 418px" class="admin-addperson-maintable-style0">
-		
-						<input name="addpersonbut" id="addpersonbut" type="button" value="确认添加人员" style="height: 55px; width: 155px" />
-					</td>
-					<td class="admin-addperson-tip2-style">&nbsp;</td>
-				</tr>
-			</table>
-			</td>
-		</tr>
-	</table>
-</div>
-		
-		<!-- 添加人员DIV -->
 		</td>
 	</tr>
 	<tr bgcolor="#C0C0C0">

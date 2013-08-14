@@ -251,7 +251,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<tr bgcolor="#808080">
 					<td><span class="admin-addperson-titletext-style"><strong>添加人员</strong></span></td>
 					<td class="admin-addperson-titleimg-style">
-					<img alt="关闭窗口" id="closeaddpersonwindowimg" height="22" src="image/personinfo_close.png" width="25" /></td>
+					<img alt="关闭窗口" height="22" src="image/personinfo_close.png" width="25" /></td>
 				</tr>
 			</table>
 			</td>
