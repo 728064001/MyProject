@@ -31,7 +31,7 @@ public class queryTelDAO {
 		}finally{
 			Dbconn.closeALL(conn, pstm, res);
 		}
-		System.out.println("可以使用");
+		System.out.println("tel可以使用");
 		
 		return true;
 	}

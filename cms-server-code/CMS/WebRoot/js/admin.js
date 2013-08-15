@@ -52,10 +52,29 @@ $(function(){
 		nowpage=p;
 		personsearch();
 	});
+	$("#pagejump").click(function(){
+		var numReg=/^\d*$/;
+		var pagetext = $.trim($("#pagenum").val());
+		if(pagetext.length!=0){
+			if(numReg.test(pagetext)){
+				if(pagetext>0&&pagetext<=p){
+					nowpage = pagetext;
+					personsearch();
+				}else{
+					alert("警告：您输入的页码不存在！");
+				}
+			}else{
+				alert("警告：页码只能是整数数字！");
+			}
+		}else{
+			alert("警告：页码没有填写！");
+		}
+	});
 //人员信息分页按钮相关的事件-------------end-------------------------
 	//打开 添加人员窗口的按钮事件
 	$("#aperson").click(function(){
 		$("#addperson").show();
+		openaddpersonwindow();
 	});
 });
 //Loading--------------end---------------------------------------------

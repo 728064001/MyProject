@@ -1,0 +1,261 @@
+$(function(){
+	$("#addperson").hide();
+	$("#closeaddpersonwindowimg").click(function(){
+		$("#addperson").hide();	
+	});
+	
+	//数据验证
+	//用户名验证
+	$("#ausername").blur(function(){
+		var ausernameStr = $.trim($("#ausername").val());
+		var ausernamelen = ausernameStr.length;
+		var ausernametipobj = $("#ausernametip");
+		var auserreg = /[\u4e00-\u9fa5],{0,}$/;	
+		if(ausernamelen>1&&ausernamelen<5){
+		if(auserreg.test(ausernameStr)){
+			$("#ausername").css("border-color","#0000FF","border-width","2px","border-style","solid");
+			ausernametipobj.html("<img src='image/check.png' />");
+		}else{
+			$("#ausername").css("border-color","red","border-width","2px","border-style","solid");
+			ausernametipobj.html("请输入中文字符");
+			ausernametipobj.css("color","red");
+		}
+	}else{
+		$("#ausername").css("border-color","red","border-width","2px","border-style","solid");
+		ausernametipobj.html("2-4个中文字符");
+		ausernametipobj.css("color","red");
+	}
+	});
+	//email验证
+	$("#aemail").blur(function(){
+		var aemailstr = $.trim($("#aemail").val());
+		var aemaillen = aemailstr.length;
+		var aemailtipobj = $("#aemailtip");
+		var aemailreg =  /^(?:[a-z\d]+[_\-\+\.]?)*[a-z\d]+@(?:([a-z\d]+\-?)*[a-z\d]+\.)+([a-z]{2,})+$/i;
+		if(aemaillen>0){
+			if(aemailreg.test(aemailstr)){
+				$("#aemail").css("border-color","#0000FF","border-width","2px","border-style","solid");
+				aemailtipobj.html("<img src='image/check.png' />");
+			}else{
+				$("#aemail").css("border-color","red","border-width","1px","border-style","solid");
+				aemailtipobj.html("电子邮件格式不正确")
+				aemailtipobj.css("color","red");		
+			}
+		}else{
+			$("#aemail").css("border-color","red","border-width","1px","border-style","solid");
+			aemailtipobj.html("电子邮件地址为必填项")
+			aemailtipobj.css("color","red");			
+		}
+	});
+	//性别验证
+	$("input:radio[name='asex']").mouseout(function(){
+		var asexradio = $("input:radio[name='asex']")
+		var asextipobj = $("#asextip");
+		if(asexradio.is(":checked")){
+			asextipobj.html("<img src='image/check.png' />");
+		}else{
+			asextipobj.html("请选择性别！");
+			asextipobj.css("color","red");
+		}
+	});
+	// 验证QQ -->
+	$("#aqq").blur(function(){
+		var aqqStr = $.trim($("#aqq").val());
+		var aqqlen = aqqStr.length;
+		var aqqtipobj = $("#aqqtip");
+		var aqqReg=/^\d*$/;
+		if(aqqlen>=4&&aqqlen<=15){
+			aajaxreturn("/CMS/registerQueryQqServlet",$("#aqq"),aqqtipobj);
+			$("#aqq").css("border-color","#0000FF","border-width","2px","border-style","solid");
+			aqqtipobj.html("<img src='image/check.png' />");
+		}else{
+			$("#aqq").css("border-color","red","border-width","2px","border-style","solid");
+			aqqtipobj.html("QQ号码长度不正确!");
+			aqqtipobj.css("color","red");
+		}
+});
+	//电话验证
+$("#atel").blur(function(){
+	var atelStr = $.trim($("#atel").val());
+	var atellen = atelStr.length;
+	var ateltipobj = $("#ateltip");
+	var atelReg=/^\d*$/;
+	if(atellen>=7&&atellen<=12){
+		if(atelReg.test(atelStr)){
+			aajaxreturn("/CMS/registerQueryTelServlet",$("#atel"),ateltipobj);
+			$("#atel").css("border-color","#0000FF","border-width","2px","border-style","solid");
+			teltipobj.html("<img src='image/check.png' />");
+		}else{
+			$("#atel").css("border-color","red","border-width","2px","border-style","solid");
+			ateltipobj.html("电话号码格式错误!(请输入合法的号码)!");
+			ateltipobj.css("color","red");			
+		}
+	}else{
+		$("#atel").css("border-color","red","border-width","2px","border-style","solid");
+		ateltipobj.html("电话号码长度错误!(7-12位)!");
+		ateltipobj.css("color","red");				
+	}
+});	
+	//农历生日 -->
+$("#abrithday").blur(function(){
+	var abrithdayStr = $.trim($("#abrithday").val());
+	var abrithdaylen = abrithdayStr.length;
+	var abrithdaytipobj = $("#abrithdaytip");
+	var abrithdayReg=/^\d*$/;
+	if(abrithdayReg.test(abrithdayStr)){
+		if(abrithdaylen==4){
+			if(((abrithdayStr.substring(0,2)>0)&&(abrithdayStr.substring(0,2)<=12))&&((abrithdayStr.substring(2,4)>0)&&(abrithdayStr.substring(2,4)<=29))){
+				$("#abrithday").css("border-color","#0000FF","border-width","2px","border-style","solid");
+				abrithdaytipobj.html("<img src='image/check.png' />");
+			}else{
+				$("#abrithday").css("border-color","red","border-width","2px","border-style","solid");
+				abrithdaytipobj.html("农历日期范围错误，如:0609");
+				abrithdaytipobj.css("color","red");	
+			}
+		}else{
+			$("#abrithday").css("border-color","red","border-width","2px","border-style","solid");
+			abrithdaytipobj.html("农历日期长度错误，如:0609");
+			abrithdaytipobj.css("color","red");				
+		}
+	}else{
+		$("#abrithday").css("border-color","red","border-width","2px","border-style","solid");
+		abrithdaytipobj.html("农历日期错误，如:0609");
+		abrithdaytipobj.css("color","red");			
+	}
+});
+	//年龄验证
+$("#aage").blur(function(){
+	var aageStr = $.trim($("#aage").val());
+	var aagetipobj = $("#aagetip");
+	var aageReg=/^\d*$/;
+	if(aageReg.test(aageStr)&&aageStr!=""){
+		if(((parseInt(aageStr))>=17)&&((parseInt(aageStr))<=100)){
+			$("#aage").css("border-color","#0000FF","border-width","2px","border-style","solid");
+			aagetipobj.html("<img src='image/check.png' />");
+		}else{
+			$("#aage").css("border-color","red","border-width","2px","border-style","solid");
+			aagetipobj.html("年龄范围错误！");
+			aagetipobj.css("color","red");			
+		}
+	}else{
+		$("#aage").css("border-color","red","border-width","2px","border-style","solid");
+		aagetipobj.html("请输入正确的年龄(数字)！");
+		aagetipobj.css("color","red");	
+	}
+});
+	//身份证验证  -->
+$("#acard").blur(function(){
+	 var acardStr = $.trim($("#acard").val());
+	 var acardlen = acardStr.length;
+	 var acardtipobj = $("#acardtip");
+	 var acardReg=/^(\d{14}|\d{17})(\d|[xX])$/;
+	 if(acardReg.test(acardStr)){
+	    aajaxreturn("/CMS/registerQueryCardServlet",$("#acard"),acardtipobj);
+		$("#acard").css("border-color","#0000FF","border-width","2px","border-style","solid");
+		acardtipobj.html("<img src='image/check.png' />");
+	 }else{
+		$("#Acard").css("border-color","red","border-width","2px","border-style","solid");
+		acardtipobj.html("身份证号码错误，请输入合法身份证!");
+		acardtipobj.css("color","red");		 
+	 }
+});
+	//所属公司验证-->
+$("#acomp").blur(function(){
+	var acompselectedval = $("#acomp option:checked").text();
+	var acomtipobj = $("#acomptip");
+	if(acompselectedval!="=请选择=" && acompselectedval!=""){
+		acomtipobj.html("<img src='image/check.png' />");
+	}else{
+		acomtipobj.html("请选择所属公司");
+		acomtipobj.css("color","red");		
+	}
+});
+
+	//部门验证-->
+$("#adep").blur(function(){
+	var adepselectedvalue = $("#adep option:selected").text();
+	var adeptipobj = $("#adeptip");
+	if(adepselectedvalue!="=请选择=" && adepselectedvalue!=""){
+		adeptipobj.html("<img src='image/check.png' />");
+	}else{
+		adeptipobj.html("请选择部门");
+		adeptipobj.css("color","red");		
+	}
+});
+
+	
+	//职位验证-->
+$("#apost").blur(function(){
+	var apostselectedvalue = $("#apost option:selected").text();
+	var aposttipobj = $("#aposttip");
+	if(apostselectedvalue!="=请选择=" && apostselectedvalue!=""){
+		aposttipobj.html("<img src='image/check.png' />");
+	}else{
+		aposttipobj.html("请选择职位");
+		aposttipobj.css("color","red");		
+	}
+});
+});
+var aflag = "";
+//通过AJAX返回的公司部门职位数据
+function openaddpersonwindow(){
+$(function(){
+	$.ajax({
+		url: "/CMS/returnCDPServlet?args=09s",
+		type: "POST",
+		dataType:'json',
+		success:function(json) {
+			adcpviwe(json);
+		}
+	});
+});
+}
+
+//通过ajax查询该号码是否可用
+function aajaxreturn(urlstr,obj,objtip){
+		$(function(){
+			$.ajax({
+				url: urlstr,
+				type: "POST",
+				dataType:'json',
+				data: $.trim(obj.val()),
+				success:function(json) {
+					if(json.status=="yes"){
+						//set style 
+						obj.css("border-color","#0000FF","border-width","1px","border-style","solid");
+						objtip.html("<img src='image/check.png' />");
+						aflag = true;
+					}else{
+						obj.css("border-color","red","border-width","1px","border-style","solid");
+						objtip.html("该号码已经被注册!");
+						objtip.css("color","red");
+						aflag = false;
+					}
+				}
+			});
+		});
+}
+//dcp 将ajax返回的公司部门职位数据显示在添加人员信息窗口中
+function adcpviwe(json){
+	var acompnamelen = json.company.length;
+	var adepnamelen = json.dep.length;
+	var apostnamelen = json.post.length;
+	var acompobj = $("#acompany");
+	var adepobj = $("#adep");
+	var apostobj = $("#apost");
+	acompobj.empty();
+	adepobj.empty();
+	apostobj.empty();
+	acompobj.append("<option value='=请选择='>=请选择=</option>");
+	for(var i=0;i<acompnamelen;i++){
+		acompobj.append("<option value="+"'"+json.company[i].name+"'"+">"+json.company[i].name+"</option>");
+	}
+	adepobj.append("<option value='=请选择='>=请选择=</option>");
+	for(var i=0;i<adepnamelen;i++){
+		adepobj.append("<option value="+"'"+json.dep[i].name+"'"+">"+json.dep[i].name+"</option>");
+	}
+	apostobj.append("<option value='=请选择='>=请选择=</option>");
+	for(var i=0;i<apostnamelen;i++){
+		apostobj.append("<option value="+"'"+json.post[i].name+"'"+">"+json.post[i].name+"</option>");
+	}	
+}

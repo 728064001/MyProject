@@ -31,7 +31,7 @@ public class queryCardDAO {
 		}finally{
 			Dbconn.closeALL(conn, pstm, res);
 		}
-		
+		System.out.println("身份证号可以使用");
 		return true;
 	}
 //	test

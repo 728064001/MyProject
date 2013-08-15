@@ -31,7 +31,7 @@ public class queryqqDAO {
 		}finally{
 			Dbconn.closeALL(conn, pstm, res);
 		}
-		System.out.println("可以使用");
+		System.out.println("qq可以使用");
 		return true;
 	}	
 	

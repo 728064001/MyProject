@@ -391,7 +391,6 @@ function updataajaxreturn(urlstr,obj,objtip){
 		}
 		//提交修改之前判断信息是否修改过
 		function valueyesnomodifiy(){
-			alert($("input:radio[name='updatasex']").filter(':checked').val());
 			if($.trim($("#updatausername").val())!=personUsername || $.trim($("#updataage").val())!=personAge || $("input:radio[name='updatasex']").filter(':checked').val()!=personSex||$.trim($("#updatatel").val())!=personTel||$.trim($("#updataqq").val())!=personQq||$.trim($("#updatabrithday").val())!=personBri||$.trim($("#updatacard").val())!=personCard||$("#updatacomp option:selected").text()!=personComp||$("#updatadep option:selected").text()!=personDep||$("#updatapost option:selected").text()!=personPost){
 			return true;
 			}else{
