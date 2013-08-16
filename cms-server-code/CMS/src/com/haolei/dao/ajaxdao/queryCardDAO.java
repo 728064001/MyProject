@@ -23,7 +23,7 @@ public class queryCardDAO {
 				num = res.getInt(1);
 			}
 			if(num!=0){
-				System.out.println("身份证号已存在，不能注册");
+				System.out.println("queryCardDAO:身份证号已存在，不能注册");
 				return false;
 			}
 		}catch(Exception e){
@@ -31,7 +31,7 @@ public class queryCardDAO {
 		}finally{
 			Dbconn.closeALL(conn, pstm, res);
 		}
-		System.out.println("身份证号可以使用");
+		System.out.println("queryCardDAO:身份证号可以使用");
 		return true;
 	}
 //	test

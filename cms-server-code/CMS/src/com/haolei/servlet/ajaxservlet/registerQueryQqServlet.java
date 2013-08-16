@@ -25,16 +25,8 @@ public class registerQueryQqServlet extends HttpServlet {
 		queryqqDAO qs = new queryqqDAO();
 		JSONObject js = new JSONObject();
 		PrintWriter pr = response.getWriter();
-		//接收 qq 
-		StringBuffer jsonBuf = new StringBuffer();
-		char[] buf = new char[1];
-		int len = 1;
-		BufferedReader reader = request.getReader();
-		while((len=reader.read(buf))!=-1){
-			jsonBuf.append(buf);
-		}
-		String Str = jsonBuf.toString();
-		person.setIcq(Str);
+	
+		person.setIcq(request.getParameter("qq"));
 		boolean o = qs.queryqq(person);
 		if(o==true){
 			js.put("status", "yes");

@@ -26,17 +26,8 @@ public class registerQueryCardServlet extends HttpServlet {
 		PrintWriter pr = response.getWriter();
 		JSONObject js = new JSONObject();
 		
-		//接收card
-		//接收 tel ajax
-		StringBuffer jsonBuf = new StringBuffer();
-		char[] buf = new char[1];
-		int len = 1;
-		BufferedReader reader = request.getReader();
-		while((len=reader.read(buf))!=-1){
-			jsonBuf.append(buf);
-		}
-		String Str = jsonBuf.toString();
-		person.setCard(Str);
+	
+		person.setCard(request.getParameter("card"));
 		boolean o = qc.querycard(person);
 		if(o==true){
 			js.put("status", "yes");

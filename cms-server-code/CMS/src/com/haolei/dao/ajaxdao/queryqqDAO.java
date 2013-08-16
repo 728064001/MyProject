@@ -23,7 +23,7 @@ public class queryqqDAO {
 				num = res.getInt(1);
 			}
 			if(num!=0){
-				System.out.println("qq号已存在，不能注册");
+				System.out.println("queryqqDAO:qq号已存在，不能注册");
 				return false;
 			}
 		}catch(Exception e){
@@ -31,7 +31,7 @@ public class queryqqDAO {
 		}finally{
 			Dbconn.closeALL(conn, pstm, res);
 		}
-		System.out.println("qq可以使用");
+		System.out.println("queryqqDAO:qq可以使用");
 		return true;
 	}	
 	

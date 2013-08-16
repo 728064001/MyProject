@@ -15,74 +15,7 @@ public class RegisterDAO {
 		Connection conn = Dbconn.getconn();
 		PreparedStatement pstm = null;
 		ResultSet res = null;
-		
-		//test
-//		System.out.println(person.getBrithday());
-//		System.out.println(company.getCompanyName());
-		
-		
-		
-//		//1.根据Company对象的CompanyName值，在Company_tab中查对应的ID
-//		String queryCompanyidStr = "select id from Company_tab where companyname = ?";
-//		int companyid=0;
-//		try{
-//			pstm = conn.prepareStatement(queryCompanyidStr);
-//			pstm.setString(1, company.getCompanyName());
-//			res = pstm.executeQuery();
-//			while(res.next()){
-//				companyid = res.getInt(1);
-//			}
-//		}catch(Exception e){
-//			e.printStackTrace();
-//			return false;
-//		}finally{
-//			Dbconn.closeALL(conn, pstm, res);
-//		}
-//		
-//		//根据Dep对象的dep值，在dep_tab中查询对应id
-//		String queryDepidStr = "select id from dep_tab where dep = ?";
-//		int depid=0;
-//		try{
-//			pstm = conn.prepareStatement(queryDepidStr);
-//			pstm.setString(1, dep.getDep());
-//			res = pstm.executeQuery();
-//			while(res.next()){
-//				depid = res.getInt(1);
-//			}
-//		}catch(Exception e){
-//			e.printStackTrace();
-//			return false;
-//		}finally{
-//			Dbconn.closeALL(conn, pstm, res);
-//		}
-//		
-//		//根据Post对象的post值，在post_tab中查询对应的ID
-//		String querypostidStr = "select id from post_tab where post = ?";
-//		int postid=0;
-//		try{
-//			pstm = conn.prepareStatement(querypostidStr);
-//			pstm.setString(1, post.getPost());
-//			res = pstm.executeQuery();
-//			while(res.next()){
-//				postid = res.getInt(1);
-//			}
-//		}catch(Exception e){
-//			e.printStackTrace();
-//			return false;
-//		}finally{
-//			Dbconn.closeALL(conn, pstm, res);
-//		}
-//		
-//		
-		
 		IdValueTwoQuery iq = new IdValueTwoQuery();
-		
-		
-		//test
-//		System.out.println(companyid);
-//		System.out.println(depid);
-//		System.out.println(postid);
-		System.out.println(person.getSex());
 		//将数据插入Person_tab表中
 		String insertPersonStr = "insert into person_tab (uuid,username,password,sex,tel,icq,brithday,age,card,companyid,depid,postid,isadmin,imagepath) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		int num = 0;

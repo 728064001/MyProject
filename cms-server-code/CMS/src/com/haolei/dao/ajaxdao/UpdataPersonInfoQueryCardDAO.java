@@ -18,13 +18,13 @@ public class UpdataPersonInfoQueryCardDAO {
 			pstm = conn.prepareStatement(updatapersoninfoquerycardStr);
 			pstm.setString(1, person.getUuid());
 			pstm.setString(2, person.getCard());
-			System.out.println(person.getUuid()+"/"+person.getCard());
+			System.out.println("UpdataPersonInfoQueryCardDAO:"+person.getUuid()+"/"+person.getCard());
 			res = pstm.executeQuery();
 			while(res.next()){
 				num = res.getInt(1);
 			}
 			if(num==0){
-				System.out.println("该身份证可以使用");
+				System.out.println("UpdataPersonInfoQueryCardDAO:该身份证可以使用");
 				return true;
 			}
 		}catch(Exception e){
@@ -32,7 +32,7 @@ public class UpdataPersonInfoQueryCardDAO {
 		}finally{
 			Dbconn.closeALL(conn, pstm, res);
 		}
-		System.out.println("该身份证不能使用");
+		System.out.println("UpdataPersonInfoQueryCardDAO:该身份证不能使用");
 		return false;
 	}
 }

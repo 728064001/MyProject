@@ -24,17 +24,8 @@ public class registerQueryTelServlet extends HttpServlet {
 		Person person = new Person();
 		queryTelDAO qt = new queryTelDAO();
 		PrintWriter pr = response.getWriter();
-//		System.out.println("en");
-		//接收 tel ajax
-		StringBuffer jsonBuf = new StringBuffer();
-		char[] buf = new char[1];
-		int len = 1;
-		BufferedReader reader = request.getReader();
-		while((len=reader.read(buf))!=-1){
-			jsonBuf.append(buf);
-		}
-		String Str = jsonBuf.toString();
-		person.setTel(Str);
+		
+		person.setTel(request.getParameter("tel"));
 		boolean o= qt.querytel(person);
 
 		if(o){
@@ -46,7 +37,6 @@ public class registerQueryTelServlet extends HttpServlet {
 			js.put("status", "no");
 			pr.print(js);
 		}
-		pr.flush();
 		pr.close();
 	}
 	

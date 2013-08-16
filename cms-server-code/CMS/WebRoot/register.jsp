@@ -18,7 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="description" content="This is my page">
 
 	<link rel="stylesheet" type="text/css" href="css/register.css">
-	<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
  </head>
 <body>
 
@@ -161,7 +161,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<td style="height: 88px; width: 196px"><span>&nbsp;<input name="xieyi" id="xieyi" type="checkbox" />				
 				<span class="style9">同意</span><a href="xieyi.html" target="_blank"><span class="style9">用户协议</span></a><span class="style9">&nbsp;
 				</span>				</span><br/><br/>
-					<input name="regist" id="regbut" type="submit" value="注  册" style="width: 103px; height: 45px"  onclick="return register()"/>	</td>
+					<input name="regist" id="regbut" type="button" value="注  册" style="width: 103px; height: 45px"/>	</td>
 				<td style="height: 88px" valign="bottom">&nbsp;</td>
 			</tr>
 			<tr>

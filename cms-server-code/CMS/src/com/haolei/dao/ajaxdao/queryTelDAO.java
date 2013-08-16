@@ -14,7 +14,6 @@ public class queryTelDAO {
 		ResultSet res = null;
 		int num = 0;
 		String querytelStr = "select count(tel) from person_tab where tel = ?";
-		
 		try{
 			pstm = conn.prepareStatement(querytelStr);
 			pstm.setString(1, person.getTel());
@@ -23,7 +22,7 @@ public class queryTelDAO {
 				num = res.getInt(1);
 			}
 			if(num!=0){
-				System.out.println("tel已存在，不能注册");
+				System.out.println("queryTelDAO:tel已存在，不能注册");
 				return false;
 			}
 		}catch(Exception e){
@@ -31,7 +30,7 @@ public class queryTelDAO {
 		}finally{
 			Dbconn.closeALL(conn, pstm, res);
 		}
-		System.out.println("tel可以使用");
+		System.out.println("queryTelDAO:tel可以使用");
 		
 		return true;
 	}

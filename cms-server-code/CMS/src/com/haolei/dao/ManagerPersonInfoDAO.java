@@ -75,8 +75,8 @@ public class ManagerPersonInfoDAO {
 		}
 		
 		int recordcount = queryRecordCount.returnCount(countStr);
-		System.out.println("sql:"+countStr);
-		System.out.println("sql:"+querypersonStr);
+		System.out.println("ManagerPersonInfoDAO.java:sql:"+countStr);
+		System.out.println("ManagerPersonInfoDAO.java:sql:"+querypersonStr);
 		//计数
 		int nums = 1;
 		//根据数据总行数和每页显示行数计算页数
@@ -108,31 +108,16 @@ public class ManagerPersonInfoDAO {
 				}
 				nums++;
 			}
-//			System.out.println(nums);
 			perjson.put("vpages",vpages);//总页数
 			perjson.put("courows",recordcount);//符合查询条件的总数据行数
-//			perjson.put("countnum", eachpagevrow);//一页显示多少行
 			perjson.put("personinfo", perary);
 		}catch(Exception e){   
 			e.printStackTrace();
 		}finally{
 			Dbconn.closeALL(conn, pstm, res);
 		}
-		System.out.println("json:"+perjson);
+		System.out.println("ManagerPersonInfoDAO.java:json:"+perjson);
 		return perjson;
-	}
-	
-	
-	/*
-	 * uuidQueryPersoninfo()
-	 * 用于在修改人员信息之前用uuid来查数据库，测试该人员是否还存在于数据库中
-	 */
-	public JSONObject uuidQueryPersoninfo(String uuid){
-		Connection conn = Dbconn.getconn();
-		PreparedStatement pstm = null;
-		ResultSet res = null;
-		String uuidQueryStr = "select ";
-		return null;
 	}
 	
 	/*
