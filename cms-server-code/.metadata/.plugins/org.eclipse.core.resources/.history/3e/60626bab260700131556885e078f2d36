@@ -13,7 +13,6 @@ public class queryqqDAO {
 		PreparedStatement pstm = null;
 		ResultSet res = null;
 		int num = 0;
-		System.out.println("queryqqDAO:"+person.getIcq());
 		String queryqqStr = "select count(icq) from person_tab where icq = ?";
 		
 		try{

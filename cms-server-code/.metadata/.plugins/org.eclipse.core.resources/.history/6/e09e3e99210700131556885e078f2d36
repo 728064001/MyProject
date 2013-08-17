@@ -264,7 +264,6 @@ function ajaxreturn(urlstr,obj,objtip){
 			$.ajax({
 				url: urlstr,
 				type: "POST",
-				async:false, 
 				dataType:'json',
 				success:function(json) {
 					if(json.status=="yes"){

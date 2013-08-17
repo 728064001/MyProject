@@ -169,9 +169,8 @@ $("#acard").blur(function(){
 	 var acardlen = acardStr.length;
 	 var acardtipobj = $("#acardtip");
 	 var acardReg=/^(\d{14}|\d{17})(\d|[xX])$/;
-	 var js_add_querycardservletstr = "/CMS/registerQueryCardServlet?"+"&card="+acardStr;
 	 if(acardReg.test(acardStr)){
-	    aajaxreturn(js_add_querycardservletstr,$("#acard"),acardtipobj);
+	    aajaxreturn("/CMS/registerQueryCardServlet",$("#acard"),acardtipobj);
 		$("#acard").css("border-color","#0000FF","border-width","2px","border-style","solid");
 		acardtipobj.html("<img src='image/check.png' />");
 	 }else{
@@ -319,7 +318,7 @@ function addpersonvalidata(){
 				});
 			}
 		}		
-	//验证电话 
+		//验证电话 
 	var atelStr = $.trim($("#atel").val());
 	var atellen = atelStr.length;
 	var ateltipobj = $("#ateltip");
@@ -370,9 +369,7 @@ function addpersonvalidata(){
 				});
 			}
 		}				
-	}	
-	
-	
+	}		
 	return true;
 }
 //通过AJAX返回的公司部门职位数据

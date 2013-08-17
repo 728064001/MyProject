@@ -82,9 +82,8 @@ $(function(){
 		var aqqlen = aqqStr.length;
 		var aqqtipobj = $("#aqqtip");
 		var aqqReg=/^\d*$/;
-		var js_add_queryqqservletstr = "/CMS/registerQueryQqServlet?"+"&qq="+aqqStr;
 		if(aqqlen>=4&&aqqlen<=15){
-			aajaxreturn(js_add_queryqqservletstr,$("#aqq"),aqqtipobj);
+			aajaxreturn("/CMS/registerQueryQqServlet",$("#aqq"),aqqtipobj);
 			$("#aqq").css("border-color","#0000FF","border-width","2px","border-style","solid");
 			aqqtipobj.html("<img src='image/check.png' />");
 		}else{
@@ -99,10 +98,9 @@ $("#atel").blur(function(){
 	var atellen = atelStr.length;
 	var ateltipobj = $("#ateltip");
 	var atelReg=/^\d*$/;
-	var js_add_querytelservletstr = "/CMS/registerQueryTelServlet?"+"&tel="+atelStr;
 	if(atellen>=7&&atellen<=12){
 		if(atelReg.test(atelStr)){
-			aajaxreturn(js_add_querytelservletstr,$("#atel"),ateltipobj);
+			aajaxreturn("/CMS/registerQueryTelServlet",$("#atel"),ateltipobj);
 			$("#atel").css("border-color","#0000FF","border-width","2px","border-style","solid");
 			teltipobj.html("<img src='image/check.png' />");
 		}else{
@@ -169,9 +167,8 @@ $("#acard").blur(function(){
 	 var acardlen = acardStr.length;
 	 var acardtipobj = $("#acardtip");
 	 var acardReg=/^(\d{14}|\d{17})(\d|[xX])$/;
-	 var js_add_querycardservletstr = "/CMS/registerQueryCardServlet?"+"&card="+acardStr;
 	 if(acardReg.test(acardStr)){
-	    aajaxreturn(js_add_querycardservletstr,$("#acard"),acardtipobj);
+	    aajaxreturn("/CMS/registerQueryCardServlet",$("#acard"),acardtipobj);
 		$("#acard").css("border-color","#0000FF","border-width","2px","border-style","solid");
 		acardtipobj.html("<img src='image/check.png' />");
 	 }else{
@@ -282,97 +279,40 @@ function addpersonvalidata(){
 		var aqqlen = aqqStr.length;
 		var aqqtipobj = $("#aqqtip");
 		var aqqReg=/^\d*$/;
-		var add_queryqqservletstr = "/CMS/registerQueryQqServlet?"+"&qq="+aqqStr;
 		if(aqqlen<4||aqqlen>15){
-			a_qq_flag = false;
 			$("#aqq").css("border-color","red","border-width","2px","border-style","solid");
 			aqqtipobj.html("QQ号码长度不正确!");
 			aqqtipobj.css("color","red");
+			return false;
 		}else{
-			if(!aqqReg.test(aqqStr)){
-				a_qq_flag = false;
-				$("#aqq").css("border-color","red","border-width","2px","border-style","solid");
-				aqqtipobj.html("QQ号码长度不正确!");
-				aqqtipobj.css("color","red");
-			}else{
-				$(function(){
-					$.ajax({
-						url: add_queryqqservletstr,
-						type: "POST",
-						async:false, 
-						dataType:'json',
-						success:function(aqqjson) {
-							if(aqqjson.status=="yes"){
-								a_qq_flag = true;
-								//set style 
-								$("#aqq").css("border-color","#0000FF","border-width","2px","border-style","solid");
-								aqqtipobj.html("OK");
-								aqqtipobj.css("color","#0000FF");
-							}else{
-								a_qq_flag = false;
-								$("#aqq").css("border-color","red","border-width","2px","border-style","solid");
-								aqqtipobj.html("该号码已经被注册!");
-								aqqtipobj.css("color","red");
-							}
-						}
-					});
-				});
+			aajaxreturn("/CMS/registerQueryQqServlet",$("#aqq"),aqqtipobj);
+			if(aflag!=true){
+				return false;
 			}
 		}		
-	//验证电话 
+		//验证电话 
 	var atelStr = $.trim($("#atel").val());
 	var atellen = atelStr.length;
 	var ateltipobj = $("#ateltip");
 	var atelReg=/^\d*$/;
-	var add_querytelservletstr = "/CMS/registerQueryTelServlet?"+"&tel="+atelStr;
 	if(atellen<7||atellen>12){
-		a_tel_flag = false;
 		$("#atel").css("border-color","red","border-width","2px","border-style","solid");
 		ateltipobj.html("电话号码长度错误!(7-12位)!");
 		ateltipobj.css("color","red");
+		return false;
 	}else{
 		if(!atelReg.test(atelStr)){
-			a_tel_flag = false;
 			$("#atel").css("border-color","red","border-width","2px","border-style","solid");
 			ateltipobj.html("电话号码格式错误!(请输入合法的号码)!");
 			ateltipobj.css("color","red");	
+			return false;
 		}else{
-//			aajaxreturn("/CMS/registerQueryTelServlet",$("#atel"),ateltipobj);
-//			if(aflag!=true){
-//				return false;
-//			}
-			if(!atelReg.test(atelStr)){
-				a_tel_flag = false;
-				$("#tel").css("border-color","red","border-width","2px","border-style","solid");
-				teltipobj.html("电话号码格式错误!(请输入合法的号码)!");
-				teltipobj.css("color","red");
-			}else{
-				$(function(){
-					$.ajax({
-						url: add_querytelservletstr,
-						type: "POST",
-						async:false, 
-						dataType:'json',
-						success:function(ateljson) {
-							if(ateljson.status=="yes"){
-								a_tel_flag = true;
-								$("#atel").css("border-color","#0000FF","border-width","2px","border-style","solid");
-								ateltipobj.html("OK");
-								ateltipobj.css("color","#0000FF");
-							}else{
-								a_tel_flag = false;
-								$("#atel").css("border-color","red","border-width","2px","border-style","solid");
-								ateltipobj.html("该号码已经被注册!");
-								ateltipobj.css("color","red");
-							}
-						}
-					});
-				});
+			aajaxreturn("/CMS/registerQueryTelServlet",$("#atel"),ateltipobj);
+			if(aflag!=true){
+				return false;
 			}
 		}				
-	}	
-	
-	
+	}		
 	return true;
 }
 //通过AJAX返回的公司部门职位数据
@@ -395,18 +335,19 @@ function aajaxreturn(urlstr,obj,objtip){
 			$.ajax({
 				url: urlstr,
 				type: "POST",
-				async:false, 
 				dataType:'json',
+				data: $.trim(obj.val()),
 				success:function(json) {
 					if(json.status=="yes"){
 						//set style 
-						obj.css("border-color","#0000FF","border-width","2px","border-style","solid");
+						obj.css("border-color","#0000FF","border-width","1px","border-style","solid");
 						objtip.html("<img src='image/check.png' />");
-						objtip.css("color","#0000FF");
+						aflag = true;
 					}else{
-						obj.css("border-color","red","border-width","2px","border-style","solid");
+						obj.css("border-color","red","border-width","1px","border-style","solid");
 						objtip.html("该号码已经被注册!");
 						objtip.css("color","red");
+						aflag = false;
 					}
 				}
 			});
