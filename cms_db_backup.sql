@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50151
 File Encoding         : 65001
 
-Date: 2013-08-14 18:26:04
+Date: 2013-08-20 18:15:11
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -276,8 +276,8 @@ CREATE TABLE `mail_tab` (
   PRIMARY KEY (`id`),
   KEY `mail_mailstatusid_fd` (`mailstatusid`),
   KEY `person_uuid_fk` (`personid`),
-  CONSTRAINT `person_uuid_fk` FOREIGN KEY (`personid`) REFERENCES `person_tab` (`uuid`),
-  CONSTRAINT `mail_mailstatusid_fd` FOREIGN KEY (`mailstatusid`) REFERENCES `mailstatus_tab` (`id`)
+  CONSTRAINT `mail_mailstatusid_fd` FOREIGN KEY (`mailstatusid`) REFERENCES `mailstatus_tab` (`id`),
+  CONSTRAINT `person_uuid_fk` FOREIGN KEY (`personid`) REFERENCES `person_tab` (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -334,15 +334,15 @@ CREATE TABLE `person_tab` (
   `password` varchar(16) NOT NULL,
   `sex` varchar(2) NOT NULL,
   `tel` varchar(12) NOT NULL,
-  `icq` varchar(10) NOT NULL,
+  `icq` varchar(20) NOT NULL,
   `brithday` varchar(10) DEFAULT NULL,
   `age` int(11) DEFAULT NULL,
   `card` varchar(19) DEFAULT NULL,
   `companyid` int(11) NOT NULL,
   `postid` int(11) NOT NULL,
+  `isadmin` varchar(10) NOT NULL,
+  `imagepath` varchar(100) DEFAULT NULL,
   `depid` int(11) NOT NULL,
-  `isadmin` varchar(11) NOT NULL,
-  `imagepath` varchar(70) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `person_companyid_fks` (`companyid`),
   KEY `person_depid_fks` (`depid`),
@@ -351,12 +351,12 @@ CREATE TABLE `person_tab` (
   CONSTRAINT `person_companyid_fks` FOREIGN KEY (`companyid`) REFERENCES `company_tab` (`id`),
   CONSTRAINT `person_depid_fks` FOREIGN KEY (`depid`) REFERENCES `dep_tab` (`id`),
   CONSTRAINT `person_postid_fks` FOREIGN KEY (`postid`) REFERENCES `post_tab` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of person_tab
 -- ----------------------------
-INSERT INTO `person_tab` VALUES ('14', '1817a69b-1dea-4842-8592-d31a0b050b4e', '米格', '11111111', '男', '13971863594', '7332255', '0917', '23', '420821199105110011', '1', '11', '3', '普通用户', ''), ('15', '965bf2df-2a19-4817-93f7-a3e8ebd203ca', '郝磊', '11111111', '男', '15815523495', '728064001', '0511', '22', '420821199105110017', '1', '9', '4', '管理员', ''), ('16', 'caa30351-eff2-4786-befa-c17706761434', '梁宁', '11111111', '男', '1234567890', '45646674', '0905', '21', '420821199105110010', '1', '4', '5', '普通用户', ''), ('17', 'dc62ca19-c1d1-4efd-8ab7-163b4c8ec776', '猫猫', '11111111', '女', '15815523545', '99808', '1009', '23', '420821199105110013', '1', '13', '6', '普通用户', ''), ('18', 'e169f3fe-6fcb-44d7-bb83-ce74516c3ca9', '陈真', '11111111', '男', '13971863591', '1111111', '1111', '21', '420821199105110019', '1', '12', '2', '普通用户', ''), ('19', 'ef09393f-021e-432c-91e8-0cc132606c42', '巴西', '11111111', '男', '15815523496', '323423', '0905', '23', '111111111111115', '1', '13', '3', '普通用户', ''), ('20', '621ead1a-e686-46bd-818d-9215530eaa42', '夏晓', '11111111', '女', '7856456', '4543444', '1011', '21', '111111111111116', '2', '11', '6', '普通用户', '');
+INSERT INTO `person_tab` VALUES ('14', '1817a69b-1dea-4842-8592-d31a0b050b4e', '米格', '11111111', '男', '13971863594', '7332255', '0917', '23', '420821199105110011', '1', '11', '普通用户', null, '3'), ('15', '965bf2df-2a19-4817-93f7-a3e8ebd203ca', '郝磊', '11111111', '男', '15815523495', '728064001', '0511', '25', '420821199105110017', '1', '9', '普通用户', null, '4'), ('16', 'caa30351-eff2-4786-befa-c17706761434', '梁宁', '11111111', '男', '1234567890', '45646674', '0905', '21', '420821199105110010', '1', '4', '普通用户', null, '5'), ('17', 'dc62ca19-c1d1-4efd-8ab7-163b4c8ec776', '猫猫', '11111111', '女', '15815523545', '99808', '1009', '23', '420821199105110013', '1', '13', '普通用户', null, '6'), ('18', 'e169f3fe-6fcb-44d7-bb83-ce74516c3ca9', '陈真', '11111111', '男', '13971863591', '1111111', '1111', '21', '420821199105110019', '1', '12', '普通用户', null, '2'), ('19', 'ef09393f-021e-432c-91e8-0cc132606c42', '巴西', '11111111', '男', '15815523496', '323423', '0905', '23', '111111111111115', '1', '13', '普通用户', null, '3'), ('20', '621ead1a-e686-46bd-818d-9215530eaa42', '夏晓', '11111111', '女', '7856456', '4543444', '1011', '21', '111111111111116', '2', '11', '普通用户', null, '6'), ('61', '7f37d62f-310f-41eb-815b-7a9633a8bab5', '刘梦桃', '1q2w3e4r5t', '女', '15815523423', '43456345534', '0617', '23', '420821199105110045', '1', '2', '普通用户', '', '1');
 
 -- ----------------------------
 -- Table structure for `post_tab`
